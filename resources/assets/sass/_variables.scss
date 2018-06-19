@@ -1,0 +1,109 @@
+// Body
+$body-bg: #fff;
+
+$white:    #fff !default;
+$gray-100: #f6f6f6 !default;
+$gray-200: #f0f0f0 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #999 !default;
+$gray-700: #555 !default;
+$gray-800: #333 !default;
+$gray-900: #222 !default;
+$black:    #000 !default;
+
+// Flat UI Color Palette
+// by Rob Dunham http://robdunham.info/
+// colors taken from flatuicolors.com
+// https://gist.github.com/Nilpo/344bcfb500907661ea9b
+
+// flatuicolors.com
+$fui-turquoise:     #1abc9c;
+$fui-green-sea:     #16a085;
+$fui-sun-flower:    #f1c40f;
+$fui-orange:        #f39c12;
+$fui-emerald:       #2ecc71;
+$fui-nephritis:     #27ae60;
+$fui-carrot:        #e67e22;
+$fui-pumpkin:       #d35400;
+$fui-peter-river:   #3498db;
+$fui-belize-hole:   #2980b9;
+$fui-alizarin:      #e74c3c;
+$fui-pomegranate:   #c0392b;
+$fui-amathyst:      #9b59b6;
+$fui-wysteria:      #8e44ad;
+$fui-clouds:        #ecf0f1;
+$fui-silver:        #bdc3c7;
+$fui-wet-asphalt:   #34495e;
+$fui-midnight-blue: #2c3e50;
+$fui-concrete:      #95a5a6;
+$fui-asbestos:      #7f8c8d;
+
+$blue:    #158CBA !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #FF4136 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #FF851B !default;
+$green:   #28B62C !default;
+$teal:    #20c997 !default;
+$cyan:    #75CAEB !default;
+
+$primary:       $fui-emerald !default;
+$secondary:     $gray-200 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-700 !default;
+
+$shadow-sm: 0 1px 3px rgba(0,0,0,.25);
+$shadow-md: 0 3px 15px rgba(0,0,0,.25);
+$shadow-lg: 0 10px 20px rgba(0,0,0,.25);
+
+$yiq-contrasted-threshold: 200 !default;
+
+// Fonts
+
+$font-family-sans-serif: "Exo 2", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$font-size-base: 0.875rem !default;
+
+// Dropdowns
+
+$dropdown-link-color: rgba(0,0,0,.5) !default;
+
+// Navs
+
+$nav-tabs-border-color:             $gray-200 !default;
+$nav-tabs-link-hover-border-color:  $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        $gray-900 !default;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color !default;
+
+// Pagination
+
+$pagination-color:                  $gray-700 !default;
+$pagination-bg:                     $gray-200 !default;
+
+$pagination-hover-color:            $pagination-color !default;
+$pagination-hover-bg:               $pagination-bg !default;
+
+$pagination-active-border-color:    darken($primary, 5%) !default;
+
+$pagination-disabled-color:         $gray-600 !default;
+$pagination-disabled-bg:            $pagination-bg !default;
+
+// Jumbotron
+
+$jumbotron-bg:                      #fafafa !default;
+
+// Modals
+
+$modal-content-border-color:        rgba($black,.1) !default;
+
+// Close
+
+$close-color: $white !default;
