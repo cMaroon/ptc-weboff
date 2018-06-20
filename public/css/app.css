@@ -32,7 +32,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Exo 2", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif: "Exo 2", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -71,13 +71,13 @@ section {
 
 body {
   margin: 0;
-  font-family: "Exo 2", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Exo 2", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
   color: #222;
   text-align: left;
-  background-color: #fff;
+  background-color: #eee;
 }
 
 [tabindex="-1"]:focus {
@@ -404,7 +404,6 @@ h1,
 h2,
 .h2 {
   font-size: 1.75rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 h3,
@@ -520,7 +519,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #eee;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -1943,7 +1942,7 @@ pre code {
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: #eee;
 }
 
 .table-sm th,
@@ -2116,7 +2115,7 @@ pre code {
 }
 
 .table .thead-dark th {
-  color: #fff;
+  color: #eee;
   background-color: #222;
   border-color: #353535;
 }
@@ -2128,7 +2127,7 @@ pre code {
 }
 
 .table-dark {
-  color: #fff;
+  color: #eee;
   background-color: #222;
 }
 
@@ -2550,8 +2549,8 @@ select.form-control-lg:not([size]):not([multiple]),
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before,
 .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 182, 44, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 182, 44, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #eee, 0 0 0 0.2rem rgba(40, 182, 44, 0.25);
+          box-shadow: 0 0 0 1px #eee, 0 0 0 0.2rem rgba(40, 182, 44, 0.25);
 }
 
 .was-validated .custom-file-input:valid ~ .custom-file-label,
@@ -2674,8 +2673,8 @@ select.form-control-lg:not([size]):not([multiple]),
 
 .was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before,
 .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255, 65, 54, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255, 65, 54, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #eee, 0 0 0 0.2rem rgba(255, 65, 54, 0.25);
+          box-shadow: 0 0 0 1px #eee, 0 0 0 0.2rem rgba(255, 65, 54, 0.25);
 }
 
 .was-validated .custom-file-input:invalid ~ .custom-file-label,
@@ -4130,8 +4129,8 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #eee, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
+          box-shadow: 0 0 0 1px #eee, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
 }
 
 .custom-control-input:active ~ .custom-control-label::before {
@@ -4377,8 +4376,8 @@ input[type="button"].btn-block {
 
 .custom-range::-webkit-slider-thumb:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #eee, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
+          box-shadow: 0 0 0 1px #eee, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
 }
 
 .custom-range::-webkit-slider-thumb:active {
@@ -4407,7 +4406,7 @@ input[type="button"].btn-block {
 
 .custom-range::-moz-range-thumb:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
+  box-shadow: 0 0 0 1px #eee, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
 }
 
 .custom-range::-moz-range-thumb:active {
@@ -4435,7 +4434,7 @@ input[type="button"].btn-block {
 
 .custom-range::-ms-thumb:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
+  box-shadow: 0 0 0 1px #eee, 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
 }
 
 .custom-range::-ms-thumb:active {
@@ -4516,7 +4515,7 @@ input[type="button"].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #222;
-  background-color: #fff;
+  background-color: #eee;
   border-color: #f0f0f0;
 }
 
@@ -6267,7 +6266,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Exo 2", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Exo 2", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6392,7 +6391,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Exo 2", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Exo 2", "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10602,7 +10601,6 @@ a.text-dark:focus {
   border-style: solid;
   border-width: 0 1px 4px 1px;
   border-top-width: 1px;
-  background-color: rgba(0, 168, 36, 0.6) !important;
 }
 
 .dropdown-item {
@@ -11087,23 +11085,6 @@ img {
 
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
-
-body,
-input,
-textarea,
-select {
-  font-family: Verdana, Geneva, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.heading {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
 
 /* Forms
 --------------------------------------------------------------------------------------------------------------- */
@@ -12021,11 +12002,6 @@ td {
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
 
-body {
-  color: #AAAAAA;
-  background-color: #1E252B;
-}
-
 a {
   color: #5B9BBD;
 }
@@ -12708,5 +12684,45 @@ table a,
   .font-x3 {
     font-size: 1.6rem;
   }
+}
+
+.ptc-navbar {
+  border-bottom: none;
+}
+
+.ptc-navbar,
+.ptc-navbar .dropdown-menu {
+  background-color: #222 !important;
+}
+
+.ptc-navbar .dropdown-menu .dropdown-item {
+  color: #ffffff !important;
+}
+
+.ptc-navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #017c17 !important;
+  color: #ffffff !important;
+}
+
+#introblocks {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
+}
+
+#introblocks li {
+  background-image: url("https://raw.githubusercontent.com/TLIBR/tlibr-web/master/resources/assets/img/bg-card-section-header.png") !important;
+  background-size: cover;
+  background-position: 20%;
+  cursor: default;
+}
+
+#introblocks li:hover {
+  z-index: 999;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+#introblocks li article img {
+  margin-bottom: 18px;
 }
 

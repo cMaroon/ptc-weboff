@@ -229,8 +229,6 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400
   @include shadow();
   border-top-width: 1px;
   @include box-shadow(none);
-  background-color: rgba(0, 168, 36, 0.6) !important;
-  
 }
 
 .dropdown-item {
