@@ -12,6 +12,7 @@ require('./jquery.mobilemenu');
 require('./jquery.placeholder.min');
 require('./jquery.backtotop');
 
+
 window.Vue = require('vue');
 
 /**

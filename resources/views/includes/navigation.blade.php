@@ -22,12 +22,8 @@
                         <a class="dropdown-item" href="#">College Department Faculty</a>
                         <a class="dropdown-item" href="#">Senior High School Department Faculty</a>
                         <a class="dropdown-item" href="#">ITRED Faculty and Staff</a>
-                        <a class="dropdown-item" href="#">Administrative Personnel</a>
-
-                       
+                        <a class="dropdown-item" href="#">Administrative Personnel</a>  
                    </div>
-
-                   
                </li>
             <!-- organization -->
                <li class="nav-item dropdown">
@@ -41,73 +37,92 @@
                     <a class="dropdown-item" href="#">PTC Cup</a>
                     <a class="dropdown-item" href="#">College Supreme Student Council</a>
                     <a class="dropdown-item" href="#">PTC Student Volunteers</a>
-                    <a class="dropdown-item" href="#">Senior High School Officers</a>
-
-                       
+                    <a class="dropdown-item" href="#">Senior High School Officers</a>    
                    </div>
-
-                   
                </li>
 
-               <!-- academics -->
-               <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" data-submenu>
+             <!-- academics -->
+             <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
                        Academics <span class="caret"></span>
                    </a>
-                   <div class="dropdown-menu">
-          <div class="dropdown dropright dropdown-submenu">
-  <button class="dropdown-item dropdown-toggle" type="button" data-toggle="dropdown">Action</button>
 
-  <div class="dropdown-menu">
-    <button class="dropdown-item" type="button">Sub action</button>
+                   <div class="dropdown-menu rounded-10" >
+                  <div class="nav-item dropdown">     
+                   <a class="dropdown-item" href="#">Four Year Program</a>
+                    <a class="dropdown-item" href="#">Two Year Program</a>
+                    <a class="dropdown-item" href="#">Senior High School (SHS)</a>
+                    <a class="dropdown-item" href="#">Executive Program</a>
+                </div>     
+                   </div>
+               </li>  
 
-    <div class="dropdown dropright dropdown-submenu">
-      <button class="dropdown-item dropdown-toggle" type="button">Another sub action</button>
+             <!-- admission -->
+             <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
+                       Admission <span class="caret"></span>
+                   </a>
 
-      <div class="dropdown-menu">
-        <button class="dropdown-item" type="button">Sub action</button>
-        <button class="dropdown-item" type="button">Another sub action</button>
-        <button class="dropdown-item" type="button">Something else here</button>
-      </div>
-    </div>
+                   <div class="dropdown-menu rounded-10" >
+                  <div class="nav-item dropdown">     
+                   <a class="dropdown-item" href="#">College Application</a>
+                   <a class="dropdown-item" href="#">Senior High School Application (SHS)</a>
+                </div>     
+                   </div>
+               </li>  
+ 
+             <!-- student -->
+             <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
+                       Student <span class="caret"></span>
+                   </a>
 
-    <button class="dropdown-item" type="button">Something else here</button>
-    <button class="dropdown-item" type="button" disabled>Disabled action</button>
+                   <div class="dropdown-menu rounded-10" >
+                  <div class="nav-item dropdown">     
+                   <a class="dropdown-item" href="#">Student</a>
 
-    <div class="dropdown dropright dropdown-submenu">
-      <button class="dropdown-item dropdown-toggle" type="button">Another action</button>
+                </div>     
+                   </div>
+               </li>                 
 
-      <div class="dropdown-menu">
-        <button class="dropdown-item" type="button">Sub action</button>
-        <button class="dropdown-item" type="button">Another sub action</button>
-        <button class="dropdown-item" type="button">Something else here</button>
-      </div>
-    </div>
-  </div>
+             <!-- alumni -->
+             <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
+                       Alumni <span class="caret"></span>
+                   </a>
 
-                   
-               </li>
-           </ul>
-           <ul class="navbar-nav">
+                   <div class="dropdown-menu rounded-10" >
+                  <div class="nav-item dropdown">     
+                   <a class="dropdown-item" href="#">Alumni</a>
 
-               <li class="nav-item">
-                
-               </li>
-               <li class="nav-item">
-                
-               </li>
-               <li class="nav-item">
-                 
-               </li>
-               <li class="nav-item">
-              
-               </li>
-               <li class="nav-item">
+                </div>     
+                   </div>
+               </li>  
+ 
+             <!-- about ptc -->
+             <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
+                       About <span class="caret"></span>
+                   </a>
+
+                   <div class="dropdown-menu rounded-10" >
+                  <div class="nav-item dropdown">     
+                    <a class="dropdown-item" href="#">HISTORY</a>
+                    <a class="dropdown-item" href="#">Mission/Core Values</a>
+                    <a class="dropdown-item" href="#">PTC Hymn</a>
+                    <a class="dropdown-item" href="#">Retrospections and Insights</a>
+                    <a class="dropdown-item" href="#">PTC President's Report</a>
+                    <a class="dropdown-item" href="#">PTC Under the New Administration</a>
+
+                </div>     
+                   </div>
+               </li>                
                
-               </li>
-           </ul>
 
 
+         </li>
+        </ul>
+           
            
        </div>
 

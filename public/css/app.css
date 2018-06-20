@@ -404,6 +404,7 @@ h1,
 h2,
 .h2 {
   font-size: 1.75rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,.75);
 }
 
 h3,
@@ -3625,10 +3626,10 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.875rem;
-  color: #222;
+  color: rgb(0, 0, 0);
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: rgba(0, 146, 7, 0.6);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -3754,7 +3755,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0);
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -3765,7 +3766,7 @@ input[type="button"].btn-block {
 .dropdown-item:focus {
   color: #151515;
   text-decoration: none;
-  background-color: #f6f6f6;
+  background-color: #eeff00;
 }
 
 .dropdown-item.active,
@@ -5000,12 +5001,12 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {

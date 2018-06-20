@@ -13911,10 +13911,10 @@ module.exports = __webpack_require__(49);
 
 __webpack_require__(14);
 __webpack_require__(36);
-__webpack_require__(38);
+__webpack_require__(37);
+__webpack_require__(39);
 __webpack_require__(40);
 __webpack_require__(41);
-__webpack_require__(37);
 
 window.Vue = __webpack_require__(42);
 
@@ -36260,224 +36260,6 @@ jQuery(document).ready(function ($) {
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-jQuery("#backtotop").click(function () {
-  jQuery("body,html").animate({
-    scrollTop: 0
-  }, 600);
-});
-jQuery(window).scroll(function () {
-  if (jQuery(window).scrollTop() > 150) {
-    jQuery("#backtotop").addClass("visible");
-  } else {
-    jQuery("#backtotop").removeClass("visible");
-  }
-});
-
-(function (factory) {
-  if (true) {
-    // AMD. Register as an anonymous module
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(2)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object') {
-    // Node/CommonJS
-    module.exports = factory(require('jquery'));
-  } else {
-    // Browser globals
-    factory(jQuery);
-  }
-})(function ($) {
-  var DropdownSubmenu = function () {
-    function DropdownSubmenu(element) {
-      _classCallCheck(this, DropdownSubmenu);
-
-      this.element = element.parentElement;
-      this.menuElement = this.element.querySelector('.dropdown-menu');
-
-      this.init();
-    }
-
-    _createClass(DropdownSubmenu, [{
-      key: "init",
-      value: function init() {
-        var _this = this;
-
-        $(this.element).off('keydown.bs.dropdown.data-api');
-
-        this.menuElement.addEventListener('keydown', this.itemKeydown.bind(this));
-
-        var dropdownItemNodeList = this.menuElement.querySelectorAll('.dropdown-item');
-
-        var _iteratorNormalCompletion = true;
-        var _didIteratorError = false;
-        var _iteratorError = undefined;
-
-        try {
-          for (var _iterator = dropdownItemNodeList[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            var element = _step.value;
-
-            element.addEventListener('keydown', this.handleKeydownDropdownItem.bind(this));
-          }
-        } catch (err) {
-          _didIteratorError = true;
-          _iteratorError = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion && _iterator.return) {
-              _iterator.return();
-            }
-          } finally {
-            if (_didIteratorError) {
-              throw _iteratorError;
-            }
-          }
-        }
-
-        $(this.menuElement).on('keydown', '.dropdown-submenu > .dropdown-item', this.handleKeydownSubmenuDropdownItem.bind(this));
-        $(this.menuElement).on('click', '.dropdown-submenu > .dropdown-item', this.handleClickSubmenuDropdownItem.bind(this));
-        $(this.element).on('hidden.bs.dropdown', function () {
-          _this.close(_this.menuElement);
-        });
-      }
-    }, {
-      key: "handleKeydownDropdownItem",
-      value: function handleKeydownDropdownItem(event) {
-        // 27: Esc
-        if (event.keyCode !== 27) {
-          return;
-        }
-
-        event.target.closest('.dropdown-menu').previousElementSibling.focus();
-        event.target.closest('.dropdown-menu').classList.remove('show');
-      }
-    }, {
-      key: "handleKeydownSubmenuDropdownItem",
-      value: function handleKeydownSubmenuDropdownItem(event) {
-        // 32: Spacebar
-        if (event.keyCode !== 32) {
-          return;
-        }
-
-        // NOTE: Off vertical scrolling
-        event.preventDefault();
-
-        this.toggle(event.target);
-      }
-    }, {
-      key: "handleClickSubmenuDropdownItem",
-      value: function handleClickSubmenuDropdownItem(event) {
-        event.stopPropagation();
-
-        this.toggle(event.target);
-      }
-    }, {
-      key: "itemKeydown",
-      value: function itemKeydown(event) {
-        // 38: Arrow up, 40: Arrow down
-        if (![38, 40].includes(event.keyCode)) {
-          return;
-        }
-
-        // NOTE: Off vertical scrolling
-        event.preventDefault();
-
-        event.stopPropagation();
-
-        var itemNodeList = this.element.querySelectorAll('.show > .dropdown-item:not(:disabled):not(.disabled), .show > .dropdown > .dropdown-item');
-
-        var index = Array.from(itemNodeList).findIndex(function (element) {
-          return element === event.target;
-        });
-
-        if (event.keyCode === 38 && index !== 0) {
-          index--;
-        } else if (event.keyCode === 40 && index !== itemNodeList.length - 1) {
-          index++;
-        } else {
-          return;
-        }
-
-        itemNodeList[index].focus();
-      }
-    }, {
-      key: "toggle",
-      value: function toggle(element) {
-        var dropdownElement = element.closest('.dropdown');
-        var parentMenuElement = dropdownElement.closest('.dropdown-menu');
-        var menuElement = dropdownElement.querySelector('.dropdown-menu');
-        var isOpen = menuElement.classList.contains('show');
-
-        this.close(parentMenuElement);
-
-        menuElement.classList.toggle('show', !isOpen);
-      }
-    }, {
-      key: "close",
-      value: function close(menuElement) {
-        var menuNodeList = menuElement.querySelectorAll('.dropdown-menu.show');
-
-        var _iteratorNormalCompletion2 = true;
-        var _didIteratorError2 = false;
-        var _iteratorError2 = undefined;
-
-        try {
-          for (var _iterator2 = menuNodeList[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-            var element = _step2.value;
-
-            element.classList.remove('show');
-          }
-        } catch (err) {
-          _didIteratorError2 = true;
-          _iteratorError2 = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion2 && _iterator2.return) {
-              _iterator2.return();
-            }
-          } finally {
-            if (_didIteratorError2) {
-              throw _iteratorError2;
-            }
-          }
-        }
-      }
-    }]);
-
-    return DropdownSubmenu;
-  }();
-
-  // For AMD/Node/CommonJS used elements (optional)
-  // http://learn.jquery.com/jquery-ui/environments/amd/
-
-
-  $.fn.submenupicker = function (elements) {
-    var $elements = this instanceof $ ? this : $(elements);
-
-    return $elements.each(function () {
-      var data = $.data(this, 'bs.submenu');
-
-      if (!data) {
-        data = new DropdownSubmenu(this);
-
-        $.data(this, 'bs.submenu', data);
-      }
-    });
-  };
-
-  return DropdownSubmenu;
-});
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
 /* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /*! jQuery v2.1.4 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
@@ -38674,7 +38456,7 @@ jQuery(window).scroll(function () {
     });
   }), n.fn.size = function () {
     return this.length;
-  }, n.fn.andSelf = n.fn.addBack, "function" == "function" && __webpack_require__(39) && !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+  }, n.fn.andSelf = n.fn.addBack, "function" == "function" && __webpack_require__(38) && !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
     return n;
   }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));var Kb = a.jQuery,
@@ -38685,7 +38467,7 @@ jQuery(window).scroll(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
@@ -38694,7 +38476,7 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports) {
 
 
@@ -38716,7 +38498,7 @@ $('<form action="#"><select /></form>').appendTo("#mainav");$("<option />", { se
 });
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* HTML5 Placeholder jQuery Plugin - v2.1.1
@@ -38792,6 +38574,25 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 // Run It
 jQuery(document).ready(function ($) {
   $("input, textarea").placeholder();
+});
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports) {
+
+
+
+jQuery("#backtotop").click(function () {
+    jQuery("body,html").animate({
+        scrollTop: 0
+    }, 600);
+});
+jQuery(window).scroll(function () {
+    if (jQuery(window).scrollTop() > 150) {
+        jQuery("#backtotop").addClass("visible");
+    } else {
+        jQuery("#backtotop").removeClass("visible");
+    }
 });
 
 /***/ }),
