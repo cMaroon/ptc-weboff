@@ -404,7 +404,7 @@ h1,
 h2,
 .h2 {
   font-size: 1.75rem;
-  text-shadow: 0 1px 3px rgba(0,0,0,.75);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 h3,
@@ -3626,10 +3626,10 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.875rem;
-  color: rgb(0, 0, 0);
+  color: #222;
   text-align: left;
   list-style: none;
-  background-color: rgba(0, 146, 7, 0.6);
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -3755,7 +3755,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: rgba(0, 0, 0);
+  color: rgba(0, 0, 0, 0.5);
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -3766,7 +3766,7 @@ input[type="button"].btn-block {
 .dropdown-item:focus {
   color: #151515;
   text-decoration: none;
-  background-color: #eeff00;
+  background-color: #f6f6f6;
 }
 
 .dropdown-item.active,
@@ -5001,12 +5001,12 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.75);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
@@ -10602,6 +10602,11 @@ a.text-dark:focus {
   border-style: solid;
   border-width: 0 1px 4px 1px;
   border-top-width: 1px;
+  background-color: rgba(0, 168, 36, 0.6) !important;
+}
+
+.dropdown-item {
+  color: black !important;
 }
 
 .breadcrumb {
@@ -11437,8 +11442,6 @@ section {
 
 #introblocks ul {
   display: table;
-  width: 100%;
-  height: 100%;
 }
 
 #introblocks ul,
@@ -11449,40 +11452,29 @@ section {
 #introblocks ul li {
   display: table-cell;
   position: relative;
-  width: 25%;
-  height: 100%;
+  width: 20%;
   padding: 7% 2% 3%;
   text-align: center;
 }
 
-#introblocks ul li * {
-  margin: 0;
-  padding: 0;
-}
-
 #introblocks ul li article i {
-  border-radius: 50% 0;
+  border: solid;
+  border-color: white;
+  border-width: .5px;
+  border-radius: 50%;
   position: absolute;
   top: 0;
   left: 50%;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  margin: -40px 0 0 -40px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: -50px 0 0 -50px;
   text-align: center;
 }
 
-#introblocks ul li article .fa {
-  font-size: 38px;
-}
-
-#introblocks ul li article .clg {
-  font-size: 42px;
-}
-
 #introblocks ul li article .heading {
-  margin-bottom: 30px;
-  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 /* Content Area
@@ -12104,29 +12096,57 @@ textarea:focus,
   background-color: #252C34;
 }
 
-/* Month name colour pre-set + the choice of adding specific header colours for different months (3 provided as examples) */
-
 .infolist li div:first-of-type time strong {
   background-color: #5B9BBD;
 }
 
-.infolist li div:first-of-type time[data-title*="April"] strong {
-  background-color: #55DEA8;
+.infolist li div:first-of-type time[data-title*="January"] strong {
+  background-color: #FF6900;
 }
 
-/*Green*/
+.infolist li div:first-of-type time[data-title*="February"] strong {
+  background-color: #FFB400;
+}
+
+.infolist li div:first-of-type time[data-title*="March"] strong {
+  background-color: #00FF00;
+}
+
+.infolist li div:first-of-type time[data-title*="April"] strong {
+  background-color: #e6cc00;
+}
 
 .infolist li div:first-of-type time[data-title*="May"] strong {
-  background-color: #FF7659;
+  background-color: #0046cc;
 }
-
-/*Orange*/
 
 .infolist li div:first-of-type time[data-title*="June"] strong {
-  background-color: #9771BD;
+  background-color: #3200cc;
 }
 
-/*Purple*/
+.infolist li div:first-of-type time[data-title*="July"] strong {
+  background-color: #6e00cc;
+}
+
+.infolist li div:first-of-type time[data-title*="August"] strong {
+  background-color: #af00cc;
+}
+
+.infolist li div:first-of-type time[data-title*="September"] strong {
+  background-color: #cc000a;
+}
+
+.infolist li div:first-of-type time[data-title*="October"] strong {
+  background-color: #cc00b4;
+}
+
+.infolist li div:first-of-type time[data-title*="November"] strong {
+  background-color: #00a5cc;
+}
+
+.infolist li div:first-of-type time[data-title*="December"] strong {
+  background-color: #cc00fa;
+}
 
 /* Rows */
 
@@ -12196,52 +12216,64 @@ textarea:focus,
 }
 
 #introblocks ul li:nth-child(1) {
-  background-color: #55DEA8;
+  background-color: #c80000;
 }
 
-/*Green*/
+/*Light Maroon*/
 
 #introblocks ul li:nth-child(2) {
-  background-color: #FF7659;
+  background-color: #ffa000;
+}
+
+/*Light Orange*/
+
+#introblocks ul li:nth-child(3) {
+  background-color: #ffbe00;
+}
+
+/*light yellow*/
+
+#introblocks ul li:nth-child(4) {
+  background-color: #0046ff;
+}
+
+/*light blue*/
+
+#introblocks ul li:nth-child(5) {
+  background-color: #ff00c3;
+}
+
+/*pink*/
+
+#introblocks ul li:nth-child(1) i {
+  background-color: maroon;
+}
+
+/*Maroon*/
+
+#introblocks ul li:nth-child(2) i {
+  background-color: #ff9100;
 }
 
 /*Orange*/
 
-#introblocks ul li:nth-child(3) {
-  background-color: #9771BD;
-}
-
-/*Purple*/
-
-#introblocks ul li:nth-child(4) {
-  background-color: #F36174;
-}
-
-/*Red*/
-
-#introblocks ul li:nth-child(1) i {
-  background-color: #27D18D;
-}
-
-/*Dark Green*/
-
-#introblocks ul li:nth-child(2) i {
-  background-color: #FF502B;
-}
-
-/*Dark Orange*/
-
 #introblocks ul li:nth-child(3) i {
-  background-color: #8456B1;
+  background-color: #ffdc00;
 }
 
-/*Dark Purple*/
+/*yellow*/
 
 #introblocks ul li:nth-child(4) i {
-  background-color: #F03E54;
+  background-color: #005fff;
 }
 
-/*Dark Red*/
+/*blue*/
+
+#introblocks ul li:nth-child(5) i {
+  background-color: #ff00fa;
+}
+
+/*pink*/
 
 #introblocks li:hover i {
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -12426,8 +12458,8 @@ tr,
   background-color: #FBFBFB;
 }
 
-tr:nth-child(even),
-#comments li:nth-child(even) {
+tr:nth-child(odd),
+#comments li:nth-child(odd) {
   color: inherit;
   background-color: #F7F7F7;
 }
@@ -12577,18 +12609,18 @@ table a,
   }
 
   #introblocks ul li {
-    float: left;
-    width: 50%;
+    float: center;
+    width: inherit;
     min-height: 260px;
-    padding: 5%;
+    padding: 12%;
     text-align: center;
   }
 
-  #introblocks ul li:nth-child(3) {
+  #introblocks ul li:nth-child(5) {
     clear: left;
   }
 
-  #introblocks ul li article i {
+  #introblocks ul li article h4 {
     position: inherit;
     top: auto;
     left: auto;

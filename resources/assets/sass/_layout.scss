@@ -49,18 +49,22 @@
 #pageintro article footer{margin-bottom:0;}
 #pageintro article footer .btn{margin-bottom:0;}
 
+// colleges
 #introblocks{position:relative; margin:-120px auto 0; z-index:1;}
-#introblocks ul{display:table; width:100%; height:100%;}
-#introblocks ul, #introblocks ul li{border:none;}
-#introblocks ul li{display:table-cell; position:relative; width:25%; height:100%; padding:7% 2% 3%; text-align:center;}
+//width:100%; height:100%;
+#introblocks ul{display:table; }
+#introblocks ul, #introblocks ul li{border:none; }
+//height:100%; 
+#introblocks ul li{display:table-cell; position:relative; width:20%; padding:7% 2% 3%; text-align:center;}
 // #introblocks ul li:last-child{}
-#introblocks ul li *{margin:0; padding:0;}
+// #introblocks ul li *{margin:0; padding:0;}
 // #introblocks ul li article{}
-#introblocks ul li article i{border-radius:50% 0; position:absolute; top:0; left:50%; width:80px; height:80px; line-height:80px; margin:-40px 0 0 -40px; text-align:center;}
-#introblocks ul li article .fa{font-size:38px;}
-#introblocks ul li article .clg{font-size:42px;}
+#introblocks ul li article i{border:solid; border-color: white;
+    border-width: .5px; border-radius:50% ; position:absolute; top:0; left:50%; width:100px; height:100px; line-height:100px; margin:-50px 0 0 -50px; text-align:center;}
+// #introblocks ul li article .fa{font-size:38px;}
+// #introblocks ul li article .clg{font-size:42px;}
 
-#introblocks ul li article .heading{margin-bottom:30px; font-size:1.2rem;}
+#introblocks ul li article .heading{margin-bottom:10px; font-size:1.1rem;}
 
 
 /* Content Area
@@ -276,13 +280,20 @@ input:focus, textarea:focus, *:required:focus{border-color:#5B9BBD;}
 
 .infolist li{border-color:#D7D7D7;}
 .infolist li div:first-of-type time{color:#FFFFFF; background-color:#252C34;}
-/* Month name colour pre-set + the choice of adding specific header colours for different months (3 provided as examples) */
+
 .infolist li div:first-of-type time strong{background-color:#5B9BBD;}
-.infolist li div:first-of-type time[data-title*="April"] strong{background-color:#55DEA8;}/*Green*/
-.infolist li div:first-of-type time[data-title*="May"] strong{background-color:#FF7659;}/*Orange*/
-.infolist li div:first-of-type time[data-title*="June"] strong{background-color:#9771BD;}/*Purple*/
-
-
+.infolist li div:first-of-type time[data-title*="January"] strong{background-color:#FF6900;}
+.infolist li div:first-of-type time[data-title*="February"] strong{background-color:#FFB400;}
+.infolist li div:first-of-type time[data-title*="March"] strong{background-color:#00FF00;}
+.infolist li div:first-of-type time[data-title*="April"] strong{background-color:#e6cc00;}
+.infolist li div:first-of-type time[data-title*="May"] strong{background-color:#0046cc;}
+.infolist li div:first-of-type time[data-title*="June"] strong{background-color:#3200cc;}
+.infolist li div:first-of-type time[data-title*="July"] strong{background-color:#6e00cc;}
+.infolist li div:first-of-type time[data-title*="August"] strong{background-color:#af00cc;}
+.infolist li div:first-of-type time[data-title*="September"] strong{background-color:#cc000a;}
+.infolist li div:first-of-type time[data-title*="October"] strong{background-color:#cc00b4;}
+.infolist li div:first-of-type time[data-title*="November"] strong{background-color:#00a5cc;}
+.infolist li div:first-of-type time[data-title*="December"] strong{background-color:#cc00fa;}
 /* Rows */
 .row0{color:#FFFFFF; background-color:#252C34; border-color:#5B9BBD;}
 .row1{color:#888888; background-color:#F9F9F9; border-color:#D7D7D7;}
@@ -306,14 +317,17 @@ input:focus, textarea:focus, *:required:focus{border-color:#5B9BBD;}
 /* Homepage Specific */
 #introblocks ul li, #introblocks ul li a, #introblocks ul li a i{color:#FFFFFF;}
 #introblocks ul li:hover a{color:#13171C;}
-#introblocks ul li:nth-child(1){background-color:#55DEA8;}/*Green*/
-#introblocks ul li:nth-child(2){background-color:#FF7659;}/*Orange*/
-#introblocks ul li:nth-child(3){background-color:#9771BD;}/*Purple*/
-#introblocks ul li:nth-child(4){background-color:#F36174;}/*Red*/
-#introblocks ul li:nth-child(1) i{background-color:#27D18D;}/*Dark Green*/
-#introblocks ul li:nth-child(2) i{background-color:#FF502B;}/*Dark Orange*/
-#introblocks ul li:nth-child(3) i{background-color:#8456B1;}/*Dark Purple*/
-#introblocks ul li:nth-child(4) i{background-color:#F03E54;}/*Dark Red*/
+#introblocks ul li:nth-child(1){background-color:rgb(200, 0, 0);}/*Light Maroon*/
+#introblocks ul li:nth-child(2){background-color:rgb(255, 160, 0);}/*Light Orange*/
+#introblocks ul li:nth-child(3){background-color:rgb(255, 190, 0);}/*light yellow*/
+#introblocks ul li:nth-child(4){background-color:rgb(0, 70, 255);}/*light blue*/
+#introblocks ul li:nth-child(5){background-color:rgb(255, 0, 195);}/*pink*/
+
+#introblocks ul li:nth-child(1) i{background-color:rgb(128, 0, 0);}/*Maroon*/
+#introblocks ul li:nth-child(2) i{background-color:rgb(255, 145, 0);}/*Orange*/
+#introblocks ul li:nth-child(3) i{background-color:rgb(255, 220, 0);}/*yellow*/
+#introblocks ul li:nth-child(4) i{background-color:rgb(0, 95, 255);}/*blue*/
+#introblocks ul li:nth-child(5) i{background-color:rgb(255, 0, 250);}/*pink*/
 
 #introblocks li:hover i{box-shadow:2px 2px 5px rgba(0,0,0,.3); text-shadow:0 1px 0 #CCCCCC, 0 2px 0 #666666, 0 3px 0 #000000, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25);}
 #introblocks .underline::after{background-color:#FFFFFF;}
@@ -371,7 +385,7 @@ table, th, td, #comments .avatar, #comments input, #comments textarea{border-col
 #comments input:focus, #comments textarea:focus, #comments *:required:focus{border-color:#5B9BBD;}
 th{color:#FFFFFF; background-color:#373737;}
 tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
-tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
+tr:nth-child(odd), #comments li:nth-child(odd){color:inherit; background-color:#F7F7F7;}
 table a, #comments a{background-color:inherit;}
 
 
@@ -441,9 +455,9 @@ table a, #comments a{background-color:inherit;}
 	#pageintro article .heading{font-size:36px;}
 
 	#introblocks ul, #introblocks ul li{display:block; width:100%;}
-	#introblocks ul li{float:left; width:50%; min-height:260px; padding:5%; text-align:center;}
-	#introblocks ul li:nth-child(3){clear:left;}
-	#introblocks ul li article i{position:inherit; top:auto; left:auto; margin:0 0 20px 0;}
+	#introblocks ul li{float:center; width:inherit; min-height:260px; padding:12%; text-align:center;}
+	#introblocks ul li:nth-child(5){clear:left;}
+	#introblocks ul li article h4{position: inherit; top:auto; left:auto; margin:0 0 20px 0;}
 
 	.container{padding-bottom:50px;}
 
