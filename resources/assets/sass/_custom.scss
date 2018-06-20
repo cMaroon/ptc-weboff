@@ -1,0 +1,36 @@
+.ptc-navbar {
+    border-bottom: none;
+}
+
+.ptc-navbar, .ptc-navbar .dropdown-menu {
+    background-color: #222 !important;
+}
+
+.ptc-navbar .dropdown-menu .dropdown-item {
+    color: #ffffff !important;
+}
+
+.ptc-navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #017c17 !important;
+    color: #ffffff !important;
+}
+
+#introblocks {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
+}
+
+#introblocks li {
+    background-image: url('https://raw.githubusercontent.com/TLIBR/tlibr-web/master/resources/assets/img/bg-card-section-header.png') !important;
+    background-size: cover;
+    background-position: 20%;
+    cursor: default;
+}
+
+#introblocks li:hover {
+    z-index: 999;
+    box-shadow: 0 10px 20px rgba(0,0,0,.25);
+}
+
+#introblocks li article img {
+    margin-bottom: 18px;
+}
