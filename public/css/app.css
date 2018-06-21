@@ -404,6 +404,7 @@ h1,
 h2,
 .h2 {
   font-size: 1.75rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 h3,
@@ -12710,7 +12711,7 @@ table a,
 }
 
 #introblocks li {
-  background-image: url("https://raw.githubusercontent.com/TLIBR/tlibr-web/master/resources/assets/img/bg-card-section-header.png") !important;
+  background-image: url(/images/bgs-card-section-header.png?68bcbf328360a94f5cdaf2567a8c6a70) !important;
   background-size: cover;
   background-position: 20%;
   cursor: default;
