@@ -11704,6 +11704,13 @@ section {
   cursor: pointer;
 }
 
+#logo_ptcfooter {
+  margin-top: 0px;
+  margin-bottom: -150px;
+  padding: 40px 40px;
+  margin-left: -25px;
+}
+
 /* Copyright
 --------------------------------------------------------------------------------------------------------------- */
 
@@ -12481,6 +12488,10 @@ table a,
   }
 
   #logo_ptc {
+    display: none;
+  }
+
+  #logo_ptcfooter {
     display: none;
   }
 

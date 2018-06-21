@@ -230,17 +230,19 @@
     </main>
 </div>
 
-<div class="wrapper row4">
-    <div id="logo_ptc">
+<div class="wrapper row4 ">
+    <div id="logo_ptcfooter">
+        
         <img src="{{ asset('images/logo_ptcbw.png') }}" alt="PTC-LOGO" >
     </div>
 
-    <footer id="footer" class="hoc topspace-0 clear"> 
-        <div class="group">
+
+    <footer id="footer" class="hoc topspace-0 clear "> 
+        <div class="group ">
 
             <div class="one_half first">
 
-            <h6 class="title">Pateros Technological College</h6>
+            <h6 class="title ">Pateros Technological College</h6>
             <p class="btmspace-30">This is the Official Website of Pateros Technological College</p>
 
             <ul class="nospace inline pushright">
