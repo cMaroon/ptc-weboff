@@ -12010,7 +12010,7 @@ td {
 --------------------------------------------------------------------------------------------------------------- */
 
 a {
-  color: #5B9BBD;
+  color: #2ecc71;
 }
 
 a:active,
@@ -12034,7 +12034,7 @@ label span {
 input:focus,
 textarea:focus,
 *:required:focus {
-  border-color: #5B9BBD;
+  border-color: #2ecc71;
 }
 
 .overlay {
@@ -12049,10 +12049,10 @@ textarea:focus,
 
 .overlay.coloured::after {
   color: inherit;
-  background-color: rgba(91, 155, 189, 0.65);
+  background-color: #2ecc71;
 }
 
-/* #5B9BBD */
+/* $fui-emerald */
 
 .overlay .underline::after {
   background-color: #FFFFFF;
@@ -12066,8 +12066,8 @@ textarea:focus,
 
 .btn:hover {
   color: #FFFFFF;
-  background-color: #5B9BBD;
-  border-color: #5B9BBD;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
 }
 
 .infolist li {
@@ -12080,7 +12080,7 @@ textarea:focus,
 }
 
 .infolist li div:first-of-type time strong {
-  background-color: #5B9BBD;
+  background-color: #2ecc71;
 }
 
 .infolist li div:first-of-type time[data-title*="January"] strong {
@@ -12136,7 +12136,7 @@ textarea:focus,
 .row0 {
   color: #FFFFFF;
   background-color: #252C34;
-  border-color: #5B9BBD;
+  border-color: #2ecc71;
 }
 
 .row1 {
@@ -12161,7 +12161,7 @@ textarea:focus,
 }
 
 .row4 a:hover {
-  color: #5B9BBD;
+  color: #2ecc71;
 }
 
 .row5,
@@ -12177,7 +12177,7 @@ textarea:focus,
 }
 
 #topbar .fl_left a:hover {
-  color: #5B9BBD;
+  color: #2ecc71;
 }
 
 /* Header */
@@ -12276,7 +12276,7 @@ textarea:focus,
 
 #join {
   color: #FFFFFF;
-  background-color: #5B9BBD;
+  background-color: #2ecc71;
 }
 
 #join .underline::after {
@@ -12284,7 +12284,7 @@ textarea:focus,
 }
 
 #join .btn:hover {
-  color: #5B9BBD;
+  color: #2ecc71;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
 }
@@ -12343,7 +12343,7 @@ textarea:focus,
 
 #footer #newsletter button {
   color: #FFFFFF;
-  background-color: #5B9BBD;
+  background-color: #2ecc71;
 }
 
 /* Navigation */
@@ -12393,7 +12393,7 @@ textarea:focus,
 }
 
 .container .sidebar nav a:hover {
-  color: #5B9BBD;
+  color: #2ecc71;
 }
 
 .pagination a,
@@ -12403,12 +12403,7 @@ textarea:focus,
 
 .pagination .current * {
   color: #FFFFFF;
-  background-color: #5B9BBD;
-}
-
-#backtotop {
-  color: #FFFFFF;
-  background-color: #5B9BBD;
+  background-color: #2ecc71;
 }
 
 /* Tables + Comments */
@@ -12425,7 +12420,7 @@ td,
 #comments input:focus,
 #comments textarea:focus,
 #comments *:required:focus {
-  border-color: #5B9BBD;
+  border-color: #2ecc71;
 }
 
 th {
@@ -12697,30 +12692,9 @@ table a,
   }
 }
 
-.ptc-navbar {
-  border-bottom: none;
-}
-
-.ptc-navbar,
-.ptc-navbar .dropdown-menu {
-  background-color: #222 !important;
-}
-
-.ptc-navbar .dropdown-menu .dropdown-item {
-  color: #ffffff !important;
-}
-
-.ptc-navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #017c17 !important;
-  color: #ffffff !important;
-}
-
-.ptc-navbar .dropdown a {
-  cursor: pointer;
-}
-
-.ptc-navbar .dropdown:hover .dropdown-menu {
-  display: block;
+#backtotop {
+  color: #ffffff;
+  background-color: #27ae60;
 }
 
 #introblocks {
@@ -12743,5 +12717,43 @@ table a,
 
 #introblocks li article img {
   margin-bottom: 18px;
+}
+
+.ptc-navbar {
+  border-bottom: none;
+}
+
+.ptc-navbar .navbar-nav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.ptc-navbar,
+.ptc-navbar .dropdown-menu {
+  background-color: #222 !important;
+}
+
+.ptc-navbar .dropdown-menu .dropdown-item {
+  color: #ffffff !important;
+}
+
+.ptc-navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #27ae60 !important;
+  color: #ffffff !important;
+}
+
+.ptc-navbar .dropdown a {
+  cursor: pointer;
+}
+
+.ptc-navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.text-emerald {
+  color: #2ecc71 !important;
+}
+
+.text-nephritis {
+  color: #27ae60 !important;
 }
 
