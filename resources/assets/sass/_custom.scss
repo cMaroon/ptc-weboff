@@ -15,6 +15,14 @@
     color: #ffffff !important;
 }
 
+.ptc-navbar .dropdown a {
+    cursor: pointer;
+}
+
+.ptc-navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 #introblocks {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
 }
