@@ -5,125 +5,91 @@
 
     <div class="collapse navbar-collapse p-2" id="navbarContent">
         <ul class="navbar-nav">
+            
             <!-- administration -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
-                        Administration <span class="caret"></span>
-                    </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link">Administration</a>
 
-                    <div class="dropdown-menu rounded-10" >
-                        
-                        <a class="dropdown-item" href="">Office of the President</a>
-                        <a class="dropdown-item" href="">Office of the Vice President for Administration and Finance</a>
-                        <a class="dropdown-item" href="#">Board of Trustees</a>
-                        <a class="dropdown-item" href="#">Management Committee (Mancom)</a>
-                        <a class="dropdown-item" href="#">College Department Faculty</a>
-                        <a class="dropdown-item" href="#">Senior High School Department Faculty</a>
-                        <a class="dropdown-item" href="#">ITRED Faculty and Staff</a>
-                        <a class="dropdown-item" href="#">Administrative Personnel</a>  
-                    </div>
-                </li>
+                <div class="dropdown-menu rounded-10">
+                    <a class="dropdown-item" href="">Office of the President</a>
+                    <a class="dropdown-item" href="">Office of the Vice President for Administration and Finance</a>
+                    <a class="dropdown-item" href="#">Board of Trustees</a>
+                    <a class="dropdown-item" href="#">Management Committee (Mancom)</a>
+                    <a class="dropdown-item" href="#">College Department Faculty</a>
+                    <a class="dropdown-item" href="#">Senior High School Department Faculty</a>
+                    <a class="dropdown-item" href="#">ITRED Faculty and Staff</a>
+                    <a class="dropdown-item" href="#">Administrative Personnel</a>  
+                </div>
+            </li>
+
             <!-- organization -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
-                        Organization <span class="caret"></span>
-                    </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link">Organization</a>
 
-                    <div class="dropdown-menu rounded-10" >
-                        
+                <div class="dropdown-menu rounded-10">
                     <a class="dropdown-item" href="#">Faculty Club</a>
                     <a class="dropdown-item" href="#">PTC Cup</a>
                     <a class="dropdown-item" href="#">College Supreme Student Council</a>
                     <a class="dropdown-item" href="#">PTC Student Volunteers</a>
                     <a class="dropdown-item" href="#">Senior High School Officers</a>    
-                    </div>
-                </li>
+                </div>
+            </li>
 
-                <!-- academics -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
-                        Academics <span class="caret"></span>
-                    </a>
+            <!-- academics -->
+            <li class="nav-item dropdown">
+                <a class="nav-link">Academics</a>
 
-                    <div class="dropdown-menu rounded-10" >
-                    <div class="nav-item dropdown">     
+                <div class="dropdown-menu rounded-10"> 
                     <a class="dropdown-item" href="#">Four Year Program</a>
                     <a class="dropdown-item" href="#">Two Year Program</a>
                     <a class="dropdown-item" href="#">Senior High School (SHS)</a>
                     <a class="dropdown-item" href="#">Executive Program</a>
-                </div>     
-                    </div>
-                </li>  
+                </div>
+            </li>  
 
-                <!-- admission -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
-                        Admission <span class="caret"></span>
-                    </a>
+            <!-- admission -->
+            <li class="nav-item dropdown">
+                <a class="nav-link">Admission</a>
 
-                    <div class="dropdown-menu rounded-10" >
-                    <div class="nav-item dropdown">     
+                <div class="dropdown-menu rounded-10">  
                     <a class="dropdown-item" href="#">College Application</a>
                     <a class="dropdown-item" href="#">Senior High School Application (SHS)</a>
-                </div>     
-                    </div>
-                </li>  
+                </div>
+            </li>  
 
-                <!-- student -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
-                        Student <span class="caret"></span>
-                    </a>
+            <!-- student -->
+            <li class="nav-item dropdown">
+                <a class="nav-link">Student</a>
 
-                    <div class="dropdown-menu rounded-10" >
-                    <div class="nav-item dropdown">     
+                <div class="dropdown-menu rounded-10">
                     <a class="dropdown-item" href="#">Student</a>
+                    <a class="dropdown-item" href="#">Portal</a>
+                </div>
+            </li>                 
 
-                </div>     
-                    </div>
-                </li>                 
+            <!-- alumni -->
+            <li class="nav-item dropdown">
+                <a class="nav-link">Alumni</a>
 
-                <!-- alumni -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
-                        Alumni <span class="caret"></span>
-                    </a>
+                <div class="dropdown-menu rounded-10">  
+                    <a class="dropdown-item" href="#">Alumni</a>   
+                </div>
+            </li>  
 
-                    <div class="dropdown-menu rounded-10" >
-                    <div class="nav-item dropdown">     
-                    <a class="dropdown-item" href="#">Alumni</a>
+            <!-- about ptc -->
+            <li class="nav-item dropdown">
+                <a class="nav-link">About</a>
 
-                </div>     
-                    </div>
-                </li>  
-
-                <!-- about ptc -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
-                        About <span class="caret"></span>
-                    </a>
-
-                    <div class="dropdown-menu rounded-10" >
-                    <div class="nav-item dropdown">     
+                <div class="dropdown-menu rounded-10">  
                     <a class="dropdown-item" href="#">HISTORY</a>
                     <a class="dropdown-item" href="#">Mission/Core Values</a>
                     <a class="dropdown-item" href="#">PTC Hymn</a>
                     <a class="dropdown-item" href="#">Retrospections and Insights</a>
                     <a class="dropdown-item" href="#">PTC President's Report</a>
                     <a class="dropdown-item" href="#">PTC Under the New Administration</a>
-
-                </div>     
-                    </div>
-                </li> 
-                
-                
-                
-
+                </div>
+            </li> 
             
-                
-
-
-            </li>
         </ul>
     </div>
 </nav>

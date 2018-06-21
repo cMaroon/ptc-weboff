@@ -40,7 +40,6 @@
                 </article>
             </li>
 
-
             <li>
                 <article>
                     <img src="{{ asset('images/logo_tesda.png') }}" alt="PTC-LOGO"><br>
