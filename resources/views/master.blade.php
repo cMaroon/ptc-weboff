@@ -16,12 +16,12 @@
 </head>
 <body id="top">
     <div id="app">
-            @include('includes.header')
-            @include('includes.navigation')
-            @yield('content')
+        @include('includes.header')
+        @include('includes.navigation')
+        @yield('content')
+        <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
     </div>
     
     @yield('script')
-    
 </body>
 </html>

@@ -42,7 +42,7 @@
                 <div class="dropdown-menu rounded-10"> 
                     <a class="dropdown-item" href="#">Four Year Program</a>
                     <a class="dropdown-item" href="#">Two Year Program</a>
-                    <a class="dropdown-item" href="#">Senior High School (SHS)</a>
+                    <a class="dropdown-item" href="#">Senior High School</a>
                     <a class="dropdown-item" href="#">Executive Program</a>
                 </div>
             </li>  
@@ -53,7 +53,7 @@
 
                 <div class="dropdown-menu rounded-10">  
                     <a class="dropdown-item" href="#">College Application</a>
-                    <a class="dropdown-item" href="#">Senior High School Application (SHS)</a>
+                    <a class="dropdown-item" href="#">Senior High School Application</a>
                 </div>
             </li>  
 
@@ -81,7 +81,7 @@
                 <a class="nav-link">About</a>
 
                 <div class="dropdown-menu rounded-10">  
-                    <a class="dropdown-item" href="#">HISTORY</a>
+                    <a class="dropdown-item" href="#">History</a>
                     <a class="dropdown-item" href="#">Mission/Core Values</a>
                     <a class="dropdown-item" href="#">PTC Hymn</a>
                     <a class="dropdown-item" href="#">Retrospections and Insights</a>

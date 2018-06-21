@@ -1,26 +1,6 @@
-.ptc-navbar {
-    border-bottom: none;
-}
-
-.ptc-navbar, .ptc-navbar .dropdown-menu {
-    background-color: #222 !important;
-}
-
-.ptc-navbar .dropdown-menu .dropdown-item {
-    color: #ffffff !important;
-}
-
-.ptc-navbar .dropdown-menu .dropdown-item:hover {
-    background-color: #017c17 !important;
-    color: #ffffff !important;
-}
-
-.ptc-navbar .dropdown a {
-    cursor: pointer;
-}
-
-.ptc-navbar .dropdown:hover .dropdown-menu {
-    display: block;
+#backtotop{
+    color: #ffffff; 
+    background-color: $fui-nephritis;
 }
 
 #introblocks {
@@ -41,4 +21,41 @@
 
 #introblocks li article img {
     margin-bottom: 18px;
+}
+
+.ptc-navbar {
+    border-bottom: none;
+}
+
+.ptc-navbar .navbar-nav li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.ptc-navbar, .ptc-navbar .dropdown-menu {
+    background-color: #222 !important;
+}
+
+.ptc-navbar .dropdown-menu .dropdown-item {
+    color: #ffffff !important;
+}
+
+.ptc-navbar .dropdown-menu .dropdown-item:hover {
+    background-color: $fui-nephritis !important;
+    color: #ffffff !important;
+}
+
+.ptc-navbar .dropdown a {
+    cursor: pointer;
+}
+
+.ptc-navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.text-emerald {
+    color: $fui-emerald !important;
+}
+
+.text-nephritis {
+    color: $fui-nephritis !important;
 }
