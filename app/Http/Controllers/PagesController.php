@@ -10,4 +10,9 @@ class PagesController extends Controller
     {
         return view('pages.home');
     }
+
+    public function dashboard()
+    {
+        return view('ptc-admin.adminDashboard.dashboard');
+    }
 }

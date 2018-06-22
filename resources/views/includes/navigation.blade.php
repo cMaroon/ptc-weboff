@@ -89,6 +89,16 @@
                     <a class="dropdown-item" href="#">PTC Under the New Administration</a>
                 </div>
             </li> 
+
+            <!-- test admin dashboard -->
+            <li class="nav-item dropdown">
+                <a class="nav-link">Admin Dashboard</a>
+
+                <div class="dropdown-menu rounded-10">
+                    <a class="dropdown-item" href="{{ route('dashboard') }}" >Login</a>  
+                      
+                </div>
+            </li>  
             
         </ul>
     </div>

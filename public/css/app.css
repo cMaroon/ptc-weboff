@@ -404,6 +404,7 @@ h1,
 h2,
 .h2 {
   font-size: 1.75rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 h3,
