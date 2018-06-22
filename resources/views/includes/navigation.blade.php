@@ -5,7 +5,16 @@
 
     <div class="collapse navbar-collapse p-2" id="navbarContent">
         <ul class="navbar-nav">
-            
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">Home</a>
+
+                <div class="dropdown-menu rounded-10">
+                    <a class="dropdown-item" href="">News</a>
+                    <a class="dropdown-item" href="">Team</a>
+                    <a class="dropdown-item" href="">Changelog</a>
+                </div>
+            </li>
+
             <!-- administration -->
             <li class="nav-item dropdown">
                 <a class="nav-link">Administration</a>

@@ -31,16 +31,32 @@
     color: $fui-nephritis !important;
 }
 
-
 .ptc-navbar {
     background-color: $fui-nephritis !important;
     box-shadow: 0 10px 20px rgba(0,0,0,.25);
     border: none;
 }
 
+.ptc-navbar button {
+    border-color: $white;
+    border-radius: 6px;
+    color: $white;
+}
+
+.ptc-navbar button .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.ptc-navbar .navbar-nav {
+    margin: 0 auto;
+}
+
 .ptc-navbar .navbar-nav .nav-item .nav-link {
     color: $white;
     cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .ptc-navbar .navbar-nav .nav-item:hover .nav-link {
@@ -52,20 +68,38 @@
 }
 
 .ptc-navbar .dropdown-menu {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
-    background-color: $white !important;
+    box-shadow: rgba(0,0,0,.25) 0px 1px 3px 0px;
+    background-color: #fff !important;
     border: none;
+    border-radius: 6px !important;
+    padding: 20px 5px;
 }
 
 .ptc-navbar .dropdown-menu .dropdown-item {
-    color: $gray-800 !important;
+    position: relative !important;
+    color: $black !important;
     transition: none !important;
+    padding: 5px 25px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .ptc-navbar .dropdown-menu .dropdown-item:hover {
-    background-color: $fui-nephritis !important;
-    transition: none !important; 
-    color: #ffffff !important;
+    background-color: #eee !important;
+    transition: none !important;
+    color: $black !important;
+}
+
+.ptc-navbar .dropdown-menu .dropdown-item:hover::after {
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    width: 3px;
+    height: calc(100% - 14px);
+    background-color: $fui-nephritis;
 }
 
 .ptc-navbar .dropdown:hover .dropdown-menu {
