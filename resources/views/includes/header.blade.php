@@ -7,7 +7,9 @@
 
         <div id="logo" class="fl_left">
 
-        <h1 style="color:#065608" class="font-weight-light">{{ config('app.name', 'PTC-Official') }}</h1>
+        <h1 style="color:#065608" class="font-weight-light">
+        <!-- {{ config('app.name', 'PTC-Official') }} -->PATEROS TECHNOLOGICAL COLLEGE
+        </h1>
         <p style="" class="font-weight-light font-italic">
             <span style="color:#a39c01">
                 College St., Sto. Rosario-Kanluran Pateros, Metro Manila, 1620<br>
