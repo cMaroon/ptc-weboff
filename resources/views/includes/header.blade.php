@@ -1,4 +1,4 @@
-<div class="wrapper row1">
+<div class="wrapper row1 ptc-header">
     <div id="logo_ptc">
         <img src="{{ asset('images/logo_ptc.png') }}" alt="PTC-LOGO">
     </div>

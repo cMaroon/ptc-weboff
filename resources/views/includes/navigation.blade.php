@@ -1,4 +1,4 @@
-<nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark d-block ptc-navbar">
+<nav id="navbar" class="navbar sticky-top navbar-expand-lg d-block ptc-navbar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
