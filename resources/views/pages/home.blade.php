@@ -233,19 +233,15 @@
             </div> --}}
 
             <footer id="footer" class="hoc topspace-0 clear"> 
-                <div class="group information">
-                    <div class="ptc-logo">
-                        <img src="{{ asset('images/logo_ptcbw.png') }}" alt="PTC-LOGO-BW">
-                    </div>
+                <div class="group">
                     <div class="one_half first">
-                        <h6 class="title mb-1">Pateros Technological College</h6>
-                        <p>About PTC, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut, culpa aperiam nisi doloremque sunt assumenda molestias magni pariatur ratione expedita neque, blanditiis temporibus omnis quidem deleniti? Velit, illum quis modi, id debitis optio similique corporis sed ad ipsam, cupiditate praesentium. Rerum officiis provident consectetur eum esse. Minima, dolorem nulla!</p>
+                        <h6 class="title font-weight-bold">Pateros Technological College</h6>
+                        <p class="btmspace-30 font-italic">This is the Official Website of Pateros Technological College</p>
 
                         <ul class="nospace inline pushright">
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Security</a></li>
                         </ul>
                     </div>
 
