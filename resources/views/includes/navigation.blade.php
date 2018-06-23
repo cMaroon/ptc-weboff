@@ -1,3 +1,137 @@
+<div class="visible-xs no-print">
+    <nav class="navbar-mobile navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header navbar-mobile__header">
+                <div class="navbar-mobile__header-section">
+                    <span class="navbar-mobile__brand navbar-brand u-ellipsis-overflow">Home</span>
+                </div>
+                <div class="navbar-mobile__header-section navbar-mobile__header-section--buttons">
+                    <button class="navbar-toggle navbar-mobile__toggle" type="button" data-toggle="collapse" data-target="#xs-navbar" aria-controls="xs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-mobile__toggle-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-mobile__menu" id="xs-navbar">
+            <ul class="nav navbar-nav navbar-mobile__menu-items">
+                <li class="navbar-mobile-item dropdown">
+                    <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="https://osu.ppy.sh/home">
+                        <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--closed">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+            
+                        <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--opened">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+
+                        Home
+                    </a>
+            
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="expand-home">
+                        <li>
+                            <a class="navbar-mobile-item__submenu" href="" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                                <span class="navbar-mobile-item__icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+        
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navbar-mobile-item__submenu" href="" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                                <span class="navbar-mobile-item__icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+        
+                                News
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navbar-mobile-item__submenu" href="" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                                <span class="navbar-mobile-item__icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+        
+                                Team
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navbar-mobile-item__submenu" href="" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                                <span class="navbar-mobile-item__icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+
+                                Changelog
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar-mobile-item dropdown">
+                    <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="https://osu.ppy.sh/home">
+                        <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--closed">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+            
+                        <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--opened">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+
+                        Administration
+                    </a>
+            
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="expand-home">
+                        <li>
+                            <a class="navbar-mobile-item__submenu" href="" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                                <span class="navbar-mobile-item__icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+        
+                                Office of the President
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navbar-mobile-item__submenu" href="" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                                <span class="navbar-mobile-item__icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+        
+                                Office of the Vice President for Administration and Finance
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navbar-mobile-item__submenu" href="" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                                <span class="navbar-mobile-item__icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+        
+                                Board of Trustees
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navbar-mobile-item__submenu" href="" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                                <span class="navbar-mobile-item__icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+
+                                Management Committee
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
 <div class="hidden-xs no-print nav2-header">
     <div class="ptc-page">
         <div class="nav2">
@@ -101,7 +235,7 @@
                     <div class="nav2__menu-popup">
                         <div class="simple-menu simple-menu--nav2 simple-menu--nav2-left-aligned" data-menu-id="nav2-menu-popup-academics" data-visibility="hidden">
                             <a href="#" class="simple-menu__item">
-                                Fourth Year Program
+                                Four Year Program
                             </a>
                             <a href="#" class="simple-menu__item">
                                 Two Year Program

@@ -41,26 +41,35 @@ $(document).ready(function() {
      * JS-MENU Dropdown Menu
      */
     $('.js-menu').mouseover(function() {
-        var data = $(this).data('menu-target');
-        $('[data-menu-id="' + data + '"]').attr('data-visibility', 'visible');
+        var data = $('[data-menu-id="' + $(this).data('menu-target') + '"]');
+
+        data.attr('data-visibility', 'visible');
     
-        $('[data-menu-id="' + data + '"]').parent().parent().mouseleave(function() {
-            $('[data-menu-id="' + data + '"]').attr('data-visibility', 'hidden');
+        data.parent().parent().mouseleave(function() {
+            data.attr('data-visibility', 'hidden');
         });
     });
 
-    /**
-     * For Vue
-     */
-    // new Vue({
-    //     mounted: function () {
-    //         this.$nextTick(function () {
-    //             const app = new Vue({
-    //                 el: '#app'
-    //             });
-    //         })
-    //     }
-    // });
+    $('.dropdown-toggle').on('click',function() {
+        this._parent = $(this).parent();
+        this._closed = $(this).children('.navbar-mobile-item__icon--closed');
+        this._opened = $(this).children('.navbar-mobile-item__icon--opened');
+
+        if (!this._parent.hasClass('show')) {
+            this._closed.css('display', 'none');
+            this._opened.css('display', 'inline-block');
+        }
+
+        if (this._parent.hasClass('show')) {
+            this._closed.css('display', 'inline-block');
+            this._opened.css('display', 'none');
+        }
+    }).focusout(function() {
+        if (this._parent.hasClass('show')) {
+            this._closed.css('display', 'inline-block');
+            this._opened.css('display', 'none');
+        }
+    });
 });
 
 $(document).scroll(function () {
