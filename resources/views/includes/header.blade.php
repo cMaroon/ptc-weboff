@@ -8,7 +8,8 @@
         <div id="logo" class="fl_left">
 
         <h1 style="color:#065608" class="font-weight-light mb-0">
-            {{ config('app.name', 'PTC-Official') }}
+            <!-- {{ config('app.name', 'PTC-Official') }} -->
+            PATEROS TECHNOLOGICAL COLLEGE
         </h1>
         <p class="font-weight-light">
             <div style="color:#017c17">Broadening Academic Horizons: 2018 and Beyond</div>
