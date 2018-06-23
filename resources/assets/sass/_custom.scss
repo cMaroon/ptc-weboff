@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
-#backtotop{
+#backtotop {
     color: #ffffff; 
     background-color: $fui-nephritis;
+    border-radius: 6px;
+}
+
+#backtotop:hover {
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
 }
 
 #introblocks {
@@ -214,11 +220,11 @@
     left: 10px;
     width: 3px;
     height: calc(100% - 14px);
-    background-color: $fui-emerald;
+    background-color: $fui-nephritis;
 }
 
 .u-section--bg-normal {
-    background-color: $fui-emerald !important;
+    background-color: $white !important;
 }
 
 .ptc-page {

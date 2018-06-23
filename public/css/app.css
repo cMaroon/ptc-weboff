@@ -12668,6 +12668,13 @@ table a,
 #backtotop {
   color: #ffffff;
   background-color: #27ae60;
+  border-radius: 6px;
+}
+
+#backtotop:hover {
+  text-decoration: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
 }
 
 #introblocks {
@@ -12879,11 +12886,11 @@ table a,
   left: 10px;
   width: 3px;
   height: calc(100% - 14px);
-  background-color: #2ecc71;
+  background-color: #27ae60;
 }
 
 .u-section--bg-normal {
-  background-color: #2ecc71 !important;
+  background-color: #fff !important;
 }
 
 .ptc-page {

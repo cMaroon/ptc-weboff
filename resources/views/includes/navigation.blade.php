@@ -6,6 +6,8 @@
                     <a href="{{ route('home') }}" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-home">
                         <span class="nav2__menu-link-main-text">
                             Home
+                            {{-- Active --}}
+                            <span class="nav2__menu-link-bar u-section--bg-normal"></span>
                         </span>
                     </a>
 
