@@ -4,7 +4,7 @@
     <div class="wrapper bgded overlay" style="background-image:url('images/backgrounds/welcome.jpg')">
         <div id="pageintro" class="hoc clear"> 
             <article>
-                <h2 class="heading underline center"><span class="text-emerald">OUR</span> VISION</h2>
+                <h2 class="heading underline center font-weight-light"><span class="text-emerald font-weight-bold">OUR</span>VISION</h2>
                 <blockquote class="font-weight-light">
                     <i class="fas fa-quote-left"></i> The Pateros Technological College envisions itself as an institution of higher learning which is strongly committed to the holistic development of the students to improve their lives in particular and the society in general. <i class="fas fa-quote-right"></i>
                 </blockquote>
@@ -123,7 +123,7 @@
                         </div>
 
                         <div class="card-footer text-muted">
-                            <footer><a href="#">View More</a></footer>
+                            <footer><a href="#">See All ></a></footer>
                         </div>
                     </div>
                 </div>
@@ -226,51 +226,58 @@
         </main>
     </div>
 
-    <div class="wrapper row4">
-        <div id="logo_ptcfooter">  
-            <img src="{{ asset('images/logo_ptcbw.png') }}" alt="PTC-LOGO-BW">
+    <div class="ptc-footer">
+        <div class="wrapper">
+            {{-- <div id="logo_ptcfooter">  
+                <img src="{{ asset('images/logo_ptcbw.png') }}" alt="PTC-LOGO-BW">
+            </div> --}}
+
+            <footer id="footer" class="hoc topspace-0 clear"> 
+                <div class="group information">
+                    <div class="ptc-logo">
+                        <img src="{{ asset('images/logo_ptcbw.png') }}" alt="PTC-LOGO-BW">
+                    </div>
+
+                    <div class="one_half first">
+                        <h6 class="title mb-1">Pateros Technological College</h6>
+                        <p>About PTC, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut, culpa aperiam nisi doloremque sunt assumenda molestias magni pariatur ratione expedita neque, blanditiis temporibus omnis quidem deleniti? Velit, illum quis modi, id debitis optio similique corporis sed ad ipsam, cupiditate praesentium. Rerum officiis provident consectetur eum esse. Minima, dolorem nulla!</p>
+
+                        <ul class="nospace inline pushright">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="one_quarter">
+                        <h6 class="title mb-1">Accreditation</h6>
+                        <article>
+                            <time datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos integer volutpat.</p>
+                        </article>
+                    </div>
+
+                    <div class="one_quarter">
+                        <h6 class="title mb-1">About</h6>
+                        <ul class="nospace linklist">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Mission/Core Values</a></li>
+                            <li><a href="#">PTC Hymn</a></li>
+                            <li><a href="#">Retrospections and Insights</a></li>
+                            <li><a href="#">PTC President's Report</a></li>
+                            <li><a href="#">PTC Under the New Administration</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
 
-        <footer id="footer" class="hoc topspace-0 clear"> 
-            <div class="group">
-                <div class="one_half first">
-                    <h6 class="title font-weight-bold">Pateros Technological College</h6>
-                    <p class="btmspace-30 font-italic">This is the Official Website of Pateros Technological College</p>
-
-                    <ul class="nospace inline pushright">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                    </ul>
-                </div>
-
-                <div class="one_quarter">
-                    <h6 class="title font-weight-bold">Accreditation</h6>
-                    <article class="font-italic">
-                        <time class="font-xs" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos integer volutpat.</p>
-                    </article>
-                </div>
-
-                <div class="one_quarter">
-                    <h6 class="title font-weight-bold">Important Links</h6>
-                    <ul class="nospace linklist">
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Mission/Core Values</a></li>
-                        <li><a href="#">PTC Hymn</a></li>
-                        <li><a href="#">Retrospections and Insights</a></li>
-                        <li><a href="#">PTC President's Report</a></li>
-                        <li><a href="#">PTC Under the New Administration</a></li>
-                    </ul>
-                </div>
+        <div class="wrapper">
+            <div id="copyright" class="hoc clear ptc-copyright"> 
+                <p class="fl_left">&copy; 2018 Pateros Technological College. All rights reserved </p>
+                <p class="fl_right">Developed and maintained by <span class="text-nephritis" data-toggle="tooltip" data-placement="top" title="PTC-Technical Information System collaboration with Emmanuel See Te">PTC-TIS</span></p>
             </div>
-        </footer>
-    </div>
-
-    <div class="wrapper row5">
-        <div id="copyright" class="hoc clear font-italic font-weight-light"> 
-            <p class="fl_left">&copy; 2018. Pateros Technological College. All rights reserved </p>
-            <p class="fl_right">Developed and maintained by <span class="text-emerald" data-toggle="tooltip" data-placement="top" title="PTC-Technical Information System collaboration with Emmanuel See Te">PTC-TIS</span></p>
         </div>
     </div>
 @endsection

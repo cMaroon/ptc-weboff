@@ -38,6 +38,18 @@ $(document).ready(function() {
     });
 
     /**
+     * JS-MENU Dropdown Menu
+     */
+    $('.js-menu').mouseover(function() {
+        var data = $(this).data('menu-target');
+        $('[data-menu-id="' + data + '"]').attr('data-visibility', 'visible');
+    
+        $('[data-menu-id="' + data + '"]').parent().parent().mouseleave(function() {
+            $('[data-menu-id="' + data + '"]').attr('data-visibility', 'hidden');
+        });
+    });
+
+    /**
      * For Vue
      */
     // new Vue({

@@ -1,4 +1,4 @@
-<div class="wrapper row1">
+<div class="wrapper row1 ptc-header">
     <div id="logo_ptc">
         <img src="{{ asset('images/logo_ptc.png') }}" alt="PTC-LOGO">
     </div>
@@ -7,17 +7,13 @@
 
         <div id="logo" class="fl_left">
 
-        <h1 style="color:#065608" class="font-weight-light">
-        <!-- {{ config('app.name', 'PTC-Official') }} -->PATEROS TECHNOLOGICAL COLLEGE
+        <h1 style="color:#065608" class="font-weight-light mb-0">
+            {{ config('app.name', 'PTC-Official') }}
         </h1>
-        <p style="" class="font-weight-light font-italic">
-            <span style="color:#a39c01">
-                College St., Sto. Rosario-Kanluran Pateros, Metro Manila, 1620<br>
-                642-8896 / 640-5389<br>
-            </span>
-            <span style="color:#017c17">
-                Broadening Academic Horizons: 2018 and Beyond
-            </span>
+        <p class="font-weight-light">
+            <div style="color:#017c17">Broadening Academic Horizons: 2018 and Beyond</div>
+            <div style="color:#a39c01">College St., Sto. Rosario-Kanluran Pateros, Metro Manila, 1620</div>
+            <div style="color:#a39c01">#642-8896 / #640-5389</div>
         </p>
         </div>
 
