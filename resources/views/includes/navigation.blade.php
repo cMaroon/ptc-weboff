@@ -1,114 +1,226 @@
-<nav id="navbar" class="navbar sticky-top navbar-expand-lg d-block ptc-navbar">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="hidden-xs no-print nav2-header">
+    <div class="ptc-page">
+        <div class="nav2">
+            <div class="nav2__colgroup nav2__colgroup--menu">
+                <div class="nav2__col nav2__col--menu">
+                    <a href="{{ route('home') }}" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-home">
+                        <span class="nav2__menu-link-main-text">
+                            Home
+                        </span>
+                    </a>
 
-    <div class="collapse navbar-collapse p-2" id="navbarContent">
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link">Home</a>
-
-                <div class="dropdown-menu rounded-10">
-                    <a class="dropdown-item" href="">News</a>
-                    <a class="dropdown-item" href="">Team</a>
-                    <a class="dropdown-item" href="">Changelog</a>
+                    <div class="nav2__menu-popup">
+                        <div class="simple-menu simple-menu--nav2 simple-menu--nav2-left-aligned" data-menu-id="nav2-menu-popup-home" data-visibility="hidden">
+                            <a href="#" class="simple-menu__item">
+                                News
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Team
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Changelog
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </li>
 
-            <!-- administration -->
-            <li class="nav-item dropdown">
-                <a class="nav-link">Administration</a>
+                <div class="nav2__col nav2__col--menu">
+                    <a href="#" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-administration">
+                        <span class="nav2__menu-link-main-text">
+                            Administration
+                        </span>
+                    </a>
 
-                <div class="dropdown-menu rounded-10">
-                    <a class="dropdown-item" href="">Office of the President</a>
-                    <a class="dropdown-item" href="">Office of the Vice President for Administration and Finance</a>
-                    <a class="dropdown-item" href="#">Board of Trustees</a>
-                    <a class="dropdown-item" href="#">Management Committee (Mancom)</a>
-                    <a class="dropdown-item" href="#">College Department Faculty</a>
-                    <a class="dropdown-item" href="#">Senior High School Department Faculty</a>
-                    <a class="dropdown-item" href="#">ITRED Faculty and Staff</a>
-                    <a class="dropdown-item" href="#">Administrative Personnel</a>  
+                    <div class="nav2__menu-popup">
+                        <div class="simple-menu simple-menu--nav2 simple-menu--nav2-left-aligned" data-menu-id="nav2-menu-popup-administration" data-visibility="hidden">
+                            <a href="#" class="simple-menu__item">
+                                Office of the President
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Office of the Vice President for Administration and Finance
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Board of Trustees
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Management Committee
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                College Department Faculty
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Senior High School Department Faculty
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                ITRED Faculty and Staff
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Administrative Personnel
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </li>
 
-            <!-- organization -->
-            <li class="nav-item dropdown">
-                <a class="nav-link">Organization</a>
+                <div class="nav2__col nav2__col--menu">
+                    <a href="#" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-organization">
+                        <span class="nav2__menu-link-main-text">
+                            Organization
+                        </span>
+                    </a>
 
-                <div class="dropdown-menu rounded-10">
-                    <a class="dropdown-item" href="#">Faculty Club</a>
-                    <a class="dropdown-item" href="#">PTC Cup</a>
-                    <a class="dropdown-item" href="#">College Supreme Student Council</a>
-                    <a class="dropdown-item" href="#">PTC Student Volunteers</a>
-                    <a class="dropdown-item" href="#">Senior High School Officers</a>    
+                    <div class="nav2__menu-popup">
+                        <div class="simple-menu simple-menu--nav2 simple-menu--nav2-left-aligned" data-menu-id="nav2-menu-popup-organization" data-visibility="hidden">
+                            <a href="#" class="simple-menu__item">
+                                Faculty Club
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                PTC Cup
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                College Supreme Student Council
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                PTC Student Volunteers
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Senior High School Officers
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </li>
 
-            <!-- academics -->
-            <li class="nav-item dropdown">
-                <a class="nav-link">Academics</a>
+                <div class="nav2__col nav2__col--menu">
+                    <a href="#" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-academics">
+                        <span class="nav2__menu-link-main-text">
+                            Academics
+                        </span>
+                    </a>
 
-                <div class="dropdown-menu rounded-10"> 
-                    <a class="dropdown-item" href="#">Four Year Program</a>
-                    <a class="dropdown-item" href="#">Two Year Program</a>
-                    <a class="dropdown-item" href="#">Senior High School</a>
-                    <a class="dropdown-item" href="#">Executive Program</a>
+                    <div class="nav2__menu-popup">
+                        <div class="simple-menu simple-menu--nav2 simple-menu--nav2-left-aligned" data-menu-id="nav2-menu-popup-academics" data-visibility="hidden">
+                            <a href="#" class="simple-menu__item">
+                                Fourth Year Program
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Two Year Program
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Senior High School
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Executive Program
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </li>  
 
-            <!-- admission -->
-            <li class="nav-item dropdown">
-                <a class="nav-link">Admission</a>
+                <div class="nav2__col nav2__col--menu">
+                    <a href="#" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-admission">
+                        <span class="nav2__menu-link-main-text">
+                            Admission
+                        </span>
+                    </a>
 
-                <div class="dropdown-menu rounded-10">  
-                    <a class="dropdown-item" href="#">College Application</a>
-                    <a class="dropdown-item" href="#">Senior High School Application</a>
+                    <div class="nav2__menu-popup">
+                        <div class="simple-menu simple-menu--nav2 simple-menu--nav2-left-aligned" data-menu-id="nav2-menu-popup-admission" data-visibility="hidden">
+                            <a href="#" class="simple-menu__item">
+                                College Application
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Senior High School Application
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </li>  
 
-            <!-- student -->
-            <li class="nav-item dropdown">
-                <a class="nav-link">Student</a>
+                <div class="nav2__col nav2__col--menu">
+                    <a href="#" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-student">
+                        <span class="nav2__menu-link-main-text">
+                            Student
+                        </span>
+                    </a>
 
-                <div class="dropdown-menu rounded-10">
-                    <a class="dropdown-item" href="#">Student</a>
-                    <a class="dropdown-item" href="#">Portal</a>
+                    <div class="nav2__menu-popup">
+                        <div class="simple-menu simple-menu--nav2 simple-menu--nav2-left-aligned" data-menu-id="nav2-menu-popup-student" data-visibility="hidden">
+                            <a href="#" class="simple-menu__item">
+                                Portal
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </li>                 
 
-            <!-- alumni -->
-            <li class="nav-item dropdown">
-                <a class="nav-link">Alumni</a>
+                <div class="nav2__col nav2__col--menu">
+                    <a href="#" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-alumni">
+                        <span class="nav2__menu-link-main-text">
+                            Alumni
+                        </span>
+                    </a>
 
-                <div class="dropdown-menu rounded-10">  
-                    <a class="dropdown-item" href="#">Alumni</a>   
+                    <div class="nav2__menu-popup">
+                        <div class="simple-menu simple-menu--nav2 simple-menu--nav2-left-aligned" data-menu-id="nav2-menu-popup-alumni" data-visibility="hidden">
+                            <a href="#" class="simple-menu__item">
+                                Alumni
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </li>  
 
-            <!-- about ptc -->
-            <li class="nav-item dropdown">
-                <a class="nav-link">About</a>
+                <div class="nav2__col nav2__col--menu">
+                    <a href="#" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-about">
+                        <span class="nav2__menu-link-main-text">
+                            About
+                        </span>
+                    </a>
 
-                <div class="dropdown-menu rounded-10">  
-                    <a class="dropdown-item" href="#">History</a>
-                    <a class="dropdown-item" href="#">Mission/Core Values</a>
-                    <a class="dropdown-item" href="#">PTC Hymn</a>
-                    <a class="dropdown-item" href="#">Retrospections and Insights</a>
-                    <a class="dropdown-item" href="#">PTC President's Report</a>
-                    <a class="dropdown-item" href="#">PTC Under the New Administration</a>
+                    <div class="nav2__menu-popup">
+                        <div class="simple-menu simple-menu--nav2 simple-menu--nav2-left-aligned" data-menu-id="nav2-menu-popup-about" data-visibility="hidden">
+                            <a href="#" class="simple-menu__item">
+                                History
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Mission/Core Values
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                PTC Hymn
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Retrospections and Insights
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                PTC President's Report
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                PTC Under the New Administration
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </li> 
 
-            <!-- test admin dashboard -->
-            <li class="nav-item dropdown">
-                <a class="nav-link">Admin Dashboard</a>
+                <div class="nav2__col nav2__col--menu">
+                    <a href="#" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-dashboard">
+                        <span class="nav2__menu-link-main-text">
+                            Dashboard
+                        </span>
+                    </a>
 
-                <div class="dropdown-menu rounded-10">
-                    <a class="dropdown-item" href="{{ route('dashboard') }}" >Login</a>  
-                      
+                    <div class="nav2__menu-popup">
+                        <div class="simple-menu simple-menu--nav2 simple-menu--nav2-left-aligned" data-menu-id="nav2-menu-popup-dashboard" data-visibility="hidden">
+                            <a href="#" class="simple-menu__item">
+                                Settings
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Login
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Register
+                            </a>
+                            <a href="#" class="simple-menu__item">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </li>  
-            
-        </ul>
+            </div>
+        </div>
     </div>
-</nav>
+</div>
