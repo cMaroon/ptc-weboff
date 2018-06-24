@@ -74,7 +74,9 @@ $links = json_decode(file_get_contents($path), true);
                             <span class="nav2__menu-link-main-text">
                                 {{ $link['name'] }}
                                 {{-- Active --}}
-                                {{-- <span class="nav2__menu-link-bar u-section--bg-normal"></span> --}}
+                                @if (isset($title) && ($title == $link['name']))
+                                    <span class="nav2__menu-link-bar u-section--bg-normal"></span>
+                                @endif
                             </span>
                         </a>
     
