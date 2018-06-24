@@ -1,8 +1,8 @@
 @extends('master', ['title' => 'Home'])
 
 @section('content')
-    <div class="wrapper bgded overlay" style="background-image:url('images/backgrounds/welcome.jpg')">
-        <div id="pageintro" class="hoc clear"> 
+    <div class="wrapper ptc-home--welcome">
+        <div id="pageintro" class="ptc-page"> 
             <article>
                 <h2 class="heading underline center font-weight-light"><span class="text-emerald font-weight-bold">OUR</span>VISION</h2>
                 <blockquote class="font-weight-light">
@@ -12,51 +12,51 @@
         </div>{{-- #pageintro --}}
     </div>
 
-    <div class="wrapper row3">
-        <div id="introblocks" class="hoc clear"> 
-            <ul class="nospace clear mb-0">
+    <div class="wrapper">
+        <div id="" class="intro-blocks ptc-page"> 
+            <ul class="nospace">
                 <li>
                     <article>
                         <img src="{{ asset('images/logo_bsit.png') }}" alt="PTC-BSIT-LOGO">
-                        <h4 class="heading underline center">Bachelor of Science in Information Technology</h4>
-                        <h4 class="heading underline center">Certificate in Computer Science</h4>
+                        <h4>Bachelor of Science in Information Technology</h4>
+                        <h4>Certificate in Computer Science</h4>
                     </article>
                 </li>
 
                 <li>
                     <article>
                         <img src="{{ asset('images/logo_bsoa.png') }}" alt="PTC-BSOA-LOGO">
-                        <h4 class="heading underline center">Bachelor of Science in Office Administration</h4>
-                        <h4 class="heading underline center">Certificate in Office Administration</h4>
+                        <h4>Bachelor of Science in Office Administration</h4>
+                        <h4>Certificate in Office Administration</h4>
                     </article>
                 </li>
 
                 <li>
                     <article>
                         <img src="{{ asset('images/logo_chrm.png') }}" alt="PTC-CHRM-LOGO">
-                        <h4 class="heading underline center">Certificate in Hotel and Restaurant Management</h4>
+                        <h4>Certificate in Hotel and Restaurant Management</h4>
                     </article>
                 </li>
 
                 <li>
                     <article>
                         <img src="{{ asset('images/logo_tesda.png') }}" alt="PTC-TESDA-LOGO">
-                        <h4 class="heading underline center">Institute of Technical Resources and Entreprenurial Development</h4>
+                        <h4>Institute of Technical Resources and Entreprenurial Development</h4>
                     </article>
                 </li>
 
                 <li>
                     <article>
                         <img src="{{ asset('images/logo_shs.png') }}" alt="PTC-SHS-LOGO">
-                        <h4 class="heading underline center">Senior High School</h4>
+                        <h4>Senior High School</h4>
                     </article>
                 </li>
             </ul>{{-- #introblocks --}}
         </div>
     </div>
 
-    <div class="wrapper row3">
-        <main class="hoc container clear" style="padding-top: 30px"> 
+    <div class="wrapper mb-4 mt-4">
+        <main class="ptc-page"> 
             <div class="group">
                 <div class="two_third first"> 
                     <div class="card border-success mb-3" style="max-width: 50rem;">
@@ -228,11 +228,7 @@
 
     <div class="ptc-footer">
         <div class="wrapper">
-            {{-- <div id="logo_ptcfooter">  
-                <img src="{{ asset('images/logo_ptcbw.png') }}" alt="PTC-LOGO-BW">
-            </div> --}}
-
-            <footer id="footer" class="hoc topspace-0 clear"> 
+            <footer id="footer" class="ptc-page topspace-0"> 
                 <div class="group information">
                     <div class="ptc-logo">
                         <img src="{{ asset('images/logo_ptcbw.png') }}" alt="PTC-LOGO-BW">

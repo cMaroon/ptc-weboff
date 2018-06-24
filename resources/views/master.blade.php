@@ -19,7 +19,9 @@
         @include('includes.header')
         @include('includes.navigation')
         @yield('content')
-        <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+        <button class="go-to-top go-to-top__background">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </div>
     
     @yield('script')

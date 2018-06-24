@@ -28,13 +28,15 @@ $(document).ready(function() {
      */
     $('[data-toggle="tooltip"]').tooltip();
 
+
+
     /**
-     * Back to Top button
+     * Go to Top button
      */
-    $("#backtotop").click(function () {
-        jQuery("body,html").animate({
+    $(".go-to-top").click(function () {
+        $("body,html").animate({
             scrollTop: 0
-        }, 600);
+        });
     });
 
     /**
@@ -73,10 +75,19 @@ $(document).ready(function() {
 });
 
 $(document).scroll(function () {
-    if ($(window).scrollTop() > 150) {
-        $("#backtotop").addClass("visible");
+    if ($(window).scrollTop() >= $('.ptc-header').height()) {
+        $('.nav2-header').addClass('sticky');
     } else {
-        $("#backtotop").removeClass("visible");
+        $('.nav2-header').removeClass('sticky');
+    }
+
+    /**
+     * Go to Top add and remove class
+     */
+    if ($(window).scrollTop() > 234) {
+        $('.go-to-top').addClass('go-to-top__active');
+    } else {
+        $('.go-to-top').removeClass('go-to-top__active');
     }
 });
 
