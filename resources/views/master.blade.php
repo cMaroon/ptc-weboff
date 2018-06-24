@@ -14,12 +14,12 @@
         {{ __(' | ') . config('app.name', 'PTC-Official') }}
     </title>
 </head>
-<body id="top">
+<body>
     <div id="app">
         @include('includes.header')
         @include('includes.navigation')
         @yield('content')
-        <button class="go-to-top go-to-top__background">
+        <button class="go-to-top go-to-top__image">
             <i class="fas fa-arrow-up"></i>
         </button>
     </div>

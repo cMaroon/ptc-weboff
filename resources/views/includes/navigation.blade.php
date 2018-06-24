@@ -8,7 +8,7 @@ $links = json_decode(file_get_contents($path), true);
         <div class="container">
             <div class="navbar-header navbar-mobile__header">
                 <div class="navbar-mobile__header-section">
-                    <span class="navbar-mobile__brand navbar-brand u-ellipsis-overflow">Home</span>
+                    <span class="navbar-mobile__brand navbar-brand u-ellipsis-overflow">{{ $title }}</span>
                 </div>
                 <div class="navbar-mobile__header-section navbar-mobile__header-section--buttons">
                     <button class="navbar-toggle navbar-mobile__toggle" type="button" data-toggle="collapse" data-target="#xs-navbar" aria-controls="xs-navbar" aria-expanded="false" aria-label="Toggle navigation">
