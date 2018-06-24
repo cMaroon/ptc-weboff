@@ -13169,15 +13169,16 @@ a:hover {
 }
 
 .ptc-welcome::after {
+  content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  content: "";
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.45);
+  opacity: .45;
+  background-color: #000;
 }
 
 .ptc-introblocks {
@@ -13196,12 +13197,12 @@ a:hover {
 }
 
 .ptc-introblocks li {
+  cursor: default;
   position: relative;
   display: table-cell;
   background-image: url(/images/bgs-card-section-header.png?68bcbf328360a94f5cdaf2567a8c6a70) !important;
   background-size: cover;
   background-position: 10%;
-  cursor: default;
   height: 100%;
   width: 20%;
   padding: 7% 2% 3%;
@@ -13394,7 +13395,7 @@ a:hover {
 
 .ptc-footer {
   border-top: 4px solid #27ae60;
-  background: #fbfbfb url(/images/bg_footer.jpg?b814d185ee490ac0d5ca148f09e91d8a);
+  background: #f6f6f6 url(/images/bg_footer.jpg?b814d185ee490ac0d5ca148f09e91d8a);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

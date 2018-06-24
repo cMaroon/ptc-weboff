@@ -1,3 +1,6 @@
+// Author: Emmanuel See Te
+// Custom PTC SASS
+
 *, ::after, ::before {
     position: relative;
     -webkit-box-sizing: border-box;
@@ -146,7 +149,7 @@ a, a:hover {
             padding: 0;
             margin: 0;
             border-width: 2px;
-            color: #fff;
+            color: $white;
             display: block;
 
             &-icon {
@@ -508,15 +511,16 @@ a, a:hover {
         }
 
         &::after {
+            content: "";
             display: block;
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            content: "";
             z-index: 1;
-            background-color: rgba(0, 0, 0, 0.45);
+            opacity: .45;
+            background-color: $black;
         }
     }
 
@@ -534,12 +538,12 @@ a, a:hover {
         }
 
         li {
+            cursor: default;
             position: relative;
             display: table-cell;
             background-image: url('../img/bgs-card-section-header.png') !important;
             background-size: cover;
             background-position: 10%;
-            cursor: default;
             height: 100%;
             width: 20%;
             padding: 7% 2% 3%;
@@ -725,7 +729,7 @@ a, a:hover {
 
     &-footer {
         border-top: 4px solid $fui-nephritis;
-        background: #fbfbfb url('../img/bg_footer.jpg');
+        background: $gray-100 url('../img/bg_footer.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -820,7 +824,7 @@ a, a:hover {
     border-radius: 3px;
     background: $fui-nephritis;
     padding: 0;
-    color: #fff;
+    color: $white;
     font-size: 14px;
     position: fixed;
     right: -200px;
