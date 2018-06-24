@@ -1,0 +1,194 @@
+{
+    "navigation": {
+        "home": {
+            "name": "Home",
+            "url": "home",
+            "submenu": {
+                "news": {
+                    "name": "News",
+                    "url": "home"
+                },
+                "team": {
+                    "name": "Team",
+                    "url": "home"
+                },
+                "changelog": {
+                    "name": "Changelog",
+                    "url": "home"
+                }
+            }
+        },
+        "administration": {
+            "name": "Administration",
+            "url": "home",
+            "submenu": {
+                "president": {
+                    "name": "Office of the President",
+                    "url": "home"
+                },
+                "vice-president": {
+                    "name": "Office of the Vice President for Administration and Finance",
+                    "url": "home"
+                },
+                "trustees": {
+                    "name": "Board of Trustees",
+                    "url": "home"
+                },
+                "committee": {
+                    "name": "Management Committee",
+                    "url": "home"
+                },
+                "college": {
+                    "name": "College Department Faculty",
+                    "url": "home"
+                },
+                "shs": {
+                    "name": "Senior High School Department Faculty",
+                    "url": "home"
+                },
+                "itred": {
+                    "name": "ITRED Faculty and Staff",
+                    "url": "home"
+                },
+                "personel": {
+                    "name": "Administrative Personel",
+                    "url": "home"
+                }
+            }
+        },
+        "organization": {
+            "name": "Organization",
+            "url": "home",
+            "submenu": {
+                "faculty": {
+                    "name": "Faculty Club",
+                    "url": "home"
+                },
+                "cup": {
+                    "name": "PTC Cup",
+                    "url": "home"
+                },
+                "college": {
+                    "name": "College Supreme Student Council",
+                    "url": "home"
+                },
+                "student": {
+                    "name": "Student Volunteers",
+                    "url": "home"
+                },
+                "shs": {
+                    "name": "Senior High School Officers",
+                    "url": "home"
+                }
+            }
+        },
+        "academics": {
+            "name": "Academics",
+            "url": "home",
+            "submenu": {
+                "four": {
+                    "name": "Four Year Program",
+                    "url": "home"
+                },
+                "two": {
+                    "name": "Two Year Program",
+                    "url": "home"
+                },
+                "shs": {
+                    "name": "Senior High School",
+                    "url": "home"
+                },
+                "executive": {
+                    "name": "Executive Program",
+                    "url": "home"
+                }
+            }
+        },
+        "admission": {
+            "name": "Admission",
+            "url": "home",
+            "submenu": {
+                "college": {
+                    "name": "College Application",
+                    "url": "home"
+                },
+                "shs": {
+                    "name": "Senior High School Application",
+                    "url": "home"
+                }
+            }
+        },
+        "student": {
+            "name": "Student",
+            "url": "home",
+            "submenu": {
+                "portal": {
+                    "name": "Portal",
+                    "url": "home"
+                }
+            }
+        },
+        "alumni": {
+            "name": "Alumni",
+            "url": "home",
+            "submenu": {
+                "alumni": {
+                    "name": "Alumni",
+                    "url": "home"
+                }
+            }
+        },
+        "about": {
+            "name": "About",
+            "url": "home",
+            "submenu": {
+                "history": {
+                    "name": "History",
+                    "url": "home"
+                },
+                "values": {
+                    "name": "Mission/Core Values",
+                    "url": "home"
+                },
+                "hymn": {
+                    "name": "PTC Hymn",
+                    "url": "home"
+                },
+                "insights": {
+                    "name": "Retrospective and Insights",
+                    "url": "home"
+                },
+                "report": {
+                    "name": "President's Report",
+                    "url": "home"
+                },
+                "administration": {
+                    "name": "PTC Under the New Administration",
+                    "url": "home"
+                }
+            }
+        },
+        "dashboard": {
+            "name": "Dashboard",
+            "url": "home",
+            "submenu": {
+                "settings": {
+                    "name": "Settings",
+                    "url": "home"
+                },
+                "login": {
+                    "name": "Login",
+                    "url": "home"
+                },
+                "register": {
+                    "name": "Register",
+                    "url": "home"
+                },
+                "logout": {
+                    "name": "Logout",
+                    "url": "home"
+                }
+            }
+        }
+    }
+}
