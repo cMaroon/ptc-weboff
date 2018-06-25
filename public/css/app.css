@@ -12676,8 +12676,18 @@ button {
 }
 
 ::-moz-selection {
-  color: #fff;
   background-color: #27ae60;
+  color: #fff;
+}
+
+::selection {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+::-moz-selection {
+  background-color: #27ae60;
+  color: #fff;
 }
 
 a,
@@ -13071,8 +13081,6 @@ a:hover {
   transform: translateZ(0);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
-  background-color: #fff;
-  color: #000;
   padding: 20px 5px;
   display: -webkit-box;
   display: -ms-flexbox;
