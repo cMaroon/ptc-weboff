@@ -1,10 +1,10 @@
 @extends('master', ['title' => 'Home'])
 
 @section('content')
-    <div class="wrapper ptc-welcome">
+    <div class="wrapper ptc-welcome ptc-welcome--overlay">
         <div id="pageintro" class="ptc-page"> 
             <article>
-                <h2 class="heading underline center font-weight-light"><span class="text-emerald font-weight-bold">OUR</span>VISION</h2>
+                <h2 class="heading underline center font-weight-light"><span class="text-secondary font-weight-bold">OUR</span>VISION</h2>
                 <blockquote class="font-weight-light">
                     <i class="fas fa-quote-left"></i> The Pateros Technological College envisions itself as an institution of higher learning which is strongly committed to the holistic development of the students to improve their lives in particular and the society in general. <i class="fas fa-quote-right"></i>
                 </blockquote>
@@ -211,7 +211,7 @@
         </main>
     </div>
 
-    <div class="ptc-footer">
+    <div class="ptc-footer ptc-footer--image">{{-- to add image background: ptc-footer--image --}}
         <div class="ptc-page">
             <footer class="topspace-0"> 
                 <div class="group">
@@ -257,7 +257,7 @@
 
             <div class="ptc-footer__copyright"> 
                 <p class="fl_left">&copy; 2018 Pateros Technological College. All rights reserved </p>
-                <p class="fl_right">Developed and maintained by <span class="text-nephritis" data-toggle="tooltip" data-placement="top" title="PTC-Technical Information System collaboration with Emmanuel See Te">PTC-TIS</span></p>
+                <p class="fl_right">Developed and maintained by <span class="text-primary" data-toggle="tooltip" data-placement="top" title="PTC-Technical Information System collaboration with Emmanuel See Te">PTC-TIS</span></p>
             </div>
         </div>
     </div>
