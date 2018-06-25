@@ -19,7 +19,7 @@
         @include('includes.header')
         @include('includes.navigation')
         @yield('content')
-        <button class="go-to-top go-to-top__image">
+        <button class="go-to-top go-to-top--image">{{-- to add image background: go-to-top--image --}}
             <i class="fas fa-arrow-up"></i>
         </button>
     </div>
