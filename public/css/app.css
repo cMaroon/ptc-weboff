@@ -406,6 +406,7 @@ h1,
 h2,
 .h2 {
   font-size: 1.75rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 h3,
@@ -13410,7 +13411,7 @@ a:hover {
 }
 
 .ptc-footer--image {
-  background-image: url(/images/bg_footer.jpg?b814d185ee490ac0d5ca148f09e91d8a);
+  background-image: url(/images/bg_footer.png?4908206f0819d9175071947dc21b5487);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
