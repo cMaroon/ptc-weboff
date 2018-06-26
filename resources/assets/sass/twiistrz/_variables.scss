@@ -1,0 +1,44 @@
+$page-width: calc(100% - 40px);
+$page-max-width: 1000px;
+$page-primary-color: $fui-nephritis;
+$page-secondary-color: $fui-emerald;
+$page-light-color: $white;
+$page-dark-color: $black;
+
+$image-welcome: url('../img/welcome.jpg');
+$image-introblocks: url('../img/bgs-card-section-header.png');
+$image-footer: url('../img/bg_footer.jpg');
+$image-gototop: url('../img/go-to-top.png');
+
+$hsla-10:bg(.1);
+$hsla-20:bg(.2);
+$hsla-30:bg(.3);
+$hsla-40:bg(.4);
+$hsla-50:bg(.5);
+$hsla-60:bg(.6);
+$hsla-70:bg(.7);
+$hsla-80:bg(.8);
+$hsla-90:bg(.9);
+$hsla-dark-10:bg-dark(.1);
+$hsla-dark-20:bg-dark(.2);
+$hsla-dark-30:bg-dark(.3);
+$hsla-dark-40:bg-dark(.4);
+$hsla-dark-50:bg-dark(.5);
+$hsla-dark-60:bg-dark(.6);
+$hsla-dark-70:bg-dark(.7);
+$hsla-dark-80:bg-dark(.8);
+$hsla-dark-90:bg-dark(.9);
+
+$all-transition:transition(all);
+$color-transition:transition(color);
+
+$border-radius-xs:4px;
+$border-radius-sm:6px;
+$border-radius-lg:10px;
+$border-radius-xl:20px;
+
+$introblocks-1:#9a4848;
+$introblocks-2:#ffa500;
+$introblocks-3:#fff200;
+$introblocks-4:#87ceeb;
+$introblocks-5:#e725df;
