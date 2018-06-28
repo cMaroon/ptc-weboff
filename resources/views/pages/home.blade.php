@@ -65,19 +65,23 @@
                             <a href="#" class="ptc-card__header-link">View All <i class="fas fa-angle-double-right"></i></a>
                         </div>
                         <div class="ptc-card__body">
-                            <article class="ptc-card__list-news-image">
-                                <div class="ptc-card__list-news-image--img" style="background-image: url('{{ asset('images/announcements/no-image.png') }}');"></div>
-                                <div class="ptc-card__list-news-inner">
-                                    <a href="#" class="ptc-card__list-news-title">{{ str_limit('Eveniet excepturi laboriosam ipsa illo, molestiae architecto minima dignissimos commodi aspernatur accusantium sunt dolorem hic iusto, recusandae perspiciatis illum nulla officiis ratione quos nihil optio ab corrupti aperiam accusamus. Voluptatem earum enim molestiae, dignissimos optio nihil nisi? Nihil fugit odit perferendis ab.', 30) }}</a>
-                                    <div class="ptc-card__list-news-date">1 day ago</div>
-                                    <div class="ptc-card__list-news-tags"><span class="badge badge-success">News</span></div>
-                                    <div class="ptc-card__list-news-summary">
-                                        {{ str_limit('Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius id porro alias debitis asperiores, dolore, error assumenda officiis atque commodi ducimus fugiat possimus, similique nulla dolor odit? Repellendus dolor sunt repellat architecto minima fugiat! Repellat dicta, illum repudiandae quis quae aliquid soluta cupiditate! Itaque, incidunt quaerat nobis praesentium laboriosam ullam.', 155) }}
-                                        <a href="#">Continue Reading</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="ptc-card__list-news-image">
+                            @if (count($posts) > 0)
+                                @foreach ($posts as $post)
+                                    <article class="ptc-card__list-news-image">
+                                        <div class="ptc-card__list-news-image--img" style="background-image: url('{{ asset('images/announcements/no-image.png') }}');"></div>
+                                        <div class="ptc-card__list-news-inner">
+                                            <a href="#" class="ptc-card__list-news-title">{{ str_limit($post->title, 30) }}</a>
+                                            <div class="ptc-card__list-news-date">{{ \Carbon\Carbon::createFromTimeStamp(strtotime($post->created_at))->diffForHumans() }}</div>
+                                            <div class="ptc-card__list-news-tags"><span class="badge badge-success">News</span></div>
+                                            <div class="ptc-card__list-news-summary">
+                                                {{ str_limit($post->body, 155) }}
+                                                <a href="#">Continue Reading</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                @endforeach
+                            @endif
+                            {{-- <article class="ptc-card__list-news-image">
                                 <div class="ptc-card__list-news-image--img" style="background-image: url('{{ asset('images/announcements/no-image.png') }}');"></div>
                                 <div class="ptc-card__list-news-inner">
                                     <a href="#" class="ptc-card__list-news-title">{{ str_limit('Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error sunt cupiditate quibusdam sint officia non illo eaque omnis et iste numquam debitis, nostrum quo ducimus, tenetur porro mollitia culpa.', 30) }}</a>
@@ -112,7 +116,7 @@
                                         <a href="#">Continue Reading</a>
                                     </div>
                                 </div>
-                            </article>
+                            </article> --}}
                         </div>
                     </div>
                 </div>

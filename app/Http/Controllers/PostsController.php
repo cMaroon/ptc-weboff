@@ -8,17 +8,6 @@ use App\Post;
 class PostsController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function home()
-    {
-        
-        return view('pages.home')->with('posts', Post::order-By('created_at','desc')->paginate(10));
-    }
-
-    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
