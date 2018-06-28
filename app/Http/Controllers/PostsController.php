@@ -14,7 +14,7 @@ class PostsController extends Controller
      */
     public function home()
     {
-        $posts = Post::all();
+        
         return view('pages.home')->with('posts', Post::order-By('created_at','desc')->paginate(10));
     }
 
