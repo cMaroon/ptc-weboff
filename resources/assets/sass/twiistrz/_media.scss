@@ -8,6 +8,23 @@
     }
 
     .ptc {
+        &-header {
+            &__content {
+                display: block;
+                text-align: center;
+
+                &-logo {
+                    margin: 0 auto;
+                    margin-bottom: 14px;
+                }
+
+                &-social {
+                    position: relative;
+                    margin-top: 14px;
+                }
+            }
+        }
+
         &-introblocks {
             margin: 0;
             width: 100% !important;

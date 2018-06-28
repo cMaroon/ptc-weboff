@@ -1,32 +1,29 @@
-<div class="wrapper row1 ptc-header">
-    <div id="logo_ptc">
-        <img src="{{ asset('images/logo_ptc.png') }}" alt="PTC-LOGO">
-    </div>
 
-    <header id="header" class="hoc clear"> 
-
-        <div id="logo" class="fl_left">
-
-        <h1 style="color:#065608" class="font-weight-light mb-0">
-            <!-- {{ config('app.name', 'PTC-Official') }} -->
-            PATEROS TECHNOLOGICAL COLLEGE
-        </h1>
-        <p class="font-weight-light">
-            <div style="color:#017c17">Broadening Academic Horizons: 2018 and Beyond</div>
-            <div style="color:#a39c01">College St., Sto. Rosario-Kanluran Pateros, Metro Manila, 1620</div>
-            <div style="color:#a39c01">#642-8896 / #640-5389</div>
-        </p>
-        </div>
-
-        <div class="fl_right">
-            <ul class="faico clear">
-                <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook-square" style="color:#3B5998"></i></a></li>
-                <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter" style="color: #00ACEE"></i></a></li>
-                <li><a class="faicon-youtube" href="#"><i class="fab fa-youtube-square" style="color:#C8232C"></i></a></li>
-                <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin" style="color:#0E76A8"></i></a></li>
-                <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-square" style="color:#DB4A39"></i></a></li>
-                <li><a class="faicon-instagram" href="#"><i class="fab fa-instagram" style="color:#f09433"></i></a></li>
-            </ul>
+<div class="wrapper">
+    <header class="ptc-header">
+        <div class="ptc-page">
+            <div class="ptc-header__content">
+                <div class="ptc-header__content-logo">
+                    <img src="{{ asset('images/logo_ptc.png') }}" alt="PTC-LOGO">
+                </div>
+                <div class="ptc-header__content-body">
+                    <h1>{{ config('app.name', 'PATEROS TECHNOLOGICAL COLLEGE') }}</h1>
+                    <p>Broadening Academic Horizons: 2018 and Beyond</p>
+                    <p>College St., Sto. Rosario-Kanluran Pateros, Metro Manila, 1620</p>
+                    <p>(XXX) 642-8896 / (XXX) 640-5389</p>
+                </div>
+                <div class="ptc-header__content-social">
+                    <ul>
+                        <li><a href="#"><img src="{{ asset('images/facebook.png') }}" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="{{ asset('images/google-plus.png') }}" alt="Google Plus"></a></li>
+                        <li><a href="#"><img src="{{ asset('images/instagram.png') }}" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="{{ asset('images/line.png') }}" alt="Line"></a></li>
+                        <li><a href="#"><img src="{{ asset('images/linkedin.png') }}" alt="LinkedIn"></a></li>
+                        <li><a href="#"><img src="{{ asset('images/twitter.png') }}" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="{{ asset('images/youtube.png') }}" alt="YouTube"></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 </div>
