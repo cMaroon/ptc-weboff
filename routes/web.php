@@ -16,3 +16,4 @@ Route::get('/ptc-admin/adminDashboard/dashboard', 'PagesController@dashboard')->
 |--------------------------------------------------------------------------
 */
 Route::resource('posts','PostsController');
+
