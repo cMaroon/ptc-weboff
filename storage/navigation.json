@@ -170,7 +170,7 @@
         },
         "dashboard": {
             "name": "Dashboard",
-            "url": "home",
+            "url": "dashboard",
             "submenu": {
                 "settings": {
                     "name": "Settings",

@@ -261,7 +261,7 @@
 
             <div class="ptc-footer__copyright"> 
                 <p class="fl_left">&copy; 2018 Pateros Technological College. All rights reserved </p>
-                <p class="fl_right">Developed and maintained by <span class="text-primary" data-toggle="tooltip" data-placement="top" title="PTC-Technical Information System collaboration with Emmanuel See Te">PTC-TIS</span></p>
+                <p class="fl_right">Developed and maintained by <span class="text-primary" data-toggle="tooltip" data-placement="top" title="PTC-Information Technology System collaboration with Emmanuel See Te">PTC-ITS</span></p>
             </div>
         </div>
     </div>
