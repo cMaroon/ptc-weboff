@@ -6,15 +6,6 @@
     }
 }
 
-@function set-text-hover-color($color) {
-    @if (lightness($color) > 50) {
-        @return $gray-800;
-    } @else {
-        @return $gray-100;
-    }
-}
-
-
 @function bg($opacity) {
     @return hsla(0, 0%, 100%, $opacity);
 }
