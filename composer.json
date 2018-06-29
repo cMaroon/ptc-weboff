@@ -1,9 +1,12 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
-    "license": "MIT",
+    "name": "cMaroon/ptc-weboff",
+    "description": "Pateros Technological College Official Website!",
+    "keywords": ["ptc-its", "pateros technological college"],
+    "license": "AGPL-3.0",
     "type": "project",
+    "support": {
+        "issues": "https://github.com/cMaroon/ptc-weboff/issues"
+    },
     "require": {
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
