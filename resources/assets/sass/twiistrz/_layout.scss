@@ -1,0 +1,27 @@
+*, ::after, ::before {
+    position: relative;
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+*, :hover, :active, :focus, a, button {
+    outline: none !important;
+}
+
+::selection {
+    background-color: $page-primary-color;
+    color: set-text-color($page-primary-color);
+}
+
+::-moz-selection {
+    background-color: $page-primary-color;
+    color: set-text-color($page-primary-color);
+}
+
+a, a:hover {
+    text-decoration: none;
+    transition: $color-transition;
+    -ms-transition: $color-transition;
+    -webkit-transition: $color-transition;
+}
