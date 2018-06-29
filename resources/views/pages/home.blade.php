@@ -2,19 +2,19 @@
 
 @section('content')
     <div class="wrapper ptc-welcome ptc-welcome--overlay">
-        <div id="pageintro" class="ptc-page"> 
+        <div class="ptc-page"> 
             <article>
-                <h2 class="heading underline center font-weight-light"><span class="text-secondary font-weight-bold">OUR</span>VISION</h2>
-                <blockquote class="font-weight-light">
+                <h1><span class="text-secondary font-weight-bold">OUR</span>VISION</h1>
+                <blockquote>
                     <i class="fas fa-quote-left"></i> The Pateros Technological College envisions itself as an institution of higher learning which is strongly committed to the holistic development of the students to improve their lives in particular and the society in general. <i class="fas fa-quote-right"></i>
                 </blockquote>
             </article>
-        </div>{{-- #pageintro --}}
+        </div>
     </div>
 
     <div class="wrapper">
         <div class="ptc-page ptc-introblocks"> 
-            <ul class="nospace">
+            <ul>
                 <li>
                     <article>
                         <img src="{{ asset('images/logo_bsit.png') }}" alt="PTC-BSIT-LOGO">
@@ -70,53 +70,17 @@
                                     <article class="ptc-card__list-news-image">
                                         <div class="ptc-card__list-news-image--img" style="background-image: url('{{ asset('images/announcements/no-image.png') }}');"></div>
                                         <div class="ptc-card__list-news-inner">
-                                            <a href="#" class="ptc-card__list-news-title">{{ str_limit($post->title, 30) }}</a>
+                                            <a href="{{ route('home') }}" class="ptc-card__list-news-title" data-toggle="tooltip" data-placement="top" data-title="{{ $post->title }}">{{ str_limit($post->title, 30) }}</a>
                                             <div class="ptc-card__list-news-date">{{ \Carbon\Carbon::createFromTimeStamp(strtotime($post->created_at))->diffForHumans() }}</div>
                                             <div class="ptc-card__list-news-tags"><span class="badge {{$post->category->color}}">{{$post->category->title}}{{--News--}}</span></div>
                                             <div class="ptc-card__list-news-summary">
                                                 {{ str_limit($post->body, 155) }}
-                                                <a href="#">Continue Reading</a>
+                                                <a href="{{ route('home') }}">Continue Reading</a>
                                             </div>
                                         </div>
                                     </article>
                                 @endforeach
                             @endif
-                            {{-- <article class="ptc-card__list-news-image">
-                                <div class="ptc-card__list-news-image--img" style="background-image: url('{{ asset('images/announcements/no-image.png') }}');"></div>
-                                <div class="ptc-card__list-news-inner">
-                                    <a href="#" class="ptc-card__list-news-title">{{ str_limit('Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error sunt cupiditate quibusdam sint officia non illo eaque omnis et iste numquam debitis, nostrum quo ducimus, tenetur porro mollitia culpa.', 30) }}</a>
-                                    <div class="ptc-card__list-news-date">1 day ago</div>
-                                    <div class="ptc-card__list-news-tags"><span class="badge badge-warning">Event</span></div>
-                                    <div class="ptc-card__list-news-summary">
-                                            {{ str_limit('Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet excepturi laboriosam ipsa illo, molestiae architecto minima dignissimos commodi aspernatur accusantium sunt dolorem hic iusto, recusandae perspiciatis illum nulla officiis ratione quos nihil optio ab corrupti aperiam accusamus. Voluptatem earum enim molestiae, dignissimos optio nihil nisi? Nihil fugit odit perferendis ab.', 155) }}
-                                        <a href="#">Continue Reading</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="ptc-card__list-news-image">
-                                <div class="ptc-card__list-news-image--img" style="background-image: url('{{ asset('images/announcements/no-image.png') }}');"></div>
-                                <div class="ptc-card__list-news-inner">
-                                    <a href="#" class="ptc-card__list-news-title">{{ str_limit('Quas necessitatibus, deserunt iusto vero ducimus suscipit minus est placeat nostrum laboriosam. Officia magni, molestiae quibusdam illum laudantium veniam nemo earum consectetur exercitationem.', 30) }}</a>
-                                    <div class="ptc-card__list-news-date">1 day ago</div>
-                                    <div class="ptc-card__list-news-tags"><span class="badge badge-info">Guide</span></div>
-                                    <div class="ptc-card__list-news-summary">
-                                        {{ str_limit('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptatibus quisquam, adipisci quibusdam totam illum eius earum animi eum. Distinctio reiciendis neque quos harum, amet, quis repellendus deleniti sit aut doloremque tempore ducimus hic voluptates quibusdam impedit repudiandae minus architecto excepturi mollitia doloribus. Ullam vero fuga praesentium unde, dignissimos voluptates.', 155) }}
-                                        <a href="#">Continue Reading</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="ptc-card__list-news-image">
-                                <div class="ptc-card__list-news-image--img" style="background-image: url('{{ asset('images/announcements/no-image.png') }}');"></div>
-                                <div class="ptc-card__list-news-inner">
-                                    <a href="#" class="ptc-card__list-news-title">{{ str_limit('Deleniti voluptatibus quisquam, adipisci quibusdam totam illum eius earum animi eum.', 30) }}</a>
-                                    <div class="ptc-card__list-news-date">1 day ago</div>
-                                    <div class="ptc-card__list-news-tags"><span class="badge badge-danger">Announcement</span></div>
-                                    <div class="ptc-card__list-news-summary">
-                                        {{ str_limit('Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas necessitatibus, deserunt iusto vero ducimus suscipit minus est placeat nostrum laboriosam. Officia magni, molestiae quibusdam illum laudantium veniam nemo earum consectetur exercitationem. Sit error nesciunt, accusantium sunt veritatis, facere qui vero cumque doloremque excepturi labore, nam reprehenderit voluptas temporibus nostrum eveniet.', 155) }}
-                                        <a href="#">Continue Reading</a>
-                                    </div>
-                                </div>
-                            </article> --}}
                         </div>
                     </div>
                 </div>
@@ -215,7 +179,7 @@
         </main>
     </div>
 
-    <div class="ptc-footer ptc-footer--image">{{-- to add image background: ptc-footer--image --}}
+    <div class="ptc-footer">{{-- to add image background: ptc-footer--image --}}
         <div class="ptc-page">
             <footer class="topspace-0"> 
                 <div class="group">

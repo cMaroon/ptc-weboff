@@ -13023,10 +13023,13 @@ a:hover {
   align-items: center;
   -ms-flex-align: center;
   -webkit-box-align: center;
+  transition: all 80ms linear;
+  -webkit-transition: all 80ms linear;
 }
 
 .nav2__menu-link-main:hover {
-  color: set-text-hover-color(#27ae60);
+  opacity: .8;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -13265,6 +13268,7 @@ a:hover {
 }
 
 .ptc-welcome {
+  padding: 100px 0 280px;
   background-image: url(/images/welcome.jpg?4e88bfc7172c6a546490736eff8c4348);
   background-repeat: no-repeat;
   background-position: center center;
@@ -13274,6 +13278,19 @@ a:hover {
 
 .ptc-welcome article {
   z-index: 2;
+}
+
+.ptc-welcome article h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.ptc-welcome article blockquote {
+  text-align: center;
+  width: 480px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .ptc-welcome--overlay::after {
@@ -13294,13 +13311,15 @@ a:hover {
   z-index: 3;
 }
 
-.ptc-introblocks ul {
-  display: table;
-}
-
 .ptc-introblocks ul,
 .ptc-introblocks ul li {
   border: none;
+}
+
+.ptc-introblocks ul {
+  margin: 0;
+  padding: 0;
+  display: table;
 }
 
 .ptc-introblocks li {
@@ -13342,16 +13361,6 @@ a:hover {
   margin: 5px auto;
   border-radius: 10px;
   background-color: #fff;
-}
-
-.ptc-introblocks li:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  z-index: 999;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: all 80ms linear;
-  -webkit-transition: all 80ms linear;
 }
 
 .ptc-introblocks li:nth-child(1) {
@@ -13524,8 +13533,8 @@ a:hover {
 
 .ptc-footer__text,
 .ptc-footer__list li a {
-  -webkit-transition: none;
-  transition: none;
+  -webkit-transition: all 80ms linear;
+  transition: all 80ms linear;
   color: rgba(0, 0, 0, 0.6);
   font-size: 13px !important;
   font-weight: 400;
@@ -13534,12 +13543,15 @@ a:hover {
 
 .ptc-footer__list li {
   text-transform: capitalize;
-  margin-bottom: 1.2rem;
+  margin-bottom: .6rem;
 }
 
-.ptc-footer__list a:hover {
-  -webkit-transition: none;
-  transition: none;
+.ptc-footer__list li a {
+  -webkit-transition: all 80ms linear;
+  transition: all 80ms linear;
+}
+
+.ptc-footer__list li a:hover {
   text-decoration: none;
   color: #27ae60;
 }
