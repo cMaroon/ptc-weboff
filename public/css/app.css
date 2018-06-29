@@ -13026,7 +13026,7 @@ a:hover {
 }
 
 .nav2__menu-link-main:hover {
-  color: #f6f6f6;
+  color: set-text-hover-color(#27ae60);
   text-decoration: none;
 }
 
