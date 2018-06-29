@@ -325,9 +325,12 @@
                 align-items: center;
                 -ms-flex-align: center;
                 -webkit-box-align: center;
+                transition: $all-transition;
+                -webkit-transition: $all-transition;
 
                 &:hover {
-                    color: set-text-hover-color($page-primary-color);
+                    opacity: .8;
+                    color: set-text-color($page-primary-color);
                     text-decoration: none;
                 }
             }

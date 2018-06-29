@@ -2,19 +2,19 @@
 
 @section('content')
     <div class="wrapper ptc-welcome ptc-welcome--overlay">
-        <div id="pageintro" class="ptc-page"> 
+        <div class="ptc-page"> 
             <article>
-                <h2 class="heading underline center font-weight-light"><span class="text-secondary font-weight-bold">OUR</span>VISION</h2>
-                <blockquote class="font-weight-light">
+                <h1><span class="text-secondary font-weight-bold">OUR</span>VISION</h1>
+                <blockquote>
                     <i class="fas fa-quote-left"></i> The Pateros Technological College envisions itself as an institution of higher learning which is strongly committed to the holistic development of the students to improve their lives in particular and the society in general. <i class="fas fa-quote-right"></i>
                 </blockquote>
             </article>
-        </div>{{-- #pageintro --}}
+        </div>
     </div>
 
     <div class="wrapper">
         <div class="ptc-page ptc-introblocks"> 
-            <ul class="nospace">
+            <ul>
                 <li>
                     <article>
                         <img src="{{ asset('images/logo_bsit.png') }}" alt="PTC-BSIT-LOGO">
@@ -81,7 +81,7 @@
                                     </article>
                                 @endforeach
                             @endif
-                            {{-- <article class="ptc-card__list-news-image">
+                            <article class="ptc-card__list-news-image">
                                 <div class="ptc-card__list-news-image--img" style="background-image: url('{{ asset('images/announcements/no-image.png') }}');"></div>
                                 <div class="ptc-card__list-news-inner">
                                     <a href="#" class="ptc-card__list-news-title">{{ str_limit('Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error sunt cupiditate quibusdam sint officia non illo eaque omnis et iste numquam debitis, nostrum quo ducimus, tenetur porro mollitia culpa.', 30) }}</a>
@@ -116,7 +116,7 @@
                                         <a href="#">Continue Reading</a>
                                     </div>
                                 </div>
-                            </article> --}}
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -215,7 +215,7 @@
         </main>
     </div>
 
-    <div class="ptc-footer ptc-footer--image">{{-- to add image background: ptc-footer--image --}}
+    <div class="ptc-footer">{{-- to add image background: ptc-footer--image --}}
         <div class="ptc-page">
             <footer class="topspace-0"> 
                 <div class="group">

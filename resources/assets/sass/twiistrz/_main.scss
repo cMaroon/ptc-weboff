@@ -100,6 +100,7 @@
     }
 
     &-welcome {
+        padding: 100px 0 280px;
         background-image: $image-welcome;
         background-repeat: no-repeat;
         background-position: center center;
@@ -108,6 +109,19 @@
 
         article {
             z-index: 2;
+
+            h1 {
+                text-align: center;
+                font-size: 36px;
+                font-weight: 100;
+            }
+
+            blockquote {
+                text-align: center;
+                width: 480px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
         }
 
         &--overlay {
@@ -130,12 +144,14 @@
         margin: -180px auto 0;
         z-index: 3;
 
-        ul {
-            display: table;
-        }
-
         ul, ul li {
             border: none;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            display: table;
         }
 
         li {
@@ -178,14 +194,6 @@
                         background-color: set-text-color($page-dark-color);
                     }
                 }
-            }
-
-            &:hover {
-                transform: scale(1.02); 
-                z-index: 999;
-                box-shadow: 0 10px 20px $hsla-dark-20;
-                transition: $all-transition;
-                -webkit-transition: $all-transition;
             }
 
             &:nth-child(1) { background-color: $introblocks-1; }
@@ -349,7 +357,7 @@
         }
 
         &__text, &__list li a {
-            transition: none;
+            transition: $all-transition;
             color: $hsla-dark-60;
             font-size: 13px !important;
             font-weight: 400;
@@ -359,14 +367,15 @@
         &__list {
             li {
                 text-transform: capitalize;
-                margin-bottom: 1.2rem;
-            }
+                margin-bottom: .6rem;
 
-            a {
-                &:hover {
-                    transition: none;
-                    text-decoration: none;
-                    color: $page-primary-color;
+                a {
+                    transition: $all-transition;
+    
+                    &:hover {
+                        text-decoration: none;
+                        color: $page-primary-color;
+                    }
                 }
             }
         }
