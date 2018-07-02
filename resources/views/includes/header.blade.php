@@ -13,14 +13,12 @@
                     <p>(XXX) 642-8896 / (XXX) 640-5389</p>
                 </div>
                 <div class="ptc-header__content-social">
-                    <ul>
-                        <li><a href="#"><img src="{{ asset('images/facebook.png') }}" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="{{ asset('images/google-plus.png') }}" alt="Google Plus"></a></li>
-                        <li><a href="#"><img src="{{ asset('images/instagram.png') }}" alt="Instagram"></a></li>
-                        <li><a href="#"><img src="{{ asset('images/line.png') }}" alt="Line"></a></li>
-                        <li><a href="#"><img src="{{ asset('images/linkedin.png') }}" alt="LinkedIn"></a></li>
-                        <li><a href="#"><img src="{{ asset('images/twitter.png') }}" alt="Twitter"></a></li>
-                        <li><a href="#"><img src="{{ asset('images/youtube.png') }}" alt="YouTube"></a></li>
+                    <ul data-toggle="tooltip" data-placement="left" data-title="Follow us">
+                        <li><a href="#"><img src="{{ asset('images/social/icon_facebook.svg') }}" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="{{ asset('images/social/icon_gplus.svg') }}" alt="Google Plus"></a></li>
+                        <li><a href="#"><img src="{{ asset('images/social/icon_instagram.svg') }}" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="{{ asset('images/social/icon_twitter.svg') }}" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="{{ asset('images/social/icon_youtube.svg') }}" alt="YouTube"></a></li>
                     </ul>
                 </div>
             </div>
