@@ -11,9 +11,8 @@
 <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
 <link rel="icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"> 
+<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
 
 {{-- Scripts --}}
 <script src="{{ asset('js/app.js') }}"></script>

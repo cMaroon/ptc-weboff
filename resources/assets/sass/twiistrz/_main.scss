@@ -149,26 +149,32 @@
         ul {
             margin: 0;
             padding: 0;
-            display: table;
+            display: flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            box-shadow: 0 2px 5px 0 $hsla-dark-30;
         }
 
         li {
-            cursor: default;
-            position: relative;
-            display: table-cell;
             background-image: $image-introblocks !important;
             background-size: cover;
             background-position: center center;
+            cursor: default;
+            position: relative;
+            display: flex;
+            align-items: center;
             height: 400px;
+            min-height: 400px;
             width: 20%;
-            padding: 7% 2% 3%;
             text-align: center;
+            padding: 62px 12px 0;
 
             article {
+                height: 100%;
+
                 img {
                     width: auto;
-                    max-width: 100%;
-                    height: auto;
+                    height: 120px;
                     margin: 0;
                     padding: 0;
                     border: none;
@@ -178,7 +184,7 @@
                 }
 
                 h4 {
-                    color: set-text-color($page-dark-color);
+                    color: $page-light-color;
                     font-size: 14px;
                     margin-bottom: 10px;
 
@@ -189,15 +195,19 @@
                         height: 3px;
                         margin: 5px auto;
                         border-radius: $border-radius-lg;
-                        background-color: set-text-color($page-dark-color);
+                        background-color: $page-light-color;
                     }
                 }
             }
 
             &:nth-child(1) { background-color: $introblocks-1; }
+
             &:nth-child(2) { background-color: $introblocks-2; }
+
             &:nth-child(3) { background-color: $introblocks-3; }
+
             &:nth-child(4) { background-color: $introblocks-4; }
+
             &:nth-child(5) { background-color: $introblocks-5; }
         }
     }

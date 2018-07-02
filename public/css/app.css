@@ -13267,7 +13267,7 @@ a:hover {
 
 .ptc-welcome {
   padding: 100px 0 280px;
-  background-image: url(/images/bg_hero.png?ea238b65871a2cf35980334c30c1978a);
+  background-image: url(/images/bg_hero.svg?2a114ce928aae94dceafc2bbbc1dc272);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13318,26 +13318,40 @@ a:hover {
 .ptc-introblocks ul {
   margin: 0;
   padding: 0;
-  display: table;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-flex;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .ptc-introblocks li {
-  cursor: default;
-  position: relative;
-  display: table-cell;
   background-image: url(/images/bg_introblock.png?68bcbf328360a94f5cdaf2567a8c6a70) !important;
   background-size: cover;
   background-position: center center;
+  cursor: default;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 400px;
+  min-height: 400px;
   width: 20%;
-  padding: 7% 2% 3%;
   text-align: center;
+  padding: 62px 12px 0;
+}
+
+.ptc-introblocks li article {
+  height: 100%;
 }
 
 .ptc-introblocks li article img {
   width: auto;
-  max-width: 100%;
-  height: auto;
+  height: 120px;
   margin: 0;
   padding: 0;
   border: none;
