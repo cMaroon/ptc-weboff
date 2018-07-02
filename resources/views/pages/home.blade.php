@@ -1,10 +1,10 @@
 @extends('master', ['title' => 'Home'])
 
 @section('content')
-    <div class="wrapper ptc-welcome ptc-welcome--overlay">
+    <div class="wrapper ptc-welcome">
         <div class="ptc-page"> 
             <article>
-                <h1><span class="text-secondary font-weight-bold">OUR</span>VISION</h1>
+                <h1><span class="font-weight-bold">OUR</span>VISION</h1>
                 <blockquote>
                     <i class="fas fa-quote-left"></i> The Pateros Technological College envisions itself as an institution of higher learning which is strongly committed to the holistic development of the students to improve their lives in particular and the society in general. <i class="fas fa-quote-right"></i>
                 </blockquote>
@@ -179,7 +179,7 @@
         </main>
     </div>
 
-    <div class="ptc-footer">{{-- to add image background: ptc-footer--image --}}
+    <div class="ptc-footer ptc-footer--image">{{-- to add image background: ptc-footer--image --}}
         <div class="ptc-page">
             <footer class="topspace-0"> 
                 <div class="group">
