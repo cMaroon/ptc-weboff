@@ -10,7 +10,7 @@
                     <h1>{{ config('app.name', 'PATEROS TECHNOLOGICAL COLLEGE') }}</h1>
                     <p>Broadening Academic Horizons: 2018 and Beyond</p>
                     <p>College St., Sto. Rosario-Kanluran Pateros, Metro Manila, 1620</p>
-                    <p>(XXX) 642-8896 / (XXX) 640-5389</p>
+                    <p>(+632) 642-8896 / (+632) 640-5389</p>
                 </div>
                 <div class="ptc-header__content-social">
                     <ul data-toggle="tooltip" data-placement="left" data-title="Follow us">
