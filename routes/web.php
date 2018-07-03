@@ -7,7 +7,9 @@
 */
 // Route::get('/', 'PagesController@landing')->name('landing');
 Route::get('/', 'PagesController@home')->name('home');
-Route::get('/ptc-admin/adminDashboard/dashboard', 'PagesController@dashboard')->name('dashboard');
+
+Auth::routes();
+Route::get('/ptc-admin/adminDashboard/dashboard', 'DashboardController@dashboard')->name('dashboard');
 
 
 /*
@@ -16,4 +18,7 @@ Route::get('/ptc-admin/adminDashboard/dashboard', 'PagesController@dashboard')->
 |--------------------------------------------------------------------------
 */
 Route::resource('posts','PostsController');
+
+
+
 

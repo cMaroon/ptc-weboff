@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/ptc-admin/adminDashboard/dashboard';
 
     /**
      * Create a new controller instance.
