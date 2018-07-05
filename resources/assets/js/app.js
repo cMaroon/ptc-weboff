@@ -92,6 +92,12 @@ $(document).scroll(function () {
 });
 
 /**
+ * Fullscreen
+ * 
+ **/
+
+
+/**
  * Display Stop
  */
 function stop() {
