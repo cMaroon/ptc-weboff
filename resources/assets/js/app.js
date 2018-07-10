@@ -91,10 +91,6 @@ $(document).scroll(function () {
     }
 });
 
-/**
- * Fullscreen
- * 
- **/
 
 
 /**
