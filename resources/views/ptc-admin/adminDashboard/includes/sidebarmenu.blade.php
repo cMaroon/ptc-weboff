@@ -17,10 +17,11 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                  <li><a href="{{ route('dashboard') }}"><i class="fa fa-tasks"></i> Dashboard <span class="label label-success pull-right">Monitoring</span></a></li>
+                  <li><a><i class="fa fa-users"></i> Records <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="index.html">Add Employee</a></li>
-                      <li><a href="index2.html">Add Student</a></li>
+                      <li><a href="{{ route('addStudent') }}">Add Student</a></li>
                       <li><a href="index3.html">View Report</a></li>
                     </ul>
                   </li>

@@ -25,4 +25,11 @@ class DashboardController extends Controller
     {
         return view('ptc-admin.adminDashboard.dashboard');
     }
+
+    public function addStudent()
+    {
+        return view('ptc-admin.adminDashboard.addStudent');
+    }
+
+
 }

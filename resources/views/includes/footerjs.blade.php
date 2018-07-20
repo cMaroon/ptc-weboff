@@ -35,6 +35,8 @@
     <!-- bootstrap-daterangepicker -->
     <script src="{{asset('/vendors/moment/min/moment.min.js')}}"></script>
     <script src="{{asset('/vendors/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="{{asset('/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js')}}"></script>
 
     <!-- Custom Theme Scripts -->
     <script src="{{asset('/js/backend_js/custom.min.js')}}"></script>
