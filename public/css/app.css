@@ -13588,6 +13588,15 @@ a:hover {
   clear: both;
 }
 
+.ptc-qrptc {
+  padding: 100px 0 280px;
+  background-image: url(/images/qr_ptc.png?b9d57381a32dfd036391e8cf0a4438ef);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+}
+
 .text-primary {
   color: #27ae60 !important;
 }

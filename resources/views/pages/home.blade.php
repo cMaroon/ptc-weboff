@@ -23,7 +23,7 @@
                     </article>
                 </li>
 
-                <li>
+                <li> 
                     <article>
                         <img src="{{ asset('images/logo_bsoa.png') }}" alt="PTC-BSOA-LOGO">
                         <h4>Bachelor of Science in Office Administration</h4>
@@ -41,7 +41,7 @@
                 <li>
                     <article>
                         <img src="{{ asset('images/logo_tesda.png') }}" alt="PTC-TESDA-LOGO">
-                        <h4>Institute of Technical Resources and Entreprenurial Development</h4>
+                        <h4>Institute of Technical Resources and Entrepreneurial Development</h4>
                     </article>
                 </li>
 
@@ -196,8 +196,9 @@
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Security</a></li>
                         </ul>
+
+                        <img class="ptc-qrptc ptc-qrptc" alt="PTC-QRCODE">
                     </div>
 
                     <div class="one_quarter">
