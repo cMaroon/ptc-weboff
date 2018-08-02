@@ -406,13 +406,20 @@
         }
 
     }
+
     &-qrptc {
-        padding: 100px 0 280px;
-        background-image: $image-qrptc;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        color: set-text-color($hsla-dark-50);
+        width: 35px;
+        height: 35px;
+        
+            &--image {
+                background-image: $image-qrptc;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 0;
+                height: 83px;
+                width: 100px;
+            }
     
         }
 }

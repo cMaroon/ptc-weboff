@@ -13589,12 +13589,18 @@ a:hover {
 }
 
 .ptc-qrptc {
-  padding: 100px 0 280px;
-  background-image: url(/images/qr_ptc.png?b9d57381a32dfd036391e8cf0a4438ef);
+  width: 35px;
+  height: 35px;
+}
+
+.ptc-qrptc--image {
+  background-image: url(/images/qr_ptc.png?92c9e25958686bd30694df3ffc44d0b0);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  color: #fff;
+  border-radius: 0;
+  height: 83px;
+  width: 100px;
 }
 
 .text-primary {

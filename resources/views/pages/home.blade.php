@@ -198,7 +198,7 @@
                             <li><a href="#">Terms of Use</a></li>
                         </ul>
 
-                        <img class="ptc-qrptc ptc-qrptc" alt="PTC-QRCODE">
+                        <a href="/images/qr_ptc.png?299857bd87f9318948665bafa8a65975" target="_blank"><div class="ptc-qrptc ptc-qrptc--image"></div></a>
                     </div>
 
                     <div class="one_quarter">
