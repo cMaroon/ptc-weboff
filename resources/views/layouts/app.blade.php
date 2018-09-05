@@ -10,7 +10,7 @@
         @elseif (isset($titlePrepend))
             {{ $currentSection . __(' · ') . $titlePrepend }}
         @endif
-        {{ __(' | ') . config('app.name', 'PTC-Official') }}
+        {{ __(' | ') . config('app.name', 'Pateros Technological College') }}
     </title>
 
     

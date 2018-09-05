@@ -40,7 +40,7 @@
 
                 <li>
                     <article>
-                        <img src="{{ asset('images/logo_tesda.png') }}" alt="PTC-TESDA-LOGO">
+                        <img src="{{ asset('images/logo_itred.png') }}" alt="PTC-TESDA-LOGO">
                         <h4>Institute of Technical Resources and Entrepreneurial Development</h4>
                     </article>
                 </li>
@@ -61,7 +61,7 @@
                 <div class="col-lg-8">
                     <div class="ptc-card">
                         <div class="ptc-card__header">
-                            <h2 class="ptc-card__header-title">News and Announcements</h2>
+                            <h1 class="ptc-card__header-title">News and Announcements</h1>
                             <a href="#" class="ptc-card__header-link">View All <i class="fas fa-angle-double-right"></i></a>
                         </div>
                         <div class="ptc-card__body">
@@ -88,21 +88,21 @@
                 <div class="col-lg-4">
                     <div class="ptc-card">
                         <div class="ptc-card__header">
-                            <h2 class="ptc-card__header-title">Presidents Corner</h2>
+                            <h1 class="ptc-card__header-title">Presidents Corner</h1>
                             <a href="#" class="ptc-card__header-link">Read More <i class="fas fa-angle-double-right"></i></a>
                         </div>
                         <div class="ptc-card__body">
                             <img class="ptc-card__image mb-3" src="{{ asset('images/ptc-staff/dr-arcega.png') }}">
                             <h3 class="ptc-card__president text-center mb-0">
                                 ANALIZA F. ARCEGA, DEM
-                                <span>The PTC President</span>
+                                <span><b>The PTC President</b></span>
                             </h3>
                         </div>
                     </div>
 
                     <div class="ptc-card">
                         <div class="ptc-card__header">
-                            <h2 class="ptc-card__header-title">Event Calendar</h2>
+                            <h1 class="ptc-card__header-title">Event Calendar</h1>
                             <a href="#" class="ptc-card__header-link">View All <i class="fas fa-angle-double-right"></i></a>
                         </div>
                         <div class="ptc-card__body">
@@ -190,7 +190,7 @@
                     <div class="one_half first">
                         <h6 class="ptc-footer__title mb-1">Pateros Technological College</h6>
                         <p class="ptc-footer__text">Ang Pateros Technological College ay isang kolehiyong paaralan na matatagpuan sa bayan ng Pateros, Kalakhang Maynila, Pilipinas. Ito ay itinatag noong 1993</p>
-                        <p class="ptc-footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ullam quis, quidem quaerat porro necessitatibus soluta velit eaque facilis atque id. Nostrum explicabo ipsam voluptates asperiores quis iure eius iste, laudantium qui tempore harum delectus quos tempora accusamus incidunt porro facilis magnam! Consequatur nisi incidunt error veniam, doloremque assumenda libero!</p>
+                        <p class="ptc-footer__text">Pateros Technological College Web-based Integrated School Information System</p>
 
                         <ul class="nospace inline pushright ptc-footer__list">
                             <li><a href="#">Privacy Policy</a></li>

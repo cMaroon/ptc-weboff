@@ -7,7 +7,7 @@
                     <img src="{{ asset('images/logo_ptc.png') }}" alt="PTC-LOGO">
                 </div>
                 <div class="ptc-header__content-body">
-                    <h1>{{ config('app.name', 'PATEROS TECHNOLOGICAL COLLEGE') }}</h1>
+                    <h1>PATEROS TECHNOLOGICAL COLLEGE</h1>
                     <p>Broadening Academic Horizons: 2018 and Beyond</p>
                     <p>College St., Sto. Rosario-Kanluran Pateros, Metro Manila, 1620</p>
                     <p>(+632) 642-8896 / (+632) 640-5389</p>
