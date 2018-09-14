@@ -17,7 +17,15 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="{{ route('dashboard') }}"><i class="fa fa-tasks"></i> Dashboard <span class="label label-success pull-right">Monitoring</span></a></li>
+
+                  <li><a><i class="fa fa-tasks"></i> Monitoring <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                      <li><a href="index.html">Recent Activities</a></li>
+                      <li><a href="index3.html">Quick Reports</a></li>
+                    </ul>
+                  </li>
+
                   <li><a><i class="fa fa-users"></i> Records <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="index.html">Add Employee</a></li>
@@ -25,7 +33,16 @@
                       <li><a href="index3.html">View Report</a></li>
                     </ul>
                   </li>
-                 
+
+                  <li><a><i class="fa fa-file-text"></i> Manage Posts <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="{{ route('newsPosts') }}">News</a></li>
+                      <li><a href="{{ route('announcementPosts') }}">Announcements</a></li>
+                    </ul>
+                  </li> 
+                  
+
+                </ul>
               </div>
 
             </div>

@@ -31,5 +31,13 @@ class DashboardController extends Controller
         return view('ptc-admin.adminDashboard.addStudent');
     }
 
+    public function newsPosts()
+    {
+        return view('ptc-admin.adminDashboard.newsPosts');
+    }
 
+    public function announcementPosts()
+    {
+        return view('ptc-admin.adminDashboard.announcementPosts');
+    }
 }
