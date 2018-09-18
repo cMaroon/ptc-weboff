@@ -72,7 +72,7 @@
                                         <div class="ptc-card__list-news-inner">
                                             <a href="{{ route('home') }}" class="ptc-card__list-news-title" data-toggle="tooltip" data-placement="top" data-title="{{ $post->title }}">{{ str_limit($post->title, 30) }}</a>
                                             <div class="ptc-card__list-news-date">{{ \Carbon\Carbon::createFromTimeStamp(strtotime($post->created_at))->diffForHumans() }}</div>
-                                            <div class="ptc-card__list-news-tags"><span class="badge {{$post->category->color}}">{{$post->category->title}}{{--News--}}</span></div>
+                                            <div class="ptc-card__list-news-tags"><span class="badge {{$post->category->color}}">{{$post->category->title}}</span></div>
                                             <div class="ptc-card__list-news-summary">
                                                 {{ str_limit($post->body, 155) }}
                                                 <a href="{{ route('home') }}">Continue Reading</a>
