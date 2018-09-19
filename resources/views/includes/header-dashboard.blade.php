@@ -23,6 +23,8 @@
     <!-- Custom Theme Style -->
     <link href="{{asset('/css/backend_css/custom.min.css')}}" rel="stylesheet">
 
+    
+
     <script>
        /**
  * Fullscreen

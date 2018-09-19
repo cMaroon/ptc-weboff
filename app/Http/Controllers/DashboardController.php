@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class DashboardController extends Controller
 {
@@ -31,13 +32,20 @@ class DashboardController extends Controller
         return view('ptc-admin.adminDashboard.addStudent');
     }
 
-    public function newsPosts()
+    public function managePosts()
     {
-        return view('ptc-admin.adminDashboard.newsPosts');
+        $posts = Post::all();
+        return view('ptc-admin.adminDashboard.managePosts')->with('posts',$posts);
+       
     }
 
-    public function announcementPosts()
+    public function createNews()
     {
-        return view('ptc-admin.adminDashboard.announcementPosts');
+        return view('ptc-admin.adminDashboard.createNews');
+    }
+
+    public function CreateAnnouncement()
+    {
+        return view('ptc-admin.adminDashboard.createAnnouncement');
     }
 }

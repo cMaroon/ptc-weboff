@@ -14,11 +14,11 @@ class PostsController extends Controller
      */
     public function index()
     {
-        // $posts = Post::all();
+       
         // $posts = DB::select('SELECT * FROM posts');
         // $posts = Post::ordereBy('title','desc')->take(1)->get();
         // $posts = Post::orderBy('title','desc')->get();
-        // return view('posts.index')->with('posts',$posts);
+        
     }
     /**
      * Show the form for creating a new resource.
@@ -27,7 +27,8 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return('ptc-admin.adminDashboard.createNews');
+        return('ptc-admin.adminDashboard.createAnnouncement');
     }
 
     /**
@@ -49,8 +50,9 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-         $post = Post::find($id);
-         //return view('posts.show')->with('post',$post);
+       return Post::find($id);
+        //  $post = Post::find($id);
+        //  return view('ptc-admin.adminDashboard.managePosts.show')->with('post',$post);
     }
 
     /**

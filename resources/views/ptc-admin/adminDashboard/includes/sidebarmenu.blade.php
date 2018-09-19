@@ -34,12 +34,7 @@
                     </ul>
                   </li>
 
-                  <li><a><i class="fa fa-file-text"></i> Manage Posts <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="{{ route('newsPosts') }}">News</a></li>
-                      <li><a href="{{ route('announcementPosts') }}">Announcements</a></li>
-                    </ul>
-                  </li> 
+                  <li><a href="{{ route('managePosts') }}"><i class="fa fa-file-text"></i> Manage Posts </a></li> 
                   
 
                 </ul>
