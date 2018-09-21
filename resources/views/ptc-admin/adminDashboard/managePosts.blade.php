@@ -49,8 +49,9 @@
                       <div class="x_panel">
                         <div class="x_title">
                           <h3>
-                              <a href="/posts/{{$post->id}}">{{$post->title}}
-                              <span class="badge {{$post->category->color}}">{{$post->category->title}}</span>
+                            <span class="badge bg-blue" style="color:white">{{$post->category->title}}</span>  
+                            <a href="/posts/{{$post->id}}">{{$post->title}}
+                              
                           </h3>
                           <small>Written on {{$post->created_at}}</small>
                         </div>

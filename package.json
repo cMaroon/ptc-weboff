@@ -20,6 +20,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "gentelella": "^1.4.0"
+        "gentelella": "^1.4.0",
+        "smartwizard": "^4.3.1"
     }
 }
