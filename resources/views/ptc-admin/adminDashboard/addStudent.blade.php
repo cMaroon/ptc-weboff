@@ -43,7 +43,7 @@
                             <!-- SmartWizard html -->
                             <div id="smartwizard">
                                 <ul>
-                                    <li><a href="#step-1">Step 1<br /><small>Email Address</small></a></li>
+                                    <li><a href="#step-1">Step 1<br /><small>Student's Directory</small></a></li>
                                     <li><a href="#step-2">Step 2<br /><small>Name</small></a></li>
                                     <li><a href="#step-3">Step 3<br /><small>Address</small></a></li>
                                     <li><a href="#step-4">Step 4<br /><small>Terms and Conditions</small></a></li>
@@ -51,11 +51,21 @@
                     
                                 <div>
                                     <div id="step-1">
-                                        <h2>Your Email Address</h2>
+                                        <h2>Student's Directory</h2>
                                         <div id="form-step-0" role="form" data-toggle="validator">
                                             <div class="form-group">
+
+                                                
+                                                <input type="text" class="form-control" name="surname" id="surname" placeholder="Surname" required>
+                                                <div class="help-block with-errors"></div>
                                                 <label for="email">Email address:</label>
                                                 <input type="email" class="form-control" name="email" id="email" placeholder="Write your email address" required>
+
+
+
+
+
+
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
