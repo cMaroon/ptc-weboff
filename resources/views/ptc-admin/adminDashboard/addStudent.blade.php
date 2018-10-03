@@ -38,82 +38,71 @@
       
                           <div class="container">
                             <br />
-                            <form action="#" id="myForm" role="form" data-toggle="validator" method="post" accept-charset="utf-8">
-                    
-                            <!-- SmartWizard html -->
-                            <div id="smartwizard">
-                                <ul>
-                                    <li><a href="#step-1">Step 1<br /><small>Student's Directory</small></a></li>
-                                    <li><a href="#step-2">Step 2<br /><small>Name</small></a></li>
-                                    <li><a href="#step-3">Step 3<br /><small>Address</small></a></li>
-                                    <li><a href="#step-4">Step 4<br /><small>Terms and Conditions</small></a></li>
-                                </ul>
-                    
-                                <div>
-                                    <div id="step-1">
-                                        <h2>Student's Directory</h2>
-                                        <div id="form-step-0" role="form" data-toggle="validator">
-                                            <div class="form-group">
-
-                                                
-                                                <input type="text" class="form-control" name="surname" id="surname" placeholder="Surname" required>
-                                                <div class="help-block with-errors"></div>
-                                                <label for="email">Email address:</label>
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="Write your email address" required>
-
-
-
-
-
-
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                    
-                                    </div>
-                                    <div id="step-2">
-                                        <h2>Your Name</h2>
-                                        <div id="form-step-1" role="form" data-toggle="validator">
-                                            <div class="form-group">
-                                                <label for="name">Name:</label>
-                                                <input type="text" class="form-control" name="name" id="email" placeholder="Write your name" required>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="step-3">
-                                        <h2>Your Address</h2>
-                                        <div id="form-step-2" role="form" data-toggle="validator">
-                                            <div class="form-group">
-                                                <label for="address">Address</label>
-                                                <textarea class="form-control" name="address" id="address" rows="3" placeholder="Write your address..." required></textarea>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="step-4" class="">
-                                        <h2>Terms and Conditions</h2>
-                                        <p>
-                                            Terms and conditions: Keep your smile :)
-                                        </p>
-                                        <div id="form-step-3" role="form" data-toggle="validator">
-                                            <div class="form-group">
-                                                <label for="terms">I agree with the T&C</label>
-                                                <input type="checkbox" id="terms" data-error="Please accept the Terms and Conditions" required>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-                    
-                    
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            </form>
+                            
+                            <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
+                              @csrf
+      
+                              <div class="form-group row">
+                                  <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+      
+                                  <div class="col-md-6">
+                                      <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+      
+                                      @if ($errors->has('name'))
+                                          <span class="invalid-feedback" role="alert">
+                                              <strong>{{ $errors->first('name') }}</strong>
+                                          </span>
+                                      @endif
+                                  </div>
+                              </div>
+      
+                              <div class="form-group row">
+                                  <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+      
+                                  <div class="col-md-6">
+                                      <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+      
+                                      @if ($errors->has('email'))
+                                          <span class="invalid-feedback" role="alert">
+                                              <strong>{{ $errors->first('email') }}</strong>
+                                          </span>
+                                      @endif
+                                  </div>
+                              </div>
+      
+                              <div class="form-group row">
+                                  <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+      
+                                  <div class="col-md-6">
+                                      <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+      
+                                      @if ($errors->has('password'))
+                                          <span class="invalid-feedback" role="alert">
+                                              <strong>{{ $errors->first('password') }}</strong>
+                                          </span>
+                                      @endif
+                                  </div>
+                              </div>
+      
+                              <div class="form-group row">
+                                  <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+      
+                                  <div class="col-md-6">
+                                      <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                  </div>
+                              </div>
+      
+                              <div class="form-group row mb-0">
+                                  <div class="col-md-6 offset-md-4">
+                                      <button type="submit" class="btn btn-primary">
+                                          {{ __('Next Page') }}
+                                      </button>
+                                  </div>
+                              </div>
+                          </form>
                     
                         </div>
 
-                            <!-- End of SmartWizard-->
       
                         </div>
                       </div>
