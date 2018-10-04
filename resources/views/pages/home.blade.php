@@ -197,8 +197,9 @@
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="#">Terms of Use</a></li>
                         </ul>
-
+                        <center>
                         <a href="/images/qr_ptc.png?299857bd87f9318948665bafa8a65975" target="_blank"><div class="ptc-qrptc ptc-qrptc--image"></div></a>
+                        </center>
                     </div>
 
                     <div class="one_quarter">

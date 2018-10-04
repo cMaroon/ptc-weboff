@@ -7,6 +7,7 @@
 */
 // Route::get('/', 'PagesController@landing')->name('landing');
 Route::get('/', 'PagesController@home')->name('home');
+Route::get('/collegeapplication', 'PagesController@collegeapplication')->name('collegeapplication');
 
 Auth::routes();
 Route::get('/ptc-admin/adminDashboard/dashboard', 'DashboardController@dashboard')->name('dashboard');

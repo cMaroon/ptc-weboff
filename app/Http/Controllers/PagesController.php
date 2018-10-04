@@ -13,6 +13,11 @@ class PagesController extends Controller
         return view('pages.home')->with('posts' , Post::orderBy('created_at','desc')->paginate(5));
     }
 
+    public function collegeapplication()
+    {
+        return view('pages.collegeapplication');
+    }
+
     // public function dashboard()
     // {
     //     return view('ptc-admin.adminDashboard.dashboard');

@@ -110,7 +110,7 @@
             "submenu": {
                 "college": {
                     "name": "College Application",
-                    "url": "home"
+                    "url": "collegeapplication"
                 },
                 "shs": {
                     "name": "Senior High School Application",
