@@ -383,7 +383,7 @@ input:focus, textarea:focus, *:required:focus{border-color:$fui-emerald;}
 /* Tables + Comments */
 table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D7D7D7;}
 #comments input:focus, #comments textarea:focus, #comments *:required:focus{border-color:$fui-emerald;}
-th{color:#FFFFFF; background-color:#373737;}
+th{color:#FFFFFF; background-color:#27ae60;}
 tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
 tr:nth-child(odd), #comments li:nth-child(odd){color:inherit; background-color:#F7F7F7;}
 table a, #comments a{background-color:inherit;}

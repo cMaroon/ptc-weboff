@@ -11109,7 +11109,6 @@ input,
 textarea,
 select,
 button {
-  display: block;
   resize: none;
   outline: none;
   color: inherit;
@@ -12391,7 +12390,7 @@ td,
 
 th {
   color: #FFFFFF;
-  background-color: #373737;
+  background-color: #27ae60;
 }
 
 tr,

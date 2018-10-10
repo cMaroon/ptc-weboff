@@ -7,6 +7,7 @@
 require('./jquery.min');
 // require('./jquery-ui.min');
 require('./bootstrap');
+require('./bootstrap-datepicker.min')
 
 // What are these? 3RD party js can broke the website 
 // functionality use it at your own risk
