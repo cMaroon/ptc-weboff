@@ -4,52 +4,110 @@
         <div class="panel panel-default">
             <div class="panel-heading"><h5><b>Programs</b></h5></div>
                 <div class="panel-body">
-                     <!-- Courses -->
-                        <div class="radio">
-                            <label>
-                            <input type="radio" checked="" value="ABA" id="optionsRadios1" name="optionsRadios"> ABA - Associate in Business Administration
-                            </label>
+                     <!-- Programs -->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" checked="" value="ABA" id="program1" name="optionsProgram"> ABA - Associate in Business Administration
+                                </label>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="COA" id="program2" name="optionsProgram"> COA - Certificate in Office Administration
+                                </label>
+                            </div>
                         </div>
-                        <div class="radio">
-                            <label>
-                            <input type="radio" value="COA" id="optionsRadios2" name="optionsRadios"> COA - Certificate in Office Administration
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                            <input type="radio" value="CCS" id="optionsRadios3" name="optionsRadios"> CCS - Certificate in Computer Science
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                            <input type="radio" value="CHRM" id="optionsRadios4" name="optionsRadios"> CHRM - Certificate in Hotel and Restaurant Management
-                            </label>
-                        </div>                       
-                        <div class="radio">
-                            <label>
-                            <input type="radio" value="BSIT" id="optionsRadios5" name="optionsRadios"> BSIT - Bachelor of Science in Information Technology
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                            <input type="radio" value="BSOA" id="optionsRadios6" name="optionsRadios"> BSOA - Bachelor of Science in Office Administration
-                            </label>
-                        </div>   
-                        <div class="radio">
-                            <label>
-                            <input type="radio" value="BSIT-EXEC" id="optionsRadios7" name="optionsRadios"> BSIT - Bachelor of Science in Information Technology (Executive Class)
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                            <input type="radio" value="BSOA-EXEC" id="optionsRadios8" name="optionsRadios"> BSOA - Bachelor of Science in Office Administration (Executive Class)
-                            </label>
-                        </div>     
-                      
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="CCS" id="program3" name="optionsProgram"> CCS - Certificate in Computer Science
+                                </label>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="CHRM" id="program4" name="optionsProgram"> CHRM - Certificate in Hotel and Restaurant Management
+                                </label>                            
+                            </div>
+                        </div>                     
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="BSIT" id="program5" name="optionsProgram"> BSIT - Bachelor of Science in Information Technology
+                                </label>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="BSIT-EXEC" id="program6" name="optionsProgram"> Bachelor of Science in Information Technology (<a href="#">Executive Class</a>) 
+                                </label>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="BSOA" id="program7" name="optionsProgram"> BSOA - Bachelor of Science in Office Administration
+                                </label>  
+                            </div>
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="BSOA-EXEC" id="program8" name="optionsProgram"> Bachelor of Science in Office Administration (<a href="#">Executive Class</a>)
+                                </label>                            
+                            </div>
+                        </div>                     
                 </div>
         </div>
     </div>
-
+<br>
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5><b>Types of Scholarship</b></h5></div>
+                <div class="panel-body">
+                     <!-- Scholarship -->
+                     <div class="row">
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="brgyscholarship" id="scholarship1" name="optionsScholarship"> Barangay Scholarship (<a href="">requirements</a>)
+                                </label>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="acadscholarship" id="scholarship2" name="optionsScholarship"> Academic Scholarship (<a href="">requirements</a>)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="gadscholarship" id="scholarship3" name="optionsScholarship"> GAD - Women in Sports Scholarship (<a href="">requirements</a>)
+                                </label>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="mayorscholarship" id="scholarship4" name="optionsScholarship"> Mayor Lani - Taguig Scholarship (<a href="">requirements</a>)
+                                </label>                            
+                            </div>
+                        </div>                     
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="chedscholarship" id="scholarship5" name="optionsScholarship"> CHED Tulong Dulong Scholarship (<a href="">requirements</a>)
+                                </label>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="entrancescholarship" id="scholarship6" name="optionsScholarship"> Entrance Scholarship (<a href="">requirements</a>)
+                                </label>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>
+                                <input type="radio" value="BSOA" id="scholarship7" name="optionsScholarship"> Executive Municipal Scholarship Ordinance (<a href="">requirements</a>)
+                                </label>  
+                            </div>
+                        </div>    
+                </div>
+        </div>
+    </div>
 <br>
 
     <div class="col-lg-12">
