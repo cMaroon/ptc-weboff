@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Category;
+use App\Admission;
 
 class PagesController extends Controller
 {
@@ -18,6 +19,7 @@ class PagesController extends Controller
         return view('pages.collegeapplication');
     }
 
+ 
     // public function dashboard()
     // {
     //     return view('ptc-admin.adminDashboard.dashboard');

@@ -12,7 +12,9 @@
                             
                         </div>
                         <div class="ptc-card__body">
-                            @include('includes.admission')   
+                        {!! Form::open(['action'=> 'AdmissionController@store','method'=>'POST'])!!}
+                            @include('includes.admission')
+                        {!! Form::close() !!}   
                         </div>
                     </div>
                 </div>
