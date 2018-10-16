@@ -16,6 +16,7 @@ class PagesController extends Controller
 
     public function collegeapplication()
     {
+        
         return view('pages.collegeapplication');
     }
 

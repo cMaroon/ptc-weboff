@@ -6,7 +6,14 @@
                 <div class="panel-body">
                      <!-- Programs -->
                         <div class="row">
-                                <input type="text" class="form-control" id="admission_refno" name="admission_refno" value="123213213" maxlength="100" required="">
+                               <?php $refno = str_random(4).date('Y').str_random(3); ?>
+                    
+                            
+                            
+                                {{$refno}}
+                                <input type="hidden" class="form-control" id="admission_refno" name="admission_refno" value="{{$refno}}" maxlength="100" required="">
+                                
+                                    
                             <div class="col-sm-6">
                                 <label>
                                 <input type="radio" checked="" value="ABA" id="program1" name="optionsProgram"> ABA - Associate in Business Administration
