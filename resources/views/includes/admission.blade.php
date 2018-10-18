@@ -6,11 +6,8 @@
                 <div class="panel-body">
                      <!-- Programs -->
                         <div class="row">
-                               <?php $refno = str_random(4).date('Y').str_random(3); ?>
-                    
-                            
-                            
-                                {{$refno}}
+                               <?php $refno = strtoupper(str_random(4).date('Y').str_random(3)); ?>
+
                                 <input type="hidden" class="form-control" id="admission_refno" name="admission_refno" value="{{$refno}}" maxlength="100" required="">
                                 
                                     
@@ -45,7 +42,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="BSIT-EXEC" id="program6" name="optionsProgram"> Bachelor of Science in Information Technology (<a href="#">Executive Class</a>) 
+                                <input type="radio" value="BSIT-EXEC" id="program6" name="optionsProgram"> Bachelor of Science in Information Technology (<a href="#" data-toggle="modal" data-target="#execreqModal">Executive Class</a>) 
                                 </label>
                             </div>
                         </div> 
@@ -57,62 +54,81 @@
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="BSOA-EXEC" id="program8" name="optionsProgram"> Bachelor of Science in Office Administration (<a href="#">Executive Class</a>)
+                                <input type="radio" value="BSOA-EXEC" id="program8" name="optionsProgram"> Bachelor of Science in Office Administration (<a href="#" data-toggle="modal" data-target="#execreqModal">Executive Class</a>)
                                 </label>                            
                             </div>
-                        </div>                     
+                        </div> 
+                        @component('includes.modal_exec')
+                            @slot('modal_title')
+                                Executive Class Requirements
+                            @endslot
+
+                            @slot('modal_body')
+                                Sample Body
+                            @endslot
+                        @endcomponent                       
                 </div>
         </div>
     </div>
 <br>
     <div class="col-lg-12">
         <div class="panel panel-default">
-            <div class="panel-heading"><h5><b>Types of Scholarship</b></h5></div>
+            <div class="panel-heading"><h5><b>Types of Scholarship</b> <small>(<a href="#" data-toggle="modal" data-target="#scholarshipModal">requirements</a>)</small></h5></div>
+            @component('includes.modal')
+                @slot('modal_title')
+                    Scholarship Requirements
+                @endslot
+
+                @slot('modal_body')
+                    @include('includes.scholarshipreq')
+                @endslot
+            @endcomponent
                 <div class="panel-body">
                      <!-- Scholarship -->
                      <div class="row">
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="brgyscholarship" id="scholarship1" name="optionsScholarship"> Barangay Scholarship (<a href="">requirements</a>)
+                                <input type="radio" value="brgyscholarship" id="scholarship1" name="optionsScholarship"> Barangay Scholarship 
                                 </label>
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="acadscholarship" id="scholarship2" name="optionsScholarship"> Academic Scholarship (<a href="">requirements</a>)
+                                <input type="radio" value="acadscholarship" id="scholarship2" name="optionsScholarship"> Academic Scholarship
+                                
                                 </label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="gadscholarship" id="scholarship3" name="optionsScholarship"> GAD - Women in Sports Scholarship (<a href="">requirements</a>)
+                                <input type="radio" value="gadscholarship" id="scholarship3" name="optionsScholarship"> GAD - Women in Sports Scholarship
                                 </label>
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="mayorscholarship" id="scholarship4" name="optionsScholarship"> Mayor Lani - Taguig Scholarship (<a href="">requirements</a>)
+                                <input type="radio" value="mayorscholarship" id="scholarship4" name="optionsScholarship"> Mayor Lani - Taguig Scholarship
                                 </label>                            
                             </div>
                         </div>                     
                         <div class="row">
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="chedscholarship" id="scholarship5" name="optionsScholarship"> CHED Tulong Dulong Scholarship (<a href="">requirements</a>)
+                                <input type="radio" value="chedscholarship" id="scholarship5" name="optionsScholarship"> CHED Tulong Dulong Scholarship
                                 </label>
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="entrancescholarship" id="scholarship6" name="optionsScholarship"> Entrance Scholarship (<a href="">requirements</a>)
+                                <input type="radio" value="entrancescholarship" id="scholarship6" name="optionsScholarship"> Entrance Scholarship
                                 </label>
                             </div>
                         </div> 
                         <div class="row">
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="BSOA" id="scholarship7" name="optionsScholarship"> Executive Municipal Scholarship Ordinance (<a href="">requirements</a>)
+                                <input type="radio" value="BSOA" id="scholarship7" name="optionsScholarship"> Executive Municipal Scholarship Ordinance 
                                 </label>  
                             </div>
-                        </div>    
+                        </div> 
                 </div>
         </div>
     </div>
@@ -149,11 +165,11 @@
             <div class="panel-heading"><h5><b>Student's Information</b></h5></div>
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-sm-3">First Name: *<input type="text" class="form-control" id="fname" name="fname" placeholder="Given Name" maxlength="100" required=""></div>
+                        <div class="col-sm-3">First Name: *<input type="text" class="form-control" id="fname" name="fname" placeholder="Given Name" maxlength="100" required="" value="test"></div>
                         <div class="col-sm-3">Middle Name: <input type="text" class="form-control" id="mname" name="mname" placeholder="Middle Name" maxlength="100" ></div>
                         <div class="col-sm-3">Last Name: *<input type="text" class="form-control" id="lname" name="lname" placeholder="Surname" maxlength="100" required=""></div>
                         <div class="col-sm-3">Suffix Name: <input type="text" class="form-control" id="sname" name="sname" maxlength="3" placeholder="(e.g. Jr.)"></div>
-                    </div>         
+                    </div>     
                     <br>
                     <div class="row">
                         <div class="col-sm-4">Sex: *
@@ -276,9 +292,9 @@
             <div class="panel-heading"><h5><b>Parents / Guardian's Information</b></h5></div>
                 <div class="panel-body">
 
-                    <div class="col-md-12">
+                    {{-- <div class="col-md-12">
                         <div id="txt-selectguardian" style="display:none;" class="alert alert-danger" role="alert">Please select at least one.<br></div>
-                    </div>
+                    </div> --}}
 
                     <div class="row">
                         <div class="col-md-12"><br><p><b>Father's Information</b></p></div>

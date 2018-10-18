@@ -70,7 +70,8 @@ class CreateStudentAdmissionTable extends Migration
             $table->string('gu_sname',4)->nullable();
             $table->integer('gu_mobno')->nullable();
             $table->string('gu_email',100)->nullable();
-            $table->string('gu_occu',100)->nullable();                 
+            $table->string('gu_occu',100)->nullable();
+            $table->string('gu_rel',100)->nullable();                 
             $table->timestamps();
         });
     }
