@@ -318,7 +318,7 @@
                     </div>
                     <br>
                     <div class="row">
-                            <div class="col-md-4">Mobile Number<input type="number" class="form-control" name="motherscontact" id="motherscontact" placeholder="09XXxxxxxxx" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, &#39;&#39;); this.value = this.value.replace(/(\..*)\./g, &#39;$1&#39;);" onkeydown="limitText(this,11);" onkeyup="limitText(this,11);" title="11 characters only"></div>
+                            <div class="col-md-4">Mobile Number<input type="text" class="form-control" name="motherscontact" id="motherscontact" placeholder="09XXxxxxxxx" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, &#39;&#39;); this.value = this.value.replace(/(\..*)\./g, &#39;$1&#39;);" onkeydown="limitText(this,11);" onkeyup="limitText(this,11);" title="11 characters only"></div>
                             <div class="col-md-4">Email<input type="email" class="form-control" name="mothersemail" id="mothersemail" placeholder="example@domain.com" maxlength="100"></div>
                             <div class="col-md-4">Occupation<input type="text" class="form-control" name="mothersoccupation" id="mothersoccupation" placeholder="Occupation" maxlength="100"></div>     
                     </div>
@@ -332,7 +332,7 @@
                     </div>
                     <br>
                     <div class="row">
-                            <div class="col-md-3">Mobile Number<input type="number" class="form-control" name="guardianscontact" id="guardianscontact" placeholder="09XXxxxxxxx" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, &#39;&#39;); this.value = this.value.replace(/(\..*)\./g, &#39;$1&#39;);" onkeydown="limitText(this,11);" onkeyup="limitText(this,11);" title="11 characters only"></div>
+                            <div class="col-md-3">Mobile Number<input type="text" class="form-control" name="guardianscontact" id="guardianscontact" placeholder="09XXxxxxxxx" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, &#39;&#39;); this.value = this.value.replace(/(\..*)\./g, &#39;$1&#39;);" onkeydown="limitText(this,11);" onkeyup="limitText(this,11);" title="11 characters only"></div>
                             <div class="col-md-3">Email<input type="email" class="form-control" name="guardiansemail" id="guardiansemail" placeholder="example@domain.com" maxlength="100"></div>
                             <div class="col-md-3">Occupation<input type="text" class="form-control" name="guardiansoccupation" id="guardiansoccupation" placeholder="Occupation" maxlength="100"></div>
                             <div class="col-md-3">Relationship<input type="text" class="form-control" name="guardiansrelationship" id="guardiansrelationship" placeholder="Relationship" maxlength="100"></div>   
