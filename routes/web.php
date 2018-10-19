@@ -19,7 +19,7 @@ Route::get('/ptc-admin/adminDashboard/createAnnouncement', 'DashboardController@
                                                     
 /*
 |--------------------------------------------------------------------------
-| Posts Routes
+| Resource Routes
 |--------------------------------------------------------------------------
 */
 Route::resource('posts','PostsController');

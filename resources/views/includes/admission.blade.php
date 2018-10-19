@@ -8,53 +8,62 @@
                         <div class="row">
                                <?php $refno = strtoupper(str_random(4).date('Y').str_random(3)); ?>
 
-                                <input type="hidden" class="form-control" id="admission_refno" name="admission_refno" value="{{$refno}}" maxlength="100" required="">
-                                
+                                {{Form::hidden('admission_refno',$refno,array('class' => 'form-control','id' => 'admission_refno','maxlength' => '100','required'))}}
                                     
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" checked="" value="ABA" id="program1" name="optionsProgram"> ABA - Associate in Business Administration
+                                    {{Form::radio('optionsProgram', 'ABA',true,array('id'=>'program1'))}} 
+                                    ABA - Associate in Business Administration
                                 </label>
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="COA" id="program2" name="optionsProgram"> COA - Certificate in Office Administration
+                                    {{Form::radio('optionsProgram', 'COA',false,array('id'=>'program2'))}}
+                                     COA - Certificate in Office Administration
                                 </label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="CCS" id="program3" name="optionsProgram"> CCS - Certificate in Computer Science
+                                    {{Form::radio('optionsProgram', 'CCS',false,array('id'=>'program3'))}}
+                                    CCS - Certificate in Computer Science
                                 </label>
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="CHRM" id="program4" name="optionsProgram"> CHRM - Certificate in Hotel and Restaurant Management
+                                    {{Form::radio('optionsProgram', 'CHRM',false,array('id'=>'program4'))}}
+                                    CHRM - Certificate in Hotel and Restaurant Management
                                 </label>                            
                             </div>
                         </div>                     
                         <div class="row">
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="BSIT" id="program5" name="optionsProgram"> BSIT - Bachelor of Science in Information Technology
+                                    {{Form::radio('optionsProgram', 'BSIT',false,array('id'=>'program5'))}}
+                                    BSIT - Bachelor of Science in Information Technology
                                 </label>
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="BSIT-EXEC" id="program6" name="optionsProgram"> Bachelor of Science in Information Technology (<a href="#" data-toggle="modal" data-target="#execreqModal">Executive Class</a>) 
+                                    {{Form::radio('optionsProgram', 'BSIT-EXEC',false,array('id'=>'program6'))}}
+                                    Bachelor of Science in Information Technology 
+                                    (<a href="#" data-toggle="modal" data-target="#execreqModal">Executive Class</a>) 
                                 </label>
                             </div>
                         </div> 
                         <div class="row">
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="BSOA" id="program7" name="optionsProgram"> BSOA - Bachelor of Science in Office Administration
+                                    {{Form::radio('optionsProgram', 'BSOA',false,array('id'=>'program7'))}}
+                                    BSOA - Bachelor of Science in Office Administration
                                 </label>  
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="BSOA-EXEC" id="program8" name="optionsProgram"> Bachelor of Science in Office Administration (<a href="#" data-toggle="modal" data-target="#execreqModal">Executive Class</a>)
+                                    {{Form::radio('optionsProgram', 'BSOA-EXEC',false,array('id'=>'program8'))}}
+                                    Bachelor of Science in Office Administration 
+                                    (<a href="#" data-toggle="modal" data-target="#execreqModal">Executive Class</a>)
                                 </label>                            
                             </div>
                         </div> 
@@ -64,7 +73,7 @@
                             @endslot
 
                             @slot('modal_body')
-                                Sample Body
+                                @include('includes.executivereq')
                             @endslot
                         @endcomponent                       
                 </div>
@@ -88,44 +97,50 @@
                      <div class="row">
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="brgyscholarship" id="scholarship1" name="optionsScholarship"> Barangay Scholarship 
+                                    {{Form::radio('optionsScholarship', 'brgyscholarship',false,array('id'=>'scholarship1'))}}
+                                    Barangay Scholarship 
                                 </label>
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="acadscholarship" id="scholarship2" name="optionsScholarship"> Academic Scholarship
-                                
+                                    {{Form::radio('optionsScholarship', 'acadscholarship',false,array('id'=>'scholarship2'))}}
+                                    Academic Scholarship
                                 </label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="gadscholarship" id="scholarship3" name="optionsScholarship"> GAD - Women in Sports Scholarship
+                                    {{Form::radio('optionsScholarship', 'gadscholarship',false,array('id'=>'scholarship3'))}}
+                                    GAD - Women in Sports Scholarship
                                 </label>
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="mayorscholarship" id="scholarship4" name="optionsScholarship"> Mayor Lani - Taguig Scholarship
+                                    {{Form::radio('optionsScholarship', 'mayorscholarship',false,array('id'=>'scholarship4'))}}
+                                    Mayor Lani - Taguig Scholarship
                                 </label>                            
                             </div>
                         </div>                     
                         <div class="row">
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="chedscholarship" id="scholarship5" name="optionsScholarship"> CHED Tulong Dulong Scholarship
+                                    {{Form::radio('optionsScholarship', 'chedscholarship',false,array('id'=>'scholarship5'))}}
+                                    CHED Tulong Dulong Scholarship
                                 </label>
                             </div>
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="entrancescholarship" id="scholarship6" name="optionsScholarship"> Entrance Scholarship
+                                    {{Form::radio('optionsScholarship', 'entrancescholarship',false,array('id'=>'scholarship6'))}}
+                                    Entrance Scholarship
                                 </label>
                             </div>
                         </div> 
                         <div class="row">
                             <div class="col-sm-6">
                                 <label>
-                                <input type="radio" value="BSOA" id="scholarship7" name="optionsScholarship"> Executive Municipal Scholarship Ordinance 
+                                    {{Form::radio('optionsScholarship', 'execsholarship',false,array('id'=>'scholarship7'))}}
+                                    Executive Municipal Scholarship Ordinance 
                                 </label>  
                             </div>
                         </div> 
@@ -165,7 +180,7 @@
             <div class="panel-heading"><h5><b>Student's Information</b></h5></div>
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-sm-3">First Name: *<input type="text" class="form-control" id="fname" name="fname" placeholder="Given Name" maxlength="100" required="" value="test"></div>
+                        <div class="col-sm-3">First Name: *<input type="text" class="form-control" id="fname" name="fname" placeholder="Given Name" maxlength="100" required=""></div>
                         <div class="col-sm-3">Middle Name: <input type="text" class="form-control" id="mname" name="mname" placeholder="Middle Name" maxlength="100" ></div>
                         <div class="col-sm-3">Last Name: *<input type="text" class="form-control" id="lname" name="lname" placeholder="Surname" maxlength="100" required=""></div>
                         <div class="col-sm-3">Suffix Name: <input type="text" class="form-control" id="sname" name="sname" maxlength="3" placeholder="(e.g. Jr.)"></div>
@@ -341,7 +356,7 @@
         </div>
     </div>
         <br/>
-        <input class="btn btn-success" type="submit" value="Submit">
+        <input class="btn btn-success" type="submit" name="submit" value="Submit">
         <script>
                 $(document).ready(function(){
                         $("input#checker").bind("click",function(o){

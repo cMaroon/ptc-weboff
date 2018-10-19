@@ -36,15 +36,7 @@ $links = json_decode(file_get_contents($path), true);
                         </a>
                 
                         <ul class="dropdown-menu" role="menu" aria-labelledby="expand-{{ $link['name'] }}">
-                            <li>
-                                <a class="navbar-mobile-item__submenu" href="{{ route($link['url']) }}" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
-                                    <span class="navbar-mobile-item__icon">
-                                        <i class="fas fa-chevron-right"></i>
-                                    </span>
-            
-                                    {{ $link['name'] }}
-                                </a>
-                            </li>
+
                             @foreach ($link['submenu'] as $sublink)
                                 <li>
                                     <a class="navbar-mobile-item__submenu" href="{{ route($sublink['url']) }}" data-toggle="collapse" data-target=".js-navbar-mobile--menu">

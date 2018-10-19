@@ -96,7 +96,24 @@ class AdmissionController extends Controller
                 $admission->gu_rel = $request->input('guardiansrelationship');
         
                 $admission->save();
-        
+
+
+                $studentname =  $request->input('lname').' '.$request->input('sname') .', '. $request->input('fname') .' '.$request->input('mname');
+                
+                $request->session()->flash('message_title','Congratulation! ');
+                $request->session()->flash('message_name',$studentname);
+                $request->session()->flash('message_body_line1',' You have successfully filled up your admission form. Your reference number is ');
+                $request->session()->flash('message_refno', $request->input('admission_refno'));
+                $request->session()->flash('message_note','Please copy your reference number and present it to the PTC admission officer.');
+
+                $msg = [
+                    'message' => 'Congratulation! '. $studentname .
+                    '<br> You have successfully filled up your admission form.
+                    <br> Your reference number is <br>'.$request->input('admission_refno').'<br>
+                    Please copy your reference number and present it to the PTC admission officer.',
+                ];
+
+               
                 return redirect('collegeapplication');
     }
 
