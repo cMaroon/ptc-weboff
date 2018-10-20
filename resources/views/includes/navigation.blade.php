@@ -24,7 +24,7 @@ $links = json_decode(file_get_contents($path), true);
             <ul class="nav navbar-nav navbar-mobile__menu-items">
                 @foreach ($links['navigation'] as $link)
                     <li class="navbar-mobile-item dropdown">
-                        <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="{{ route($link['url']) }}">
+                        <a data-toggle="dropdown" class="navbar-mobile-item__main dropdown-toggle" href="#">
                             <span class="navbar-mobile-item__icon navbar-mobile-item__icon--main navbar-mobile-item__icon--closed">
                                 <i class="fas fa-chevron-right"></i>
                             </span>
@@ -39,7 +39,8 @@ $links = json_decode(file_get_contents($path), true);
 
                             @foreach ($link['submenu'] as $sublink)
                                 <li>
-                                    <a class="navbar-mobile-item__submenu" href="{{ route($sublink['url']) }}" data-toggle="collapse" data-target=".js-navbar-mobile--menu">
+                                    <a class="navbar-mobile-item__submenu" href="{{ route($sublink['url']) }}" >
+                                        {{-- data-toggle="collapse" data-target=".js-navbar-mobile--menu" --}}
                                         <span class="navbar-mobile-item__icon">
                                             <i class="fas fa-chevron-right"></i>
                                         </span>
@@ -62,7 +63,7 @@ $links = json_decode(file_get_contents($path), true);
             <div class="nav2__colgroup nav2__colgroup--menu">
                 @foreach ($links['navigation'] as $link)
                     <div class="nav2__col nav2__col--menu">
-                        <a href="{{ route($link['url']) }}" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-{{ $link['name'] }}">
+                        <a href="#" class="nav2__menu-link-main js-menu" data-menu-target="nav2-menu-popup-{{ $link['name'] }}">
                             <span class="nav2__menu-link-main-text">
                                 {{ $link['name'] }}
                                 {{-- Active --}}
@@ -79,6 +80,10 @@ $links = json_decode(file_get_contents($path), true);
                                         {{ $sublink['name'] }}
                                     </a>
                                 @endforeach
+
+                                <router-link to="/enrollment" class="simple-menu__item">
+                                        Testing
+                                </router-link>
                             </div>
                         </div>
                     </div>

@@ -1,8 +1,10 @@
 @extends('master', ['title' => 'Home'])
 
 @section('content')
+
     <div class="wrapper ptc-welcome">
         <div class="ptc-page"> 
+                
             <article>
                 <h1><span class="font-weight-bold">OUR</span>VISION</h1>
                 <blockquote>

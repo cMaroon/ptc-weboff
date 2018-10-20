@@ -189,6 +189,16 @@
                     "url": "home"
                 }
             }
+        },
+        "enrollment": {
+            "name": "Enrollment",
+            "submenu":{
+                "college":{
+                    "name": "College Registration",
+                    "url": "home"
+                }
+            }
         }
+
     }
 }

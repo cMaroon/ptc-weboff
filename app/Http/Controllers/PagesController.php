@@ -11,6 +11,7 @@ class PagesController extends Controller
 {
     public function home()
     {   
+        // return view('pages.enrollment');
         return view('pages.home')->with('posts' , Post::orderBy('created_at','desc')->paginate(5));
     }
 
@@ -19,6 +20,7 @@ class PagesController extends Controller
         
         return view('pages.collegeapplication');
     }
+    
 
  
     // public function dashboard()

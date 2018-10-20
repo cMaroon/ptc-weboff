@@ -18,6 +18,28 @@ require('./bootstrap-datepicker.min')
 
 // window.Vue = require('vue');
 
+// import VueRouter from 'vue-router'
+// Vue.use(VueRouter)
+
+// let routes = [
+//     { path: '/enrollment', component: require('./components/Enrollment.vue') }
+//     // { path: '/bar', component: Bar }
+//   ]
+
+// const router = new VueRouter({
+// routes // short for `routes: routes`
+// })
+
+// Vue.component('example-component',require('./components/ExampleComponent.vue'));
+
+// var app = new Vue({
+//     el: '#app',
+//     data:{
+//         message: 'Hello Vue'
+//     }
+    
+// });
+
 $(document).ready(function() {
     /**
      * Console Log
