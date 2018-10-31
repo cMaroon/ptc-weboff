@@ -170,7 +170,7 @@
         },
         "dashboard": {
             "name": "Dashboard",
-            "url": "dashboard",
+            "url": "home",
             "submenu": {
                 "settings": {
                     "name": "Settings",
@@ -178,7 +178,7 @@
                 },
                 "login": {
                     "name": "Login",
-                    "url": "home"
+                    "url": "dashboard"
                 },
                 "register": {
                     "name": "Register",
