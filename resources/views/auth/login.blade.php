@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Admin Dashboard'])
+@extends('layouts.app', ['title' => 'Admin Login'])
 
 
 @section('content')
@@ -7,39 +7,35 @@
     <img src="{{ asset('images/logo_ptc.png') }}" alt="PTC-LOGO">
       <h1 class="h3 mb-3 font-weight-normal">PTC Admin Login</h1>
       @csrf
-
+     
       <div class="form-group row">
       
-          <div class="col-md">
-              <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' 
-: '' }}" placeholder="Email Address" name="email" value="{{ old('email') }}" required autofocus>
-              @if ($errors->has('email'))
-                  <span class="invalid-feedback" role="alert">
-                      <strong>{{ $errors->first('email') }}</strong>
-                  </span>
-              @endif
-          </div>
+        <div class="col-md">
+            <input 
+            id="id_num" 
+            placeholder="ID Number" 
+            type="id_num" 
+            class="form-control{{ $errors->has('id_num') ? ' is-invalid' : '' }}" 
+            name="id_num" 
+            value="{{ $errors->has('id_num') ? old('id_num') : '' }}" 
+            required
+            autocomplete="off"
+            {{ $errors->has('id_num') ? 'autofocus' : '' }}
+            >
+
+        </div>
       </div>
+
       <div class="form-group row">
             <div class="col-md">
-                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' 
-
-is-invalid' : '' }}" placeholder="Password" name="password" required>
-
-                @if ($errors->has('password'))
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('password') }}</strong>
-                    </span>
-                @endif
+                <input id="password" type="password" class="form-control{{ $errors->has('password') ? 'is-invalid' : '' }}" placeholder="Password" name="password" required>
             </div>
         </div>
         <div class="form-group row">
                 <div class="col-md offset-md-4">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ 
-
-__('Remember Me') }}
+                    <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{__('Remember Me') }}
                         </label>
                     </div>
                 </div>
@@ -60,7 +56,19 @@ __('Remember Me') }}
                         <p class="fl_right">Developed and maintained by <span class="text-primary" data-toggle="tooltip" data-placement="top" title="PTC-Information Technology System collaboration with Emmanuel See Te">PTC-ITS</span></p>
                 </div>
     </form>
+     
 
-   
+    @if ($errors->has('id_num'))
+
+            <script>
+            swal({
+            type: 'warning',
+            title: 'Login Error!',
+            text: 'Your credentials do not match our records.',
+            showConfirmButton: false,
+            timer: 3000
+            })
+        </script>
+  @endif
 
 @endsection

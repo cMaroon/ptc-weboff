@@ -11,7 +11,7 @@
         @elseif (isset($titlePrepend))
             {{ $currentSection . __(' · ') . $titlePrepend }}
         @endif
-        {{ __(' | ') . config('app.name', 'Pateros Technological College') }}
+       
     </title>
 </head>
 <body >
@@ -27,6 +27,8 @@
     </div>
     
     @yield('script')
+
+    
    
 </body>
 </html>

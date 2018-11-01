@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddSuperadmin extends Migration
+class CreateAddSuperadminTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,18 +14,14 @@ class AddSuperadmin extends Migration
     public function up()
     {
         DB::table('users')->insert(array(
-            'role_id' => '1',
-            'name' => 'SuperAdmin',
-            'email' => 'superadmin@ptc-edu.ph',
+            'id_num' => 'superadmin01',
+            'name' => 'Super Admin',
+            'email' => 'itstaff.ptc@gmail.com',
             'password' => Hash::make('admin'),
-            'active' => '1',
             'created_at' => date('Y-m-d H:m:s'),
-            'updated_at' => date('Y-m-d H:m:s')
-
+            'updated_at' => date('Y-m-d H:m:s'),
+            'usertype' => 'superadmin',
         ));
-        DB::table('roles')
-            ->where('id', '1')
-            ->update(array('used_limit' => '1'));
     }
 
     /**
@@ -35,6 +31,6 @@ class AddSuperadmin extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('add_superadmin');
     }
 }

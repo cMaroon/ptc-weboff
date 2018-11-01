@@ -16,6 +16,8 @@
   <body class="nav-md">
     @yield('content')
 
+    @yield('script')
+
     @include('includes.footerjs')
   </body>
 </html>

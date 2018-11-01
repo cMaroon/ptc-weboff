@@ -13,7 +13,7 @@ class CreateStudentAdmissionTable extends Migration
      */
     public function up()
     {
-        Schema::connection('mysql2')->create('student_admission', function (Blueprint $table) {
+        Schema::create('student_admission', function (Blueprint $table) {
             $table->increments('id');
             $table->string('admission_refno',100)->unique();
             $table->string('fname',100)->nullable();

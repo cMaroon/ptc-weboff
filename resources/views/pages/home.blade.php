@@ -1,4 +1,4 @@
-@extends('master', ['title' => 'Home'])
+@extends('master', ['title' => 'Pateros Technological College'])
 
 @section('content')
 

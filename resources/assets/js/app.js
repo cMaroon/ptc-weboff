@@ -7,7 +7,8 @@
 require('./jquery.min');
 // require('./jquery-ui.min');
 require('./bootstrap');
-require('./bootstrap-datepicker.min')
+require('./bootstrap-datepicker.min');
+
 
 // What are these? 3RD party js can broke the website 
 // functionality use it at your own risk
@@ -113,8 +114,6 @@ $(document).scroll(function () {
         $('.go-to-top').removeClass('go-to-top__active');
     }
 });
-
-
 
 /**
  * Display Stop

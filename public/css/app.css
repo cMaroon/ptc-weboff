@@ -406,7 +406,6 @@ h1,
 h2,
 .h2 {
   font-size: 1.75rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 h3,
@@ -2259,11 +2258,6 @@ pre code {
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #999;
-  opacity: 1;
-}
-
-.form-control:-ms-input-placeholder {
   color: #999;
   opacity: 1;
 }
@@ -13266,7 +13260,7 @@ a:hover {
 
 .ptc-welcome {
   padding: 100px 0 280px;
-  background-image: url(/images/bg_hero.svg?2a114ce928aae94dceafc2bbbc1dc272);
+  background-image: url(/images/bg_hero.svg?8e15d1792eaa01e78d2e5e3d57bd84ab);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13524,7 +13518,7 @@ a:hover {
 }
 
 .ptc-footer--image {
-  background-image: url(/images/bg_footer.png?a6a2c72d85d72f191be8eb0074e92ec1);
+  background-image: url(/images/bg_footer.png?1c59f2986e676f891a522b020327fc40);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -13593,7 +13587,7 @@ a:hover {
 }
 
 .ptc-qrptc--image {
-  background-image: url(/images/qr_ptc.png?92c9e25958686bd30694df3ffc44d0b0);
+  background-image: url(/images/qr_ptc.png?6bc9ec9dbfa922a5625ce3115a98901e);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

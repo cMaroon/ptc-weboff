@@ -195,7 +195,7 @@
             "submenu":{
                 "college":{
                     "name": "College Registration",
-                    "url": "home"
+                    "url": "register"
                 }
             }
         }
