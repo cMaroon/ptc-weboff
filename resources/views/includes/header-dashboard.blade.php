@@ -18,6 +18,8 @@
     <link href="{{asset('/vendors/jqvmap/dist/jqvmap.min.css')}}" rel="stylesheet"/>
     <!-- bootstrap-daterangepicker -->
     <link href="{{asset('/vendors/bootstrap-daterangepicker/daterangepicker.css')}}" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="{{asset('/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css')}}" rel="stylesheet">
     <!-- SmartWizard CSS -->
     <link href="{{asset('vendors/techlab/smartwizard/dist/css/smart_wizard.css')}}" rel="stylesheet" type="text/css" /> 
     <!-- Optional SmartWizard theme -->
@@ -30,6 +32,7 @@
     <link href="{{asset('/vendors/pnotify/dist/pnotify.nonblock.css')}}" rel="stylesheet">
     <!-- Custom Theme Style -->
     <link href="{{asset('/css/backend_css/custom.min.css')}}" rel="stylesheet">
+    
 
     
 

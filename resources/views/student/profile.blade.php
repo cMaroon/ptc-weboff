@@ -20,31 +20,8 @@
         <!-- /top navigation -->
 
         <!-- page content -->
-        <div class="right_col" role="main">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="dashboard_graph">
-                      <div class="row justify-content-center">
-                          <div class="col-md-12">
-                              <h3> 404 Error Content Not Found </h3>
-                              <center>
-                                Profile
-                              </center>
-                              </div>
-                      </div>
-
-    
-                    
-    
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-    
-              </div>
-          
-                
-           
-        </div>
+        @include('student.includes.content')
+        
         <!-- /page content -->
 
         <!-- footer content -->
