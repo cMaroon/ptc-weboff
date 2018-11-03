@@ -30,7 +30,8 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/ptc-admin/adminDashboard/dashboard';
+
+    // protected $redirectTo = '/student/dashboard';
 
     /**
      * Create a new controller instance.

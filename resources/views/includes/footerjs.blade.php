@@ -65,6 +65,11 @@
     <script src="{{asset('/vendors/techlab/smartwizard/dist/js/jquery.smartWizard.min.js')}}"></script>
     <!-- SmartWizard Function -->
     <script src="{{asset('/vendors/techlab/smartwizard/dist/js/jquery.smartWizardFunction.js')}}"></script>
+    <script src="{{asset('vendors/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
+    <!-- PNotify -->
+    <script src="{{asset('/vendors/pnotify/dist/pnotify.js')}}"></script>
+    <script src="{{asset('/vendors/pnotify/dist/pnotify.buttons.js')}}"></script>
+    <script src="{{asset('/vendors/pnotify/dist/pnotify.nonblock.js')}}"></script>
 
     <!-- Custom Theme Scripts -->
     <script src="{{asset('/js/backend_js/custom.min.js')}}"></script>

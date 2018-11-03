@@ -22,7 +22,12 @@
     <link href="{{asset('vendors/techlab/smartwizard/dist/css/smart_wizard.css')}}" rel="stylesheet" type="text/css" /> 
     <!-- Optional SmartWizard theme -->
     <link href="{{asset('vendors/techlab/smartwizard/dist/css/smart_wizard_theme_dots.css')}}" rel="stylesheet" type="text/css" />
-
+    <!-- Sweet Alert 2 -->
+    <link href="{{asset('vendors/sweetalert2/dist/sweetalert2.min.css')}}" rel="stylesheet" >
+    <!-- PNotify -->
+    <link href="{{asset('/vendors/pnotify/dist/pnotify.css')}}" rel="stylesheet">
+    <link href="{{asset('/vendors/pnotify/dist/pnotify.buttons.css')}}" rel="stylesheet">
+    <link href="{{asset('/vendors/pnotify/dist/pnotify.nonblock.css')}}" rel="stylesheet">
     <!-- Custom Theme Style -->
     <link href="{{asset('/css/backend_css/custom.min.css')}}" rel="stylesheet">
 

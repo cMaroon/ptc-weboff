@@ -1,11 +1,11 @@
-@extends('layouts.app', ['title' => 'Admin Login'])
+@extends('layouts.app', ['title' => 'PTC Portal Login'])
 
 
 @section('content')
 
  <form class="form-signin" method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
     <img src="{{ asset('images/logo_ptc.png') }}" alt="PTC-LOGO">
-      <h1 class="h3 mb-3 font-weight-normal">PTC Admin Login</h1>
+      <h1 class="h3 mb-3 font-weight-normal">PTC Portal Login</h1>
       @csrf
      
       <div class="form-group row">
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="ptc-footer__copyright"> 
-                        <p class="fl_left">&copy; 2018 Pateros Technological College. All rights reserved </p>
+                        <p class="fl_left">&copy; 2018 Pateros Technological College. <br>All rights reserved </p>
                         <p class="fl_right">Developed and maintained by <span class="text-primary" data-toggle="tooltip" data-placement="top" title="PTC-Information Technology System collaboration with Emmanuel See Te">PTC-ITS</span></p>
                 </div>
     </form>

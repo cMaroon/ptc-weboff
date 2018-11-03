@@ -1,4 +1,4 @@
-
+<?php set_time_limit(0);?>
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>

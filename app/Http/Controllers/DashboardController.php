@@ -24,7 +24,18 @@ class DashboardController extends Controller
      */
     public function dashboard()
     {
-        return view('ptc-admin.adminDashboard.dashboard');
+        if (\Gate::allows('isSuperAdmin')) {
+            return view('ptc-admin.adminDashboard.dashboard');
+        } elseif (\Gate::allows('isStudent')){
+            return view('student.dashboard');
+
+        }
+
+    }
+
+    public function studentprofile()
+    {
+        return view('student.profile');
     }
 
     public function addStudent()

@@ -1,4 +1,4 @@
-@extends('master-dashboard', ['title' => 'Dashboard'])
+@extends('master-dashboard', ['title' => 'Admin Portal'])
 
 @section('content')
 <div class="container body">
@@ -10,13 +10,13 @@
              @include('ptc-admin.adminDashboard.includes.sidebarmenu')
 
             <!-- /menu footer buttons -->
-            @include('ptc-admin.adminDashboard.includes.menufooter')
+            @include('includes.menufooter')
             <!-- /menu footer buttons -->
           </div>
         </div>
 
         <!-- top navigation -->
-        @include('ptc-admin.adminDashboard.includes.topnavigation')
+        @include('includes.topnavigation')
         <!-- /top navigation -->
 
         <!-- page content -->
@@ -714,7 +714,7 @@
         <!-- /page content -->
 
         <!-- footer content -->
-        @include('ptc-admin.adminDashboard.includes.footer')
+        @include('includes.footer-dashboard')
         <!-- /footer content -->
       </div>
     </div>

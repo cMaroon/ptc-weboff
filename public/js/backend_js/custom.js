@@ -1843,15 +1843,15 @@ if (typeof NProgress != 'undefined') {
 			console.log('init_PNotify');
 			
 			new PNotify({
-			  title: "PNotify",
+			  title: "PTC Portal",
 			  type: "info",
-			  text: "Welcome. Try hovering over me. You can click things behind me, because I'm non-blocking.",
+			  text: "Welcome to PTC Portal. This portal is a beta versions.",
 			  nonblock: {
 				  nonblock: true
 			  },
 			  addclass: 'dark',
 			  styling: 'bootstrap3',
-			  hide: false,
+			  // hide: false,
 			  before_close: function(PNotify) {
 				PNotify.update({
 				  title: PNotify.options.title + " - Enjoy your Stay",
