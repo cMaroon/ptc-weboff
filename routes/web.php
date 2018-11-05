@@ -11,7 +11,13 @@ Route::get('/collegeapplication', 'PagesController@collegeapplication')->name('c
 
 
 Auth::routes();
+/*
+|--------------------------------------------------------------------------
+| Admin Routes
+|--------------------------------------------------------------------------
+*/
 Route::get('/online', 'DashboardController@dashboard')->name('dashboard');
+Route::get('/online/admin/student-list','DashboardController@studentlist')->name('studentlist');
 Route::get('/ptc-admin/adminDashboard/addStudent', 'DashboardController@addStudent')->name('addStudent');
 Route::get('/ptc-admin/adminDashboard/managePosts', 'DashboardController@managePosts')->name('managePosts');
 Route::get('/ptc-admin/adminDashboard/createNews', 'DashboardController@createNews')->name('createNews');

@@ -33,6 +33,10 @@ class DashboardController extends Controller
 
     }
 
+    public function studentlist()
+    {
+        return view('ptc-admin.adminDashboard.studentlist');
+    }
     public function studentprofile()
     {
         return view('student.profile');

@@ -21,7 +21,7 @@
                   <li><a><i class="fa fa-tasks" ></i> Monitoring <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                      <li><a href="{{ route('dashboard') }}">Student List</a></li>
+                      <li><a href="{{ route('studentlist') }}">Student List</a></li>
                       <li><a href="index.html">Recent Activities</a></li>
                       <li><a href="index3.html">Quick Reports</a></li>
                     </ul>

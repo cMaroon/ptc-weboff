@@ -1,81 +1,73 @@
 <div class="right_col" role="main">
-    <div class="">
-      
+    <div class="clearfix">  
       <div class="clearfix"></div>
-
-<div class="row">
+    <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="x_panel">
-            <div class="x_title">
-              <h2>Student Infromation </h2>
-              <div class="clearfix"></div>
-            </div>
-            <div class="x_content">
-            {{-- Avatar --}}
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="col-lg-12">
-                    <div class="panel panel-default" style="background-image:url({{ asset('images/hero.png') }}); background-position:center center; background-size:cover;">
-                        <div class="panel-body">
-                            <div class="row">
-                                
-                                            <div class="col-sm-8">
-                  <h1 style="color:white">Student Name</h1>
-                <br>
-                  <ul class="list-unstyled user_data">
-                    <li>
-                        <h3 style="color:white">
-                        <i class="fa fa-university user-profile-icon"></i> 
-                        ID Number : M2018-0001
-                        </h3>
-                      
-                    </li>
-  
-                    <li>
-                        <h3 style="color:white">
-                      <i class="fa fa-briefcase user-profile-icon"></i> 
-                      Year level and Section : 1st Year - A
-                        </h3>
-                    </li>
-  
-                    <li>
-                        <h3 style="color:white">
-                      <i class="fa fa-list-alt user-profile-icon"></i> 
-                      Program : BSIT
-                        </h3>
-                    </li>
-  
-                    <li>
-                        <h3 style="color:white">
-                      <i class="fa fa-envelope user-profile-icon"></i> 
-                      Email : test@gmail.com
-                        </h3>
-
-                    </li>
-                  </ul>
-                                            </div>
-                    <div class="col-sm-4">
-                            <div class="profile_img">
-                            <div id="crop-avatar">
-                                <!-- Current avatar -->
-                                <img class="img-responsive avatar-view" src="{{ asset('images/no-image.png') }}" alt="Avatar" >
-                            </div>
-                            </div>
-                    </div>
-  
-                            </div>
-                    </div>
-            </div>
-                    </div>
-            </div>
-              
-              
-            {{-- End of Avatar --}}
-
-            {{-- Scholarship --}}
-              <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Student Infromation </h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                {{-- Avatar --}}
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="col-lg-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading"><h5><b>Types of Scholarship</b> <small>(<a href="#" data-toggle="modal" data-target="#scholarshipModal">requirements</a>)</small></h5></div>
+                        <div class="panel panel-default" style="background-image:url({{ asset('images/hero.png') }}); background-position:center center; background-size:cover;">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h1 style="color:white">Student Name</h1>
+                                        <br>
+                                        <ul class="list-unstyled user_data">
+                                            <li>
+                                                <h3 style="color:white">
+                                                    <i class="fa fa-university user-profile-icon"></i> 
+                                                    ID Number : M2018-0001
+                                                </h3>
+                                            </li>
+  
+                                            <li>
+                                                <h3 style="color:white">
+                                                    <i class="fa fa-briefcase user-profile-icon"></i> 
+                                                    Year level and Section : 1st Year - A
+                                                </h3>
+                                            </li>
+  
+                                            <li>
+                                                <h3 style="color:white">
+                                                    <i class="fa fa-list-alt user-profile-icon"></i> 
+                                                    Program : BSIT
+                                                </h3>
+                                            </li>
+  
+                                            <li>
+                                                <h3 style="color:white">
+                                                    <i class="fa fa-envelope user-profile-icon"></i> 
+                                                    Email : test@gmail.com
+                                                </h3>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="profile_img">
+                                            <div id="crop-avatar">
+                                                <!-- Current avatar -->
+                                                <img class="img-responsive avatar-view" src="{{ asset('images/no-image.png') }}" alt="Avatar" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                {{-- End of Avatar --}}
+
+                {{-- Scholarship --}}
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><h5><b>Types of Scholarship</b> <small>(<a href="#" data-toggle="modal" data-target="#scholarshipModal">requirements</a>)</small></h5></div>
                                 @component('includes.modal')
                                     @slot('modal_title')
                                         Scholarship Requirements
@@ -85,148 +77,149 @@
                                         @include('includes.scholarshipreq')
                                     @endslot
                                 @endcomponent
-                                    <div class="panel-body">
-                                         {{-- Scholarship --}}
-                                         <div class="row">
-                                                <div class="col-sm-6">
-                                                    <label>
-                                                        <input checked 
-                                                        type="radio" 
-                                                        class="flat" 
-                                                        name="scholarship" id="scholarship" 
-                                                        value="No Scholarship">
-                                                        No Scholarship
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label>
-                                                        <input 
-                                                        type="radio" 
-                                                        class="flat" 
-                                                        name="scholarship" id="scholarship" 
-                                                        value="Executive Municipal Scholarship Ordinance">
-                                                        Executive Municipal Scholarship Ordinance
-                                                    </label>
-                                                </div>
-                                         </div>
-                                         <div class="row">
-                                                <div class="col-sm-6">
-                                                    <label>
-                                                        <input 
-                                                        type="radio" 
-                                                        class="flat" 
-                                                        name="scholarship" id="scholarship" 
-                                                        value="Barangay Scholarship">
-                                                        Barangay Scholarship
-                                                    </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <label>
-                                                        <input 
-                                                        type="radio" 
-                                                        class="flat" 
-                                                        name="scholarship" id="scholarship" 
-                                                        value="Academic Scholarship">
-                                                        Academic Scholarship
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                        <label>
-                                                            <input 
-                                                            type="radio" 
-                                                            class="flat" 
-                                                            name="scholarship" id="scholarship" 
-                                                            value="GAD - Women in Sports Scholarship">
-                                                            GAD - Women in Sports Scholarship
-                                                        </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                        <label>
-                                                            <input 
-                                                            type="radio" 
-                                                            class="flat" 
-                                                            name="scholarship" id="scholarship" 
-                                                            value="Mayor Lani - Taguig Scholarship">
-                                                            Mayor Lani - Taguig Scholarship
-                                                        </label>                          
-                                                </div>
-                                            </div>                     
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                        <label>
-                                                            <input 
-                                                            type="radio" 
-                                                            class="flat" 
-                                                            name="scholarship" id="scholarship" 
-                                                            value="CHED Tulong Dulong Scholarship">
-                                                            CHED Tulong Dulong Scholarship
-                                                        </label>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                        <label>
-                                                            <input 
-                                                            type="radio" 
-                                                            class="flat" 
-                                                            name="scholarship" id="scholarship" 
-                                                            value="Entrance Scholarship">
-                                                            Entrance Scholarship
-                                                        </label>
-                                                </div>
-                                            </div> 
+                                <div class="panel-body">
+                                    {{-- Scholarship --}}
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label>
+                                                <input checked 
+                                                type="radio" 
+                                                class="flat" 
+                                                name="scholarship" id="scholarship" 
+                                                value="No Scholarship">
+                                                No Scholarship
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>
+                                                <input 
+                                                type="radio" 
+                                                class="flat" 
+                                                name="scholarship" id="scholarship" 
+                                                value="Executive Municipal Scholarship Ordinance">
+                                                Executive Municipal Scholarship Ordinance
+                                            </label>
+                                        </div>
                                     </div>
-                            </div>
-                        </div>
-              </div>
-              {{-- End of Scholarship --}}
-              {{-- General Information --}}
-              <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading"><h5><b>Student's Information</b></h5></div>
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-sm-3">Suffix Name: <input type="text" class="form-control" id="sname" name="sname" maxlength="3" placeholder="(e.g. Jr.)"></div>
-                                    <div class="col-sm-3">Sex: *
-                                        <select class="form-control" name="sex" required="">
-                                            <option value=""></option>
-                                            <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
-                                        </select>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label>
+                                                <input 
+                                                type="radio" 
+                                                class="flat" 
+                                                name="scholarship" id="scholarship" 
+                                                value="Barangay Scholarship">
+                                                Barangay Scholarship
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>
+                                                <input 
+                                                type="radio" 
+                                                class="flat" 
+                                                name="scholarship" id="scholarship" 
+                                                value="Academic Scholarship">
+                                                Academic Scholarship
+                                            </label>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-3">Civil Status: *
-                                        <select class="form-control" name="civil_status" required="">
-                                            <option value=""></option>
-                                            <option value="Single">Single</option>
-                                            <option value="Married">Married</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-3">Citizenship: *<input type="text" class="form-control" id="citizenship" name="citizenship" placeholder="Citizenship" required=""></div>
-                                </div>     
-                                <br>
-                                <div class="row">
-                                    <div class="col-sm-4">Birthplace: *<input type="text" class="form-control" id="birthplace" name="birthplace" placeholder="Birthplace" required=""></div>
-                                    <div class="col-sm-4">Religion: *<input type="text" class="form-control" id="religion" name="religion" placeholder="Religion" required=""></div> 
-                                    <div class="col-sm-4">Date of Birth: * 
-                                        <div class='input-group date' id='myDatepicker2'>
-                                                <input class="form-control" name="bdate" id="bdate" placeholder="mm/dd/yyyy" maxlength="10" required=""/>
-                                                <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                                </span>
-                                            </div>
-                                    </div>
-
-                                        
-                                            
-                                        
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label>
+                                                <input 
+                                                type="radio" 
+                                                class="flat" 
+                                                name="scholarship" id="scholarship" 
+                                                value="GAD - Women in Sports Scholarship">
+                                                GAD - Women in Sports Scholarship
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>
+                                                <input 
+                                                type="radio" 
+                                                class="flat" 
+                                                name="scholarship" id="scholarship" 
+                                                value="Mayor Lani - Taguig Scholarship">
+                                                Mayor Lani - Taguig Scholarship
+                                            </label>                          
+                                        </div>
+                                    </div>                     
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label>
+                                                <input 
+                                                type="radio" 
+                                                class="flat" 
+                                                name="scholarship" id="scholarship" 
+                                                value="CHED Tulong Dulong Scholarship">
+                                                CHED Tulong Dulong Scholarship
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>
+                                                <input 
+                                                type="radio" 
+                                                class="flat" 
+                                                name="scholarship" id="scholarship" 
+                                                value="Entrance Scholarship">
+                                                Entrance Scholarship
+                                            </label>
+                                        </div>
+                                    </div> 
                                 </div>
-                                
-                            </div>
+                        </div>
                     </div>
                 </div>
-              </div>
-              {{-- End of General Information --}}
+                {{-- End of Scholarship --}}
+                {{-- General Information --}}
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><h5><b>Student's Information</b></h5></div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-3">Suffix Name: <input type="text" class="form-control" id="sname" name="sname" maxlength="3" placeholder="(e.g. Jr.)"></div>
+                                            <div class="col-sm-3">Sex: *
+                                                <select class="form-control" name="sex" required="">
+                                                    <option value=""></option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-3">Civil Status: *
+                                                <select class="form-control" name="civil_status" required="">
+                                                    <option value=""></option>
+                                                    <option value="Single">Single</option>
+                                                    <option value="Married">Married</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-3">Citizenship: *
+                                                <input type="text" class="form-control" id="citizenship" name="citizenship" placeholder="Citizenship" required="">
+                                            </div>
+                                    </div>     
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-4">Birthplace: *
+                                            <input type="text" class="form-control" id="birthplace" name="birthplace" placeholder="Birthplace" required="">
+                                        </div>
+                                        <div class="col-sm-4">Religion: *
+                                            <input type="text" class="form-control" id="religion" name="religion" placeholder="Religion" required="">
+                                        </div> 
+                                        <div class="col-sm-4">Date of Birth: * 
+                                            <div class='input-group date' id='myDatepicker2'>
+                                                <input class="form-control" name="bdate" id="bdate" placeholder="mm/dd/yyyy" maxlength="10" required=""/>
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>         
+                                    </div>    
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- End of General Information --}}
 
               {{-- Address --}}
               <div class="col-md-12 col-sm-12 col-xs-12">
