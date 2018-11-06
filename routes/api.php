@@ -16,3 +16,18 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//Student List
+Route::get('online/admin/student-list','StudentController@index');
+
+//Single Student List
+Route::get('online/admin/student-list/{id}','StudentController@show');
+
+//Create New Student
+Route::post('online/admin/new-student','StudentController@store');
+
+//Update Student
+Route::put('online/admin/student-list','StudentController@store');
+
+//Delete Student
+Route::delete('online/admin/student-list/{id_num}','StudentController@destroy');

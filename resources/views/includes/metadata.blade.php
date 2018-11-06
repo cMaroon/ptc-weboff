@@ -16,6 +16,5 @@
 <!-- bootstrap-daterangepicker -->
 <link href="{{asset('/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css')}}" rel="stylesheet">
 {{-- Scripts --}}
-<script src="{{ asset('js/app.js') }}"></script>
 {{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
 

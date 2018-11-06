@@ -4,6 +4,7 @@
  * build a custom jquery-ui dist without the tooltip.
  * Go to this link: https://jqueryui.com/download/#!version=1.12.0
  */
+
 require('./jquery.min');
 // require('./jquery-ui.min');
 require('./bootstrap');
@@ -17,7 +18,6 @@ require('./bootstrap-datepicker.min');
 // require('./jquery.placeholder.min');
 // require('./jquery.backtotop');
 
-// window.Vue = require('vue');
 
 // import VueRouter from 'vue-router'
 // Vue.use(VueRouter)
@@ -30,16 +30,6 @@ require('./bootstrap-datepicker.min');
 // const router = new VueRouter({
 // routes // short for `routes: routes`
 // })
-
-// Vue.component('example-component',require('./components/ExampleComponent.vue'));
-
-// var app = new Vue({
-//     el: '#app',
-//     data:{
-//         message: 'Hello Vue'
-//     }
-    
-// });
 
 $(document).ready(function() {
     /**
@@ -133,3 +123,14 @@ function stop() {
         "                           888\n\n" +
         "collaboration with Emmanuel S. See Te (Software Engineer)\n";
 }
+
+window.Vue = require('vue');
+
+Vue.component(
+    'studentlist',
+    require('./components/Studentlist.vue')
+);
+
+const app = new Vue({
+    el: '#app',
+});

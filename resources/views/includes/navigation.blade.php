@@ -81,9 +81,7 @@ $links = json_decode(file_get_contents($path), true);
                                     </a>
                                 @endforeach
 
-                                <router-link to="/enrollment" class="simple-menu__item">
-                                        Testing
-                                </router-link>
+                               
                             </div>
                         </div>
                     </div>

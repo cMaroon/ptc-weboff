@@ -357,31 +357,6 @@
     </div>
         <br/>
         <input class="btn btn-success" type="submit" name="submit" value="Submit">
-        <script>
-                $(document).ready(function(){
-                        $("input#checker").bind("click",function(o){
-                            if($("input#checker:checked").length){
-                                $("#per_add_st_num").val($("#add_st_num").val());
-                                $("#per_add_st_name").val($("#add_st_name").val());
-                                $("#per_add_subd").val($("#add_subd").val());
-                                $("#per_add_brgy").val($("#add_brgy").val());
-                                $("#per_add_city").val($("#add_city").val());
-                                $("#per_add_province").val($("#add_province").val());
-                                $("#per_add_zipcode").val($("#add_zipcode").val());
-                      document.getElementById("address_label").style.display = '';
-                            }else{
-                              $("#per_add_st_num").val("");
-                                $("#per_add_st_name").val("");
-                                $("#per_add_subd").val("");
-                                $("#per_add_brgy").val("");
-                                $("#per_add_city").val("");
-                                $("#per_add_province").val("");
-                                $("#per_add_zipcode").val("");
-                                //document.getElementById("address_label").style.display = 'none';
-                            }
-                        });
-                    }
-                );
-                </script>
+        
   {{-- </form> --}}
   <!-- end form for validations -->

@@ -1,4 +1,4 @@
-
+   
    <!-- jQuery -->
     <script src="{{asset('/vendors/jquery/dist/jquery.min.js')}}"></script>
     <!-- Bootstrap -->
@@ -63,9 +63,9 @@
     <!-- Include jQuery Validator plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
     <!-- SmartWizard -->
-    <script src="{{asset('/vendors/techlab/smartwizard/dist/js/jquery.smartWizard.min.js')}}"></script>
+    {{-- <script src="{{asset('/vendors/techlab/smartwizard/dist/js/jquery.smartWizard.min.js')}}"></script> --}}
     <!-- SmartWizard Function -->
-    <script src="{{asset('/vendors/techlab/smartwizard/dist/js/jquery.smartWizardFunction.js')}}"></script>
+    {{-- <script src="{{asset('/vendors/techlab/smartwizard/dist/js/jquery.smartWizardFunction.js')}}"></script> --}}
     <script src="{{asset('vendors/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
     <!-- PNotify -->
     <script src="{{asset('/vendors/pnotify/dist/pnotify.js')}}"></script>

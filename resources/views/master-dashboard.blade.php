@@ -15,10 +15,16 @@
   </head>
 
   <body class="nav-md">
-    @yield('content')
+    <div id="app">
+      
+        @yield('content')
+
+    </div>
 
     @yield('script')
 
-    @include('includes.footerjs')
+    
+    <script src="{{ asset('js/app.js') }}"></script>   
+    @include('includes.footerjs') 
   </body>
 </html>
