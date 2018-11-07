@@ -20,7 +20,7 @@ class StudentController extends Controller
     public function index()
     {
         //Get Students
-        $students = Student::paginate(15);
+        $students = Student::all();
 
         //Return collection of students as a resource
         return StudentResource::collection($students);
@@ -34,34 +34,11 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        $student = $request->isMethod('put') ? Student::findOrFail($request->student_id) : new Student;
-        $user = $request->isMethod('put') ? User::findOrFail($request->user_id) : new User;
-
-
-        $student->id_num = $request->input('id_num');
-        $student->firstname = $request->input('firstname');
-        $student->middlename = $request->input('middlename');
-        $student->lastname = $request->input('lastname');
-        $student->cd_email = $request->input('cd_email');
-        $student->acad_program = $request->input('acad_program');
-        $student->year_level = $request->input('year_level');
-        $student->section = $request->input('section');
-
-        $user->id_num = $request->input('id_num');
-        $user->name = $request->input('firstname') .' '. $request->input('lastname');
-        $user->email = $request->input('cd_email');
-        $user->password =  Hash::make($request->input('password'));
-
-        $user->save();
-
-        if($student->save()){
-            return new StudentResource($student);
-            
-
-
-        }
+        $student = Student::create($request->all());
+        return new StudentResource($student);
 
     }
+    
 
     /**
      * Display the specified resource.
@@ -79,6 +56,20 @@ class StudentController extends Controller
         
     }
 
+        /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $student = Student::findOrFail($id);
+        $student->update($request->all());
+        return new StudentResource($student);
+    }
+
     /**
      * Remove the specified resource from storage.
      *
@@ -89,10 +80,15 @@ class StudentController extends Controller
     {
         //Get Single Student
         $student = Student::findOrFail($id);
+        $id_num = $student->id_num;
+        $user = User::where('id_num',$id_num)->delete(); 
+
 
         if($student->delete()){
             return new StudentResource($student);
 
         }
+
+        
     }
 }

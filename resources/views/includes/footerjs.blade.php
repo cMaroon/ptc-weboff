@@ -61,7 +61,7 @@
     <!-- validator -->
     <script src="{{asset('/vendors/validator/validator.js')}}"></script>
     <!-- Include jQuery Validator plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script> --}}
     <!-- SmartWizard -->
     {{-- <script src="{{asset('/vendors/techlab/smartwizard/dist/js/jquery.smartWizard.min.js')}}"></script> --}}
     <!-- SmartWizard Function -->

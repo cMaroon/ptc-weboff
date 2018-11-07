@@ -14,17 +14,17 @@ class Student extends JsonResource
      */
     public function toArray($request)
     {
-        // return parent::toArray($request);
-        return [
-            'id' => $this->id,
-            'id_num' => $this->id_num,
-            'firstname' => $this->firstname,
-            'middlename' => $this->middlename,
-            'lastname' => $this->lastname,
-            'suffixname' => $this->suffixname,
-            'acad_program' => $this->acad_program,
-            'year_level' => $this->year_level,
-            'section' => $this->section
-        ];
+        return parent::toArray($request);
+        // return [
+        //     'id' => $this->id,
+        //     'id_num' => $this->id_num,
+        //     'firstname' => $this->firstname,
+        //     'middlename' => $this->middlename,
+        //     'lastname' => $this->lastname,
+        //     'suffixname' => $this->suffixname,
+        //     'acad_program' => $this->acad_program,
+        //     'year_level' => $this->year_level,
+        //     'section' => $this->section
+        // ];
     }
 }

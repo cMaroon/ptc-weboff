@@ -131,6 +131,25 @@ Vue.component(
     require('./components/Studentlist.vue')
 );
 
+window.Fire = new Vue();
+
+import swal from 'sweetalert2'
+window.swal = swal;
+
+import VueProgressBar from 'vue-progressbar'
+
+import { Form, HasError, AlertError } from 'vform';
+window.Form = Form;
+Vue.component(HasError.name, HasError)
+Vue.component(AlertError.name, AlertError)
+
+Vue.use(VueProgressBar, {
+  color: 'rgb(143, 255, 199)',
+  failedColor: 'red',
+  height: '4px'
+})
+
 const app = new Vue({
     el: '#app',
 });
+

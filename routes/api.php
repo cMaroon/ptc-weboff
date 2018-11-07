@@ -18,16 +18,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 //Student List
-Route::get('online/admin/student-list','StudentController@index');
+Route::get('students','StudentController@index');
 
 //Single Student List
-Route::get('online/admin/student-list/{id}','StudentController@show');
+Route::get('student/{id}','StudentController@show');
 
 //Create New Student
-Route::post('online/admin/new-student','StudentController@store');
+Route::post('student','StudentController@store');
 
 //Update Student
-Route::put('online/admin/student-list','StudentController@store');
+Route::put('student/{id}','StudentController@update');
 
 //Delete Student
-Route::delete('online/admin/student-list/{id_num}','StudentController@destroy');
+Route::delete('student/{id}','StudentController@destroy');
