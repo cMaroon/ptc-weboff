@@ -47,6 +47,19 @@ Route::put('/student','StudentController@store');
 //Delete Student
 Route::delete('/student/{id}','StudentController@destroy');
 
+/*
+|
+| Profile API
+|
+*/
+
+//Single Profile List
+Route::get('/profile','ProfileController@index');
+
+//Update Profile
+Route::put('/profile','ProfileController@store');
+
+
 
 /*
 |

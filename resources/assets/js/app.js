@@ -129,6 +129,7 @@ window.Vue = require('vue');
 Vue.component('studentlist',require('./components/Studentlist.vue'));
 Vue.component('courses',require('./components/Courses.vue'));
 Vue.component('programs',require('./components/Programs.vue'));
+Vue.component('profile',require('./components/Profile.vue'));
 
 window.Fire = new Vue();
 

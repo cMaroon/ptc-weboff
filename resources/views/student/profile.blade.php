@@ -9,9 +9,6 @@
 
              @include('student.includes.sidebarmenu')
 
-            <!-- /menu footer buttons -->
-            @include('includes.menufooter')
-            <!-- /menu footer buttons -->
           </div>
         </div>
 
@@ -20,7 +17,24 @@
         <!-- /top navigation -->
 
         <!-- page content -->
-        @include('student.includes.content')
+        <div class="right_col" role="main">
+            <div class="clearfix">
+              <div class="page-title">
+
+              </div>
+  
+              <div class="clearfix"></div>
+              
+               <div class="container">
+                  <profile></profile>
+               </div>
+            
+        
+
+            </div>
+    </div>
+
+        {{-- @include('student.includes.content') --}}
         
         <!-- /page content -->
 

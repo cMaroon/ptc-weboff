@@ -30,6 +30,26 @@
                   <li><a href="{{ route('manageCourses') }}"><i class="fa fa-sitemap"></i> Manage Courses </a></li> 
 
                   <li><a href="{{ route('managePosts') }}"><i class="fa fa-file-text"></i> Manage Posts </a></li> 
+                  <li>
+                    <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                  document.getElementById('logout-form').submit();">
+                              <i class="fa fa-power-off"></i>
+                      
+                                  {{ __('Logout') }}
+                            
+                    </a>
+
+                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                     @csrf
+                 </form>
+                </li>
+
+                <li>
+                    <a onclick="openFullscreen();">
+                        <i class="fa fa-arrows-alt"></i> Fullscreen 
+                      </a>
+                </li>
 
                   
 

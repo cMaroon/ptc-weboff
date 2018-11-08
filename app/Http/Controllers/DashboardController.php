@@ -26,6 +26,7 @@ class DashboardController extends Controller
     {
         if (\Gate::allows('isSuperAdmin')) {
             return view('ptc-admin.adminDashboard.dashboard');
+
         } elseif (\Gate::allows('isStudent')){
             return view('student.dashboard');
 

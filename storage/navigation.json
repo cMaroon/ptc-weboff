@@ -178,7 +178,7 @@
                 },
                 "login": {
                     "name": "Login",
-                    "url": "dashboard"
+                    "url": "login"
                 },
                 "register": {
                     "name": "Register",

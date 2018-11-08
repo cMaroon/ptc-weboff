@@ -1,5 +1,11 @@
 <?php
-
+/*
+|--------------------------------------------------------------------------
+| Resource Routes
+|--------------------------------------------------------------------------
+*/
+Route::resource('posts','PostsController');
+Route::resource('admission','AdmissionController');
 /*
 |--------------------------------------------------------------------------
 | Pages Routes
@@ -16,8 +22,8 @@ Auth::routes();
 | Admin Routes
 |--------------------------------------------------------------------------
 */
-Route::get('/online/', 'DashboardController@dashboard')->name('dashboard');
-Route::get('/online/studentlist/','DashboardController@studentlist')->name('studentlist');
+Route::get('/online', 'DashboardController@dashboard')->name('dashboard');
+Route::get('/online/studentlist','DashboardController@studentlist')->name('studentlist');
 Route::get('/online/courses', 'DashboardController@manageCourses')->name('manageCourses');
 Route::get('/online/programs', 'DashboardController@managePrograms')->name('managePrograms');
 
@@ -32,13 +38,7 @@ Route::get('/ptc-admin/adminDashboard/createAnnouncement', 'DashboardController@
 */
 Route::get('/online/profile', 'DashboardController@studentprofile')->name('studentprofile');
 
-/*
-|--------------------------------------------------------------------------
-| Resource Routes
-|--------------------------------------------------------------------------
-*/
-Route::resource('posts','PostsController');
-Route::resource('admission','AdmissionController');
+
 
 
 

@@ -34,6 +34,9 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+
+       $primaryKey = 'id_num';
+
         $user = $request->isMethod('put') ? User::findOrFail($request->user_id) : new User;
 
         
