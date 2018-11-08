@@ -1,14 +1,92 @@
 <template>
-    <div>
-        <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel">
-          <div class="x_title">
-            <h2>Student List</h2>
-            <div class="clearfix"></div>
+  <div>
+    <h2>Student List</h2>
+
+        <div class="modal fade" id="addNew" tabindex="-1" role="dialog" aria-labelledby="addNewLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                    <h5 class="modal-title" id="addNewLabel">Update Student's Info</h5>
+
+              </div>
+              <form @submit.prevent="updateStudent">
+              <div class="modal-body">
+
+                    <div class="form-group">
+                      <input  type="text" placeholder="ID Number"
+                        class="form-control" v-model="student.id_num" readonly>
+                    </div>
+                    
+                    <div class="form-group">
+                      <input  type="text"
+                      placeholder="First Name"
+                        class="form-control" v-model="student.firstname" >
+                    </div>
+
+                    <div class="form-group">
+                      <input  type="text" 
+                      placeholder="Middle Name"
+                        class="form-control" v-model="student.middlename">
+
+                    </div>
+
+                    <div class="form-group">
+                      <input  type="text" 
+                      placeholder="Last Name"
+                        class="form-control" v-model="student.lastname">
+
+                    </div>
+
+                    <div class="form-group">
+                      <input  type="text" 
+                      placeholder="Suffix Name"
+                        class="form-control" v-model="student.suffixname">
+                    </div>
+
+                    <div class="form-group">
+                    <select  type="text" class="form-control" required v-model="student.acad_program">
+                        <option v-for="program in programs" :key="program.id" v-bind:value="program.program_code">{{program.descriptive_title}}</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                    <select  type="text"  class="form-control"  required v-model="student.year_level" >
+                            <option value="">Please select year level*</option>
+                            <option value="First Year">First Year</option>
+                            <option value="Second Year">Second Year</option>
+                            <option value="Third Year">Third Year</option>
+                            <option value="Fourth Year">Fourth Year</option>
+                            <option value="Grade 11">Grade 11</option>
+                            <option value="Grade 12">Grade 12</option>
+                    </select>
+
+                    </div>                    
+
+                    <div class="form-group">
+                            <select  type="text"  class="form-control"  required  v-model="student.section">
+                                    <option value="">Please select section*</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="Executive">Executive</option>
+                                    <option value="SHS">Senior High School</option>
+                            </select>
+
+                    </div>
+                    
+              </div>
+              <div class="modal-footer">
+
+                    <button type="submit" class="btn btn-success">Update <i class="fa fa-save"></i></button>
+                    
+              </div>
+              </form>
+            </div>
           </div>
-          <div class="x_content">
-            
-            <table id="datatable-fixed-header" class="table table-striped table-bordered">
+        </div>
+          
+        <table id="datatable-fixed-header" class="table table-striped table-bordered">
               <thead>
                 <tr>
                     <th>Registered At</th>
@@ -29,7 +107,7 @@
                     <td style="text-align:center; width:140px">{{student.acad_program}}</td>
                     <td style="width:140px">{{student.year_level}} - {{student.section}}</td>
                     <td style="text-align:center; width:140px">
-                      <a href="#" @click="editModal(student)" data-toggle="tooltip" data-placement="top" title="Edit">
+                      <a href="#" @click="editStudent(student)" data-toggle="tooltip" data-placement="top" title="Edit">
                             <i class="fa fa-edit "></i>
                         </a>
                       |
@@ -42,119 +120,16 @@
                 
               </tbody>
             </table>
-          </div>
-        </div>
-    </div>
-
-<!-- Modal -->
-        <div class="modal fade" id="addNew" tabindex="-1" role="dialog" aria-labelledby="addNewLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                    <h5 class="modal-title" v-show="!editmode" id="addNewLabel">Add New</h5>
-                    <h5 class="modal-title" v-show="editmode" id="addNewLabel">Update Student's Info</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <form @submit.prevent="editmode ? updateStudent() : createStudent()">
-              <div class="modal-body">
-
-                    <div class="form-group">
-                      <input v-model="student.id_num" type="text" name="id_num"
-                      placeholder="ID Number"
-                        class="form-control" >
-                    </div>
-                    
-                    <div class="form-group">
-                      <input v-model="student.firstname" type="text" name="firstname"
-                      placeholder="First Name"
-                        class="form-control" >
-                    </div>
-
-                    <div class="form-group">
-                      <input v-model="student.middlename" type="text" name="middlename"
-                      placeholder="Middle Name"
-                        class="form-control">
-
-                    </div>
-
-                    <div class="form-group">
-                      <input v-model="student.lastname" type="text" name="lastname"
-                      placeholder="Last Name"
-                        class="form-control">
-
-                    </div>
-
-                    <div class="form-group">
-                      <input v-model="student.suffixname" type="text" name="suffixname"
-                      placeholder="Suffix Name"
-                        class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                    <select v-model="student.acad_program" type="text" id="acad_program" name="acad_program" class="form-control" required>
-                                <option value="">Please select your program*</option>
-                                <option value="ABA">Associate in Business Administration</option>
-                                <option value="COA">Certificate in Office Administration</option>
-                                <option value="CCS">Certificate in Computer Science</option>
-                                <option value="CHRM">Certificate in Hotel and Restaurant Management</option>
-                                <option value="BSIT">Bachelor of Science in Information Technology</option>
-                                <option value="BSOA">Bachelor of Science in Office Administration</option>
-                                <option value="BSIT-EXEC">Executive - Bachelor of Science in Information Technology</option>
-                                <option value="BSOA-EXEC">Executive - Bachelor of Science in Office Administration </option>
-                                <option value="ABM">Accountancy, Business and Management </option>
-                                <option value="HUMSS">Humanities and Social Science </option>
-                                <option value="TECH-VOC ICT">Tech-Voc Information and Communications Technology </option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                    <select v-model="student.year_level" type="text" id="year_level" name="year_level" class="form-control"  required >
-                            <option value="">Please select year level*</option>
-                            <option value="First Year">First Year</option>
-                            <option value="Second Year">Second Year</option>
-                            <option value="Third Year">Third Year</option>
-                            <option value="Fourth Year">Fourth Year</option>
-                            <option value="Grade 11">Grade 11</option>
-                            <option value="Grade 12">Grade 12</option>
-                    </select>
-
-                    </div>                    
-
-                    <div class="form-group">
-                            <select v-model="student.section" type="text" id="section" name="section" class="form-control"  required  >
-                                    <option value="">Please select section*</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                    <option value="Executive">Executive</option>
-                                    <option value="SHS">Senior High School</option>
-                            </select>
-
-                    </div>
-                    
-              </div>
-              <div class="modal-footer">
-                    <button v-show="editmode" type="submit" class="btn btn-success">Update <i class="fas fa-pen fa-fw"></i></button>
-                    <button v-show="!editmode" type="submit" class="btn btn-primary">Create <i class="fas fa-save fa-fw"></i></button>
-              </div>
-              </form>
-            </div>
-          </div>
-        </div>
-
-
-    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            students: [],
-            student: {
+  data() {
+    return {
+      programs: [],
+      students: [],
+      student: {
                 id: '',
                 id_num: '',
                 firstname:'',
@@ -164,75 +139,37 @@ export default {
                 acad_program:'',
                 year_level:'',
                 section:''
-            },
-            editmode: false
-        }
+      },
+      student_id: '',
+      user_id:'',
+      pagination: {},
+      edit: false
+    };
+  },
+  created() {
+    this.fetchStudents();
+    this.fetchPrograms();
+  },
+  methods: {
+    fetchStudents() {
+      fetch('/api/students')
+        .then(res => res.json())
+        .then(res => {
+          this.students = res.data;
+        })
+        .catch(err => console.log(err));
+    },
+    fetchPrograms() {
+      fetch('/api/programs')
+        .then(res => res.json())
+        .then(res => {
+          this.programs = res.data;
+        })
+        .catch(err => console.log(err));
     },
 
-    created() {
-        this.fetchStudents();
-    },
-
-    methods: {
-        fetchStudents() {
-            fetch('/api/students')
-            .then(res => res.json())
-            .then(res => {
-                this.students = res.data;
-
-            })
-        },
-        editModal(student){
-                this.editmode = true;
-                $('#addNew').modal('show');
-
-                this.student.id = student.id;
-                this.student.id_num = student.id_num;
-                this.student.firstname = student.firstname;
-                this.student.middlename = student.middlename;
-                this.student.lastname = student.lastname;
-                this.student.suffixname = student.suffixname;
-                this.student.acad_program = student.acad_program;
-                this.student.year_level = student.year_level;
-                this.student.section = student.section;
-            },
-          updateStudent(){
-
-                // console.log('Editing data');
-                fetch('/api/student/'+this.student.id,{
-                    method: 'put',
-                    body: JSON.stringify(this.student),
-                    headers: {
-                        'content-type':'application/json'
-                    }
-                })
-                .then(res => res.json()) 
-                .then(data => {
-                    // success
-                     swal(
-                        'Updated!',
-                        'Information has been updated.',
-                        'success'
-                        ) 
-                    this.student.id_num = '';
-                    this.student.firstname = '';
-                    this.student.middlename = '';
-                    this.student.lastname = '';
-                    this.student.suffixname = '';
-                    this.student.acad_program = '';
-                    this.student.year_level = '';
-                    this.student.section = '';
-                    this.editmode = false;
-                    $('#addNew').modal('hide');               
-                    this.fetchStudents();
-                })
-                .catch(()=> {
-                    swal("Failed!", "UNAUTHORIZED ACTION.", "warning");
-                });
-
-            },
-        deleteStudent(id){
-                swal({
+    deleteStudent(id) {
+      swal({
                     title: 'Are you sure?',
                     text: "You won't be able to revert this!",
                     type: 'warning',
@@ -254,7 +191,7 @@ export default {
                                         'success'
                                         )
                                     this.fetchStudents();
-                                    // location.reload();
+                                    location.reload();
                                     
 
                                 })
@@ -264,7 +201,76 @@ export default {
                              
                          }
                     })
-            },
+    },
+    updateStudent() {
+        fetch('/api/user', {
+          method: 'put',
+          body: JSON.stringify(this.student),
+          headers: {
+            'content-type': 'application/json'
+          }
+        })
+          .then(res => res.json())
+
+          .catch(()=> {
+                    swal("Failed!", "UNAUTHORIZED ACTION.", "warning");
+            });
+      
+        // Update
+        fetch('/api/student', {
+          method: 'put',
+          body: JSON.stringify(this.student),
+          headers: {
+            'content-type': 'application/json'
+          }
+        })
+          .then(res => res.json())
+          .then(data => {
+            this.clearForm();
+            swal(
+                'Updated!',
+                'Information has been updated.',
+                'success'
+            ) 
+            $('#addNew').modal('hide');               
+            this.fetchStudents();
+            // location.reload();
+          })
+          .catch(()=> {
+                    swal("Failed!", "UNAUTHORIZED ACTION.", "warning");
+            });
+
+
+      
+    },
+    editStudent(student) {
+        $('#addNew').modal('show');
+      this.edit = true;
+                this.student.id = student.id;
+                this.student.student_id = student.id;
+                this.student.user_id = student.id_num;
+                this.student.id_num = student.id_num;
+                this.student.firstname = student.firstname;
+                this.student.middlename = student.middlename;
+                this.student.lastname = student.lastname;
+                this.student.suffixname = student.suffixname;
+                this.student.acad_program = student.acad_program;
+                this.student.year_level = student.year_level;
+                this.student.section = student.section;
+    },
+    clearForm() {
+      this.edit = false;
+                    this.student.id = null;
+                    this.student.student_id = null;
+                    this.student.id_num = '';
+                    this.student.firstname = '';
+                    this.student.middlename = '';
+                    this.student.lastname = '';
+                    this.student.suffixname = '';
+                    this.student.acad_program = '';
+                    this.student.year_level = '';
+                    this.student.section = '';
     }
-}
+  }
+};
 </script>

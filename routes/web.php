@@ -16,9 +16,11 @@ Auth::routes();
 | Admin Routes
 |--------------------------------------------------------------------------
 */
-Route::get('/online', 'DashboardController@dashboard')->name('dashboard');
-Route::get('/online/admin/student-list','DashboardController@studentlist')->name('studentlist');
-Route::get('/ptc-admin/adminDashboard/addStudent', 'DashboardController@addStudent')->name('addStudent');
+Route::get('/online/', 'DashboardController@dashboard')->name('dashboard');
+Route::get('/online/studentlist/','DashboardController@studentlist')->name('studentlist');
+Route::get('/online/courses', 'DashboardController@manageCourses')->name('manageCourses');
+Route::get('/online/programs', 'DashboardController@managePrograms')->name('managePrograms');
+
 Route::get('/ptc-admin/adminDashboard/managePosts', 'DashboardController@managePosts')->name('managePosts');
 Route::get('/ptc-admin/adminDashboard/createNews', 'DashboardController@createNews')->name('createNews');
 Route::get('/ptc-admin/adminDashboard/createAnnouncement', 'DashboardController@createAnnouncement')->name('createAnnouncement');

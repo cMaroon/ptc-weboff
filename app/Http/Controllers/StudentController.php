@@ -21,6 +21,7 @@ class StudentController extends Controller
     {
         //Get Students
         $students = Student::all();
+        // $students = Student::orderBy('created_at','desc')->paginate(10);
 
         //Return collection of students as a resource
         return StudentResource::collection($students);
@@ -34,8 +35,29 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        $student = Student::create($request->all());
-        return new StudentResource($student);
+
+        $student = $request->isMethod('put') ? Student::findOrFail($request->student_id) : new Student;
+
+        $student->id = $request->input('student_id');
+        $student->id_num = $request->input('id_num');
+        $student->firstname = $request->input('firstname');
+        $student->middlename = $request->input('middlename');
+        $student->lastname = $request->input('lastname');
+        $student->suffixname = $request->input('suffixname');
+        $student->acad_program = $request->input('acad_program');
+        $student->year_level = $request->input('year_level');
+        $student->section = $request->input('section');
+
+
+
+        if($student->save()) {
+            return new StudentResource($student);
+        }
+
+
+        
+
+
 
     }
     
@@ -56,19 +78,6 @@ class StudentController extends Controller
         
     }
 
-        /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        $student = Student::findOrFail($id);
-        $student->update($request->all());
-        return new StudentResource($student);
-    }
 
     /**
      * Remove the specified resource from storage.

@@ -15,6 +15,7 @@
               <form method="POST" action="{{ route('register') }}" data-parsley-validate class="form-horizontal form-label-left">
                     @csrf
 
+
                     <div class="form-group row">
                         <label for="id_num" class="control-label col-md-3 col-sm-3 col-xs-12">{{ __('ID Number') }}</label>
 

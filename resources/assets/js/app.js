@@ -126,15 +126,23 @@ function stop() {
 
 window.Vue = require('vue');
 
-Vue.component(
-    'studentlist',
-    require('./components/Studentlist.vue')
-);
+Vue.component('studentlist',require('./components/Studentlist.vue'));
+Vue.component('courses',require('./components/Courses.vue'));
+Vue.component('programs',require('./components/Programs.vue'));
 
 window.Fire = new Vue();
 
 import swal from 'sweetalert2'
 window.swal = swal;
+
+const toast = swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000
+  });
+  
+window.toast = toast;
 
 import VueProgressBar from 'vue-progressbar'
 

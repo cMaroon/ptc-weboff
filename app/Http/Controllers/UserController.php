@@ -34,32 +34,15 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        // $student = $request->isMethod('put') ? Student::findOrFail($request->student_id) : new Student;
-        // $user = $request->isMethod('put') ? User::findOrFail($request->user_id) : new User;
+        $user = $request->isMethod('put') ? User::findOrFail($request->user_id) : new User;
 
+        
+        $user->name = $request->input('firstname').' '.$request->input('lastname');
 
-        // $student->id_num = $request->input('id_num');
-        // $student->firstname = $request->input('firstname');
-        // $student->middlename = $request->input('middlename');
-        // $student->lastname = $request->input('lastname');
-        // $student->cd_email = $request->input('cd_email');
-        // $student->acad_program = $request->input('acad_program');
-        // $student->year_level = $request->input('year_level');
-        // $student->section = $request->input('section');
+        if($user->save()) {
+            return new UserResource($user);
+        }
 
-        // $user->id_num = $request->input('id_num');
-        // $user->name = $request->input('firstname') .' '. $request->input('lastname');
-        // $user->email = $request->input('cd_email');
-        // $user->password =  Hash::make($request->input('password'));
-
-        // $user->save();
-
-        // if($student->save()){
-        //     return new StudentResource($student);
-            
-
-
-        // }
 
     }
 

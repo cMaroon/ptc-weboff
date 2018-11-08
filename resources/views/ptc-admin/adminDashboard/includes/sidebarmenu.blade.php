@@ -26,16 +26,11 @@
                       <li><a href="index3.html">Quick Reports</a></li>
                     </ul>
                   </li>
-
-                  <li><a><i class="fa fa-users"></i> Records <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="index.html">Add Employee</a></li>
-                      <li><a href="{{ route('addStudent') }}">Add Student</a></li>
-                      <li><a href="index3.html">View Report</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="{{ route('managePrograms') }}"><i class="fa fa-folder"></i> Manage Program </a></li> 
+                  <li><a href="{{ route('manageCourses') }}"><i class="fa fa-sitemap"></i> Manage Courses </a></li> 
 
                   <li><a href="{{ route('managePosts') }}"><i class="fa fa-file-text"></i> Manage Posts </a></li> 
+
                   
 
                 </ul>
