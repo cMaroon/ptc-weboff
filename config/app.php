@@ -147,6 +147,8 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
+        
         
 
         /*

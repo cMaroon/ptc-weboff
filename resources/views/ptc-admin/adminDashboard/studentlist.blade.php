@@ -10,9 +10,6 @@
 
               @include('ptc-admin.adminDashboard.includes.sidebarmenu')
 
-              <!-- /menu footer buttons -->
-              @include('includes.menufooter')
-              <!-- /menu footer buttons -->
             </div>
           </div>
 

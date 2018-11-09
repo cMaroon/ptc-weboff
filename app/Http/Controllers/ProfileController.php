@@ -18,16 +18,13 @@ class ProfileController extends Controller
      */
     public function index()
     {
-
-       $id = Auth::id();
-        // $user_id_num = Auth::user()->getId_Num();
- 
-        // //Get profile
-        // $profile = Student::where('id_num', '=', $user_id_num)->first();
-
-
-        // //Return collection of courses as a resource
-        // return ProfileResource::collection($profile);
+        $user_id_num = Auth::user()->id_num;
+        //Get profile
+        $profiles = Student::where('id_num', '=', $user_id_num)->first();
+        // dd($profiles);
+        // $profiles = Student::all();
+        //Return collection of courses as a resource
+        return new ProfileResource($profiles);
     }
 
     /**
@@ -36,21 +33,25 @@ class ProfileController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    // public function store(Request $request)
+    // {
+
+    //     $student = $request->isMethod('put') ? Student::findOrFail($request->profile_id) : new Student;
+
+    //     $student->id = $request->input('student_id');
+    //     $student->dob = $request->input('dob');
+
+    //     if($student->save()) {
+    //         return new ProfileResource($student);
+    //     }
+
+    // }    
+    public function update(Request $request, $id)
     {
-        // $course = $request->isMethod('put') ? Courses::findOrFail($request->course_id) : new Courses;
-
-        // $course->id = $request->input('course_id');
-        // $course->course_code = $request->input('course_code');
-        // $course->descriptive_title = $request->input('descriptive_title');
-        // $course->lec_hr = $request->input('lec_hr');
-        // $course->lab_hr = $request->input('lab_hr');
-        // $course->course_unit = $request->input('course_unit');
-        // $course->course_pre_req = $request->input('course_pre_req');
-
-        // if($course->save()) {
-        //     return new CourseResource($course);
-        // }
+        $student = Student::findOrFail($id);
+        
+        $student->update($request->all());
+        return ['message'=>'Updated the student info'];
     }
     
 

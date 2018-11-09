@@ -42,3 +42,7 @@ Route::get('/online/profile', 'DashboardController@studentprofile')->name('stude
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

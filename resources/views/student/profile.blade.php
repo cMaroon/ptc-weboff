@@ -17,22 +17,8 @@
         <!-- /top navigation -->
 
         <!-- page content -->
-        <div class="right_col" role="main">
-            <div class="clearfix">
-              <div class="page-title">
-
-              </div>
   
-              <div class="clearfix"></div>
-              
-               <div class="container">
                   <profile></profile>
-               </div>
-            
-        
-
-            </div>
-    </div>
 
         {{-- @include('student.includes.content') --}}
         
