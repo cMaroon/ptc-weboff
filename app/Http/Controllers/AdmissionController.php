@@ -114,7 +114,7 @@ class AdmissionController extends Controller
                 ];
 
                
-                return redirect('collegeapplication');
+                // return redirect('collegeapplication');
     }
 
     /**
